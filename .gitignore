@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+.venv/
+__pycache__/
+work/
+
+# Large or downloadable data: fetch with `npm run data:fetch`, rebuild with `npm run data:convert`
+resources/audio/
+resources/dictionaries/wiktionary/
+resources/dictionaries/perseus_ls/
+resources/dictionaries/lewis_and_short/

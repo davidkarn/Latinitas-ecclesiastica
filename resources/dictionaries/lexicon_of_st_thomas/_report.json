@@ -1,0 +1,131 @@
+{
+ "entries_per_letter": {
+  "a": 973,
+  "b": 126,
+  "c": 1202,
+  "d": 703,
+  "e": 520,
+  "f": 390,
+  "g": 167,
+  "h": 178,
+  "i": 1048,
+  "j": 118,
+  "k": 2,
+  "l": 293,
+  "m": 506,
+  "n": 232,
+  "o": 287,
+  "p": 1179,
+  "q": 127,
+  "r": 474,
+  "s": 951,
+  "t": 389,
+  "u": 114,
+  "v": 329,
+  "x": 2,
+  "z": 13
+ },
+ "total": 10323,
+ "rejected_headword_candidates": [
+  {
+   "pdf_page": 989,
+   "text": "superior, see sacerdos simplex. — (o), sacerdos veteris legis, see sacerdos evangelicus.",
+   "prev": "sacerdos",
+   "guides": [
+    "sacerdos",
+    "sacerdotium"
+   ]
+  },
+  {
+   "pdf_page": 1068,
+   "text": "scientiae, see scientia under 1. — One kind of subiectum in this sense is: subiectum proprium, the particular or proper ",
+   "prev": "subiectum",
+   "guides": [
+    "subiectum",
+    "sublimis"
+   ]
+  }
+ ],
+ "merged_as_continuation": [
+  {
+   "pdf_page": 291,
+   "into": "dēmonstrātio",
+   "text": "demonstratione, see significare. — Kinds of demonstratio in this sense are: (a), demonstratio ad intellectum and demonst"
+  },
+  {
+   "pdf_page": 505,
+   "into": "idiōma",
+   "text": "idiomatum, see communicatio. — (2), facultas autem pronuntiandi potest attendi vel quantum ad idioma, in quo aliquis pos"
+  },
+  {
+   "pdf_page": 565,
+   "into": "inhaerentia",
+   "text": "inhaerentiae, see fieri; on praedicare per modum inhaerentiae, see praedicare; on praedicatio per inhaerentiam, see prae"
+  },
+  {
+   "pdf_page": 584,
+   "into": "intellectus",
+   "text": "intellectus, see habitus; on imaginatio per intellectum, see imaginatio; on imperium intellectus, see imperium; on impur"
+  },
+  {
+   "pdf_page": 599,
+   "into": "intrinsecus",
+   "text": "intrinseca, see causa; on forma intrinseca, see forma; on mensura intrinseca, see mensura; on motor intrinsecus, see mot"
+  },
+  {
+   "pdf_page": 680,
+   "into": "māteriālis",
+   "text": "materialiter, see sumere under 3; on tenere materialiter, see tenere under 7; on volitum materialiter, see volitus. — (2"
+  },
+  {
+   "pdf_page": 698,
+   "into": "mirāculum",
+   "text": "miraculorum, see spiritus; on usus miraculorum, see usus under 1. — Kinds of miraculum in this sense are: (a), miraculum"
+  },
+  {
+   "pdf_page": 711,
+   "into": "mos",
+   "text": "morum, see unitas; on via morum see via under 1; on vitium moris, see vitium under 1. — Kinds of mos in this sense are: "
+  },
+  {
+   "pdf_page": 729,
+   "into": "nātūra",
+   "text": "naturam, see vitium under 1 and 2; on voluntabile secundum naturam, see voluntabilis; on voluntas per modum naturae seu "
+  },
+  {
+   "pdf_page": 791,
+   "into": "origo",
+   "text": "originem, see distinguere; on ordo originis seu secundum originem, see ordo under 1; on peccatum originis, see peccatum "
+  },
+  {
+   "pdf_page": 792,
+   "into": "ornātus",
+   "text": "ornament, (1) embellishment of style in speech, (2) ornaments of women, (II) fig., (A) in the abstract or as a quality, "
+  },
+  {
+   "pdf_page": 860,
+   "into": "posterus",
+   "text": "posteriora, see definire under 2; on dicere per posteriora, see dicere under 3; on differentia posterior, see differenti"
+  },
+  {
+   "pdf_page": 952,
+   "into": "receptāculum",
+   "text": "received or retire esp. for shelter or security, a synonym of domus (2) an abode, a place of abiding for the soul after "
+  },
+  {
+   "pdf_page": 993,
+   "into": "saeculāris",
+   "text": "saecularis, see industria under 3; on officium saeculare, see officium under 2; on potentia saecularis, see potentia und"
+  },
+  {
+   "pdf_page": 1054,
+   "into": "spirituālis",
+   "text": "spiritualis, see filius under 1; on finis spiritualis, see finis under 2; on forma spiritualis, see forma under 2; on fo"
+  },
+  {
+   "pdf_page": 1088,
+   "into": "suppositio",
+   "text": "suppositionem, ad simplicem, ..., quia cum dicitur: homo factus est Deus, ly homo habet personalem suppositionem, PT. Q."
+  }
+ ]
+}

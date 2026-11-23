@@ -1,0 +1,60 @@
+{
+ "Kalendae": {
+  "headword": "Kalendae",
+  "grammar": "ārum, f.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "feminine"
+  ],
+  "definition": "the Calends, the first day of the month",
+  "examples": [
+   {
+    "latin": "Ergo cum natus fuerit in profundo hiemis, id est, octavo Kalendas ian.",
+    "ref": "PT. Q. 35. Art. 8 ob. 3",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 35,
+    "article": 8,
+    "locus": "objection 3"
+   }
+  ],
+  "reference_count": 1,
+  "page": 621,
+  "pdf_page": 628,
+  "text": "Kalendae, ārum, f., the Calends, the first day of the month. Ergo cum natus fuerit in profundo hiemis, id est, octavo Kalendas ian., PT. Q. 35. Art. 8 ob. 3."
+ },
+ "kumibilis": {
+  "headword": "kumibilis",
+  "grammar": "e, adj.",
+  "part_of_speech": [
+   "adjective"
+  ],
+  "definition": "niggardly",
+  "examples": [
+   {
+    "latin": "Philosophus ponit multa genera viciorum pertinentium ad avaritiam, quam nominat illiberalitatem, videlicet parcos, tenaces, kumibiles, illiberales operationes operantes, et de meretrici pastos, et usurarios, aleatores, et mortuorum spoliatores, et latrones",
+    "ref": "SS. Q. 118. Art. 8 ob. 4",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 118,
+    "article": 8,
+    "locus": "objection 4"
+   },
+   {
+    "latin": "Kyrie, used with eleison Kype ελέησον Lord have mercy, an ancient ejaculation used in the Roman rite before the Gloria of the Mass as triple formula before and after triple Christe eleison, in hours of Divine Office, in the litany of the Saints, and elsewhere; frequently in other rites without Christe eleison. Dum misericordia petitur, dicendo Kyrie eleison, ter quidem pro persona Patris, ter autem pro persona Filii, cum dicitur: Christe eleison, et ter pro persona Spiritus sancti, cum subditur: Kyrie eleison, contra triplicem miseriam, ignorantiae, culpae et poenae",
+    "ref": "PT. Q. 83. Art. 4 c",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 83,
+    "article": 4,
+    "locus": "corpus (body of article)"
+   }
+  ],
+  "reference_count": 2,
+  "page": 621,
+  "pdf_page": 628,
+  "text": "kumibilis, e, adj., niggardly. Philosophus ponit multa genera viciorum pertinentium ad avaritiam, quam nominat illiberalitatem, videlicet parcos, tenaces, kumibiles, illiberales operationes operantes, et de meretrici pastos, et usurarios, aleatores, et mortuorum spoliatores, et latrones, SS. Q. 118. Art. 8 ob. 4. Kyrie, used with eleison Kype ελέησον Lord have mercy, an ancient ejaculation used in the Roman rite before the Gloria of the Mass as triple formula before and after triple Christe eleison, in hours of Divine Office, in the litany of the Saints, and elsewhere; frequently in other rites without Christe eleison. Dum misericordia petitur, dicendo Kyrie eleison, ter quidem pro persona Patris, ter autem pro persona Filii, cum dicitur: Christe eleison, et ter pro persona Spiritus sancti, cum subditur: Kyrie eleison, contra triplicem miseriam, ignorantiae, culpae et poenae, PT. Q. 83. Art. 4 c."
+ }
+}

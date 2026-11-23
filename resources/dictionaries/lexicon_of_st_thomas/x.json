@@ -1,0 +1,63 @@
+{
+ "xenium": {
+  "headword": "xenium",
+  "grammar": "ii, n.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "neuter"
+  ],
+  "definition": "a gift, present",
+  "examples": [
+   {
+    "latin": "Puta cum aliquis multa expendit in xeniis mittendis, (ob. 3), ..., magnificus etiam dat dona vel xenia",
+    "ref": "SS. Q. 134. Art. 3 ad 3",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 134,
+    "article": 3,
+    "locus": "reply to objection 3"
+   }
+  ],
+  "cross_references": [
+   {
+    "ref": "PS. Q. 102. Art. 5",
+    "work": "Summa Theologica",
+    "part": "Prima Secundae",
+    "question": 102,
+    "article": 5
+   }
+  ],
+  "reference_count": 2,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "xenium, ii, n., a gift, present. Puta cum aliquis multa expendit in xeniis mittendis, (ob. 3), ..., magnificus etiam dat dona vel xenia, SS. Q. 134. Art. 3 ad 3. Cf. PS. Q. 102. Art. 5."
+ },
+ "xenodochium": {
+  "headword": "xenodochium",
+  "grammar": "i, n.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "neuter"
+  ],
+  "definition": "guest-house",
+  "examples": [
+   {
+    "latin": "Quidam erga institutionem fratrum et coenobiorum curam; quosdam xenodochii, id est, hospitalitatis, delectat obsequium",
+    "ref": "SS. Q. 188. Art. 2 c",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 188,
+    "article": 2,
+    "locus": "corpus (body of article)"
+   }
+  ],
+  "reference_count": 1,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "xenodochium, i, n., guest-house. Quidam erga institutionem fratrum et coenobiorum curam; quosdam xenodochii, id est, hospitalitatis, delectat obsequium, SS. Q. 188. Art. 2 c."
+ }
+}

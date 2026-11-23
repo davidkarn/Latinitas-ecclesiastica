@@ -1,0 +1,735 @@
+{
+ "Zacharias": {
+  "headword": "Zacharias",
+  "grammar": "ae, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "examples": [
+   {
+    "latin": "Zacharias etiam sorte exiit ut incensum poneret",
+    "ref": "SS. Q. 95. Art. 8 ob. 2",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 95,
+    "article": 8,
+    "locus": "objection 2"
+   },
+   {
+    "latin": "ut et Zacharias peccavit, dicens ad angelum",
+    "ref": "SS. Q. 97. Art. 2 ad 3",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 97,
+    "article": 2,
+    "locus": "reply to objection 3"
+   }
+  ],
+  "cross_references": [
+   {
+    "ref": "PT. Q. 30. Art. 2",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 30,
+    "article": 2
+   },
+   {
+    "ref": "PT. Q. 30. Art. 3",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 30,
+    "article": 3
+   },
+   {
+    "ref": "PT. Q. 37. Art. 2",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 37,
+    "article": 2
+   }
+  ],
+  "senses": [
+   {
+    "number": 1,
+    "definition": "Zachary, the father of John the Baptist"
+   },
+   {
+    "number": 2,
+    "examples": [
+     {
+      "latin": "Zacharias, one cum the minor prophets. Et hic est quod dicitur: Zachar, ix, 11",
+      "ref": "PT. Q. 52. Art. 5 c",
+      "work": "Summa Theologica",
+      "part": "Pars Tertia",
+      "question": 52,
+      "article": 5,
+      "locus": "corpus (body of article)"
+     }
+    ],
+    "cross_references": [
+     {
+      "ref": "PS. Q. 109. Art. 6",
+      "work": "Summa Theologica",
+      "part": "Prima Secundae",
+      "question": 109,
+      "article": 6
+     },
+     {
+      "ref": "SS. Q. 84. Art. 3",
+      "work": "Summa Theologica",
+      "part": "Secunda Secundae",
+      "question": 84,
+      "article": 3
+     },
+     {
+      "ref": "SS. Q. 147. Art. 5",
+      "work": "Summa Theologica",
+      "part": "Secunda Secundae",
+      "question": 147,
+      "article": 5
+     },
+     {
+      "ref": "PT. Q. 52. Art. 1",
+      "work": "Summa Theologica",
+      "part": "Pars Tertia",
+      "question": 52,
+      "article": 1
+     }
+    ]
+   }
+  ],
+  "reference_count": 10,
+  "et_passim": true,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zacharias, ae, m., (1) Zachary, the father of John the Baptist. Zacharias etiam sorte exiit ut incensum poneret, SS. Q. 95. Art. 8 ob. 2; ut et Zacharias peccavit, dicens ad angelum, SS. Q. 97. Art. 2 ad 3. Cf. PT. Q. 30. Art. 2; PT. Q. 30. Art. 3; PT. Q. 37. Art. 2. —(2) Zacharias, one cum the minor prophets. Et hic est quod dicitur: Zachar, ix, 11, PT. Q. 52. Art. 5 c. Cf. PS. Q. 109. Art. 6; SS. Q. 84. Art. 3; SS. Q. 147. Art. 5; PT. Q. 52. Art. 1; et passim."
+ },
+ "Zacheus": {
+  "headword": "Zacheus",
+  "grammar": "i, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "definition": "Zacheus, a publican and tax gatherer, who lived in Jericho in the time of our Lord",
+  "examples": [
+   {
+    "latin": "Zacheus dixit ad Dominum: si quem defraudavi, (ob. 2), ..., Zacheus id dixit, quasi supererogare, volens; unde et praemiserat: ecce dimidium bonorum meorum do pauperibus",
+    "ref": "SS. Q. 62. Art. 3 ad 2",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 62,
+    "article": 3,
+    "locus": "reply to objection 2"
+   }
+  ],
+  "cross_references": [
+   {
+    "ref": "PT. Q. 80. Art. 10 ad 3",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 80,
+    "article": 10,
+    "locus": "reply to objection 3"
+   }
+  ],
+  "reference_count": 2,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zacheus, i, m., Zacheus, a publican and tax gatherer, who lived in Jericho in the time of our Lord. Zacheus dixit ad Dominum: si quem defraudavi, (ob. 2), ..., Zacheus id dixit, quasi supererogare, volens; unde et praemiserat: ecce dimidium bonorum meorum do pauperibus, SS. Q. 62. Art. 3 ad 2. Cf. PT. Q. 80. Art. 10 ad 3."
+ },
+ "Zambri": {
+  "headword": "Zambri",
+  "grammar": "indecl. noun",
+  "part_of_speech": [
+   "noun"
+  ],
+  "indeclinable": true,
+  "definition": "Zambri, a chief of Simeon, slain by Phinees",
+  "examples": [
+   {
+    "latin": "Sicut Moyses occidendo Aegyptium, ut habetur Exod. II, et Phinees filius Eleazari, Zambri filium Salumni",
+    "ref": "SS. Q. 60. Art. 6 ob. 2",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 60,
+    "article": 6,
+    "locus": "objection 2"
+   }
+  ],
+  "reference_count": 1,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zambri, indecl. noun, Zambri, a chief of Simeon, slain by Phinees. Sicut Moyses occidendo Aegyptium, ut habetur Exod. II, et Phinees filius Eleazari, Zambri filium Salumni, SS. Q. 60. Art. 6 ob. 2."
+ },
+ "Zara": {
+  "headword": "Zara",
+  "grammar": "ae, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "definition": "Zara, son of Iuda and Thamar, and twin brother of Phares",
+  "examples": [
+   {
+    "latin": "Matthaeus autem in generatione Christi tres tantum enumerat matres scilicet Thamar, Ruth et uxorem Uriae: fratres autem nominat Iudae et Iechoniae et iterum Phares et Zaram, (ob. 5), ..., Phares autem et Zaram simul nominantur, ut Ambrosius dicit super Lucam, ..., una secundum legem, quae significatur per Zaram",
+    "ref": "PT. Q. 31. Art. 3 ad 5",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 31,
+    "article": 3,
+    "locus": "reply to objection 5"
+   }
+  ],
+  "reference_count": 1,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zara, ae, m., Zara, son of Iuda and Thamar, and twin brother of Phares. Matthaeus autem in generatione Christi tres tantum enumerat matres scilicet Thamar, Ruth et uxorem Uriae: fratres autem nominat Iudae et Iechoniae et iterum Phares et Zaram, (ob. 5), ..., Phares autem et Zaram simul nominantur, ut Ambrosius dicit super Lucam, ..., una secundum legem, quae significatur per Zaram, PT. Q. 31. Art. 3 ad 5."
+ },
+ "Zebedaeus": {
+  "headword": "Zebedaeus",
+  "grammar": "i, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "definition": "Zebedee, husband of Salome, and father of the apostles John and James the Greater",
+  "examples": [
+   {
+    "latin": "Potest tamen dici quod petebant filii Zebedaei excellentiam habere prae aliis in participando iudiciariam potestatem eius",
+    "ref": "PT. Q. 58. Art. 4 ad 4",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 58,
+    "article": 4,
+    "locus": "reply to objection 4"
+   }
+  ],
+  "reference_count": 1,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zebedaeus, i, m., Zebedee, husband of Salome, and father of the apostles John and James the Greater. Potest tamen dici quod petebant filii Zebedaei excellentiam habere prae aliis in participando iudiciariam potestatem eius, PT. Q. 58. Art. 4 ad 4."
+ },
+ "zēlo": {
+  "headword": "zēlo",
+  "grammar": "āre, 1, v.a.",
+  "part_of_speech": [
+   "verb"
+  ],
+  "conjugation": 1,
+  "voice": "active (transitive)",
+  "senses": [
+   {
+    "number": 1,
+    "definition": "to be jealous of, to be envious",
+    "examples": [
+     {
+      "latin": "sicut viri dicuntur zelare uxores, quas nolunt habere communes cum caeteris, (ob. 2), ..., et hoc modo viri dicuntur zelare uxores",
+      "ref": "PS. Q. 28. Art. 4 c",
+      "work": "Summa Theologica",
+      "part": "Prima Secundae",
+      "question": 28,
+      "article": 4,
+      "locus": "corpus (body of article)"
+     }
+    ],
+    "cross_references": [
+     {
+      "ref": "SS. Q. 36. Art. 3, in quot",
+      "work": "Summa Theologica",
+      "part": "Secunda Secundae",
+      "question": 36,
+      "article": 3
+     }
+    ]
+   },
+   {
+    "number": 2,
+    "definition": "to be zealous for",
+    "examples": [
+     {
+      "latin": "et secundum hoc aliquis dicitur zelare pro amico quando, si quae dicuntur, vel fiunt contra bonum amici, homo repellere studet; et per hunc etiam modum aliquis dicitur zelare pro Deo",
+      "ref": "PS. Q. 28. Art. 4 c",
+      "work": "Summa Theologica",
+      "part": "Prima Secundae",
+      "question": 28,
+      "article": 4,
+      "locus": "corpus (body of article)"
+     }
+    ]
+   }
+  ],
+  "reference_count": 3,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "zēlo, āre, 1, v.a., (1) to be jealous of, to be envious, (2) to be zealous for. —(1), sicut viri dicuntur zelare uxores, quas nolunt habere communes cum caeteris, (ob. 2), ..., et hoc modo viri dicuntur zelare uxores, PS. Q. 28. Art. 4 c. Cf. SS. Q. 36. Art. 3, in quot. —(2), et secundum hoc aliquis dicitur zelare pro amico quando, si quae dicuntur, vel fiunt contra bonum amici, homo repellere studet; et per hunc etiam modum aliquis dicitur zelare pro Deo, PS. Q. 28. Art. 4 c."
+ },
+ "zēlōtes": {
+  "headword": "zēlōtes",
+  "grammar": "ae, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "definition": "a zealot, one that loves with jealousy, one that is jealous (eccl. Lat.)",
+  "examples": [
+   {
+    "latin": "Deus appellatur zelotes, propter multum amorem quem habet ad existentia",
+    "ref": "PS. Q. 28. Art. 4 a, in quot",
+    "work": "Summa Theologica",
+    "part": "Prima Secundae",
+    "question": 28,
+    "article": 4,
+    "locus": "sed contra",
+    "in_quotation": true
+   }
+  ],
+  "reference_count": 1,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "zēlōtes, ae, m., a zealot, one that loves with jealousy, one that is jealous (eccl. Lat.). Deus appellatur zelotes, propter multum amorem quem habet ad existentia, PS. Q. 28. Art. 4 a, in quot."
+ },
+ "zēlotypia": {
+  "headword": "zēlotypia",
+  "grammar": "ae, f.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "feminine"
+  ],
+  "definition": "jealousy",
+  "examples": [
+   {
+    "latin": "Et quia sacrificium zelotypiae non procedebat ex devotione, sed magis ex suspicione, ideo in eo non offerebatur thus",
+    "ref": "PS. Q. 102. Art. 3 ad 14",
+    "work": "Summa Theologica",
+    "part": "Prima Secundae",
+    "question": 102,
+    "article": 3,
+    "locus": "reply to objection 14"
+   }
+  ],
+  "cross_references": [
+   {
+    "ref": "PS. Q. 105. Art. 4 ob. 9",
+    "work": "Summa Theologica",
+    "part": "Prima Secundae",
+    "question": 105,
+    "article": 4,
+    "locus": "objection 9"
+   },
+   {
+    "ref": "PTS. Q. 67. Art. 3",
+    "work": "Summa Theologica",
+    "part": "Partis Tertiae Supplementum",
+    "question": 67,
+    "article": 3
+   }
+  ],
+  "reference_count": 3,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "zēlotypia, ae, f., jealousy. Et quia sacrificium zelotypiae non procedebat ex devotione, sed magis ex suspicione, ideo in eo non offerebatur thus, PS. Q. 102. Art. 3 ad 14. Cf. PS. Q. 105. Art. 4 ob. 9; PTS. Q. 67. Art. 3."
+ },
+ "Zelpha": {
+  "headword": "Zelpha",
+  "grammar": "ae, f.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "feminine"
+  ],
+  "definition": "Zelpha, a Syrian servant of Lea, given as a secondary wife to Jacob, to whom she bore Gad and Aser",
+  "examples": [
+   {
+    "latin": "Et Gen. xxx legitur de Iacob quod accessit ad ancillas uxorum suarum Balam et Zelpham",
+    "ref": "SS. Q. 154. Art. 2 ob. 3",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 154,
+    "article": 2,
+    "locus": "objection 3"
+   }
+  ],
+  "reference_count": 1,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zelpha, ae, f., Zelpha, a Syrian servant of Lea, given as a secondary wife to Jacob, to whom she bore Gad and Aser. Et Gen. xxx legitur de Iacob quod accessit ad ancillas uxorum suarum Balam et Zelpham, SS. Q. 154. Art. 2 ob. 3."
+ },
+ "zēlus": {
+  "headword": "zēlus",
+  "grammar": "i, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "senses": [
+   {
+    "number": 1,
+    "definition": "zeal, emulation",
+    "examples": [
+     {
+      "latin": "zelus, quocumque modo sumatur, ex intensione amoris provenit",
+      "ref": "PS. Q. 28. Art. 4 c",
+      "work": "Summa Theologica",
+      "part": "Prima Secundae",
+      "question": 28,
+      "article": 4,
+      "locus": "corpus (body of article)"
+     },
+     {
+      "latin": "hoc ipsum, quod aliquis odio habet ea, quae repugnant amato, ex amore procedit unde zelus proprie ponitur effectus amoris magis quam odii",
+      "ref": "PS. Q. 28. Art. 4 ad 3",
+      "work": "Summa Theologica",
+      "part": "Prima Secundae",
+      "question": 28,
+      "article": 4,
+      "locus": "reply to objection 3"
+     }
+    ],
+    "cross_references": [
+     {
+      "ref": "PS. Q. 28. Art. 8 (passim)",
+      "occurrences": "passim",
+      "work": "Summa Theologica",
+      "part": "Prima Secundae",
+      "question": 28,
+      "article": 8
+     },
+     {
+      "ref": "SS. Q. 36. Art. 2",
+      "work": "Summa Theologica",
+      "part": "Secunda Secundae",
+      "question": 36,
+      "article": 2
+     },
+     {
+      "ref": "SS. Q. 60. Art. 6",
+      "work": "Summa Theologica",
+      "part": "Secunda Secundae",
+      "question": 60,
+      "article": 6
+     },
+     {
+      "ref": "PT. Q. 59. Art. 1",
+      "work": "Summa Theologica",
+      "part": "Pars Tertia",
+      "question": 59,
+      "article": 1
+     },
+     {
+      "ref": "Nom. 4. 10",
+      "work": "expositio in librum b. Dionysii de divinis nominibus",
+      "section": "4.10"
+     }
+    ],
+    "phrases": [
+     {
+      "phrase": "On ira per zelum",
+      "meaning": "see ira under 1"
+     },
+     {
+      "label": "a",
+      "phrase": "zelus invidiae",
+      "meaning": "the zeal of envy or jealousy",
+      "examples": [
+       {
+        "latin": "Apostolus sibi loquitur de zelo invidiae, qui quidem est causa contentionis non contra rem amatam, sed pro re amata contra impedimenta ipsius",
+        "ref": "PS. Q. 28. Art. 4 ad 1",
+        "work": "Summa Theologica",
+        "part": "Prima Secundae",
+        "question": 28,
+        "article": 4,
+        "locus": "reply to objection 1"
+       }
+      ],
+      "cross_references": [
+       {
+        "ref": "PS. Q. 28. Art. 4 ad 2",
+        "work": "Summa Theologica",
+        "part": "Prima Secundae",
+        "question": 28,
+        "article": 4,
+        "locus": "reply to objection 2"
+       }
+      ]
+     },
+     {
+      "label": "b",
+      "phrase": "zelus iustitiae",
+      "meaning": "the zeal for justice",
+      "examples": [
+       {
+        "latin": "Puta cum aliquis ignoranter vel zelo iustitiae legitimom occidit",
+        "ref": "SS. Q. 34. Art. 4 c",
+        "work": "Summa Theologica",
+        "part": "Secunda Secundae",
+        "question": 34,
+        "article": 4,
+        "locus": "corpus (body of article)"
+       }
+      ],
+      "cross_references": [
+       {
+        "ref": "SS. Q. 33. Art. 1",
+        "work": "Summa Theologica",
+        "part": "Secunda Secundae",
+        "question": 33,
+        "article": 1
+       },
+       {
+        "ref": "SS. Q. 40. Art. 1",
+        "work": "Summa Theologica",
+        "part": "Secunda Secundae",
+        "question": 40,
+        "article": 1
+       },
+       {
+        "ref": "C. G. 3. 146",
+        "work": "summa de veritate catholicae fidei contra gentiles",
+        "section": "3.146"
+       },
+       {
+        "ref": "Regim. 3. 4",
+        "work": "opusculum de regimine principum",
+        "section": "3.4"
+       }
+      ]
+     },
+     {
+      "label": "c",
+      "phrase": "zelus vindicta",
+      "meaning": "the zeal for revenge",
+      "cross_references": [
+       {
+        "ref": "Virt. 2. 8 ad 14",
+        "work": "quaestiones disputatae de virtutibus",
+        "section": "2.8",
+        "locus": "ad 14"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "number": 2,
+    "definition": "jealousy",
+    "examples": [
+     {
+      "latin": "zelus addit super amorem quandam intensionem, est enim amor vehemens non patiens consortium in amato",
+      "ref": "Verit. 26. 4 ad 8",
+      "work": "quaestiones disputatae de veritate",
+      "section": "26.4",
+      "locus": "ad 8"
+     },
+     {
+      "latin": "zelus vero et nemesis sub invidia continentur",
+      "ref": "PS. Q. 35. Art. 8 ad 2",
+      "work": "Summa Theologica",
+      "part": "Prima Secundae",
+      "question": 35,
+      "article": 8,
+      "locus": "reply to objection 2"
+     },
+     {
+      "latin": "tam in hominibus quam in animalibus invenitur maior zelus maris ad feminam quam e converso",
+      "ref": "4 Sent. 33. 1. 1 ad 9",
+      "work": "scriptum in 4 libros sententiarum magistri Petri Lombardi",
+      "book": 4,
+      "section": "33.1.1",
+      "locus": "ad 9"
+     },
+     {
+      "latin": "i. i. (bis)",
+      "ref": "3 Sent. 26. 1. 3 c",
+      "work": "scriptum in 4 libros sententiarum magistri Petri Lombardi",
+      "book": 3,
+      "section": "26.1.3",
+      "locus": "c"
+     },
+     {
+      "latin": ", i",
+      "ref": "Cor. 14. 1",
+      "work": "expositio in 2 epistolas d. Pauli ad Corrinthios",
+      "section": "14.1"
+     }
+    ],
+    "cross_references": [
+     {
+      "ref": "SS. Q. 36. Art. 2 (passim)",
+      "occurrences": "passim",
+      "work": "Summa Theologica",
+      "part": "Secunda Secundae",
+      "question": 36,
+      "article": 2
+     },
+     {
+      "ref": "SS. Q. 38. Art. 2 (bis)",
+      "occurrences": 2,
+      "work": "Summa Theologica",
+      "part": "Secunda Secundae",
+      "question": 38,
+      "article": 2
+     },
+     {
+      "ref": "PTS. Q. 65",
+      "work": "Summa Theologica",
+      "part": "Partis Tertiae Supplementum",
+      "question": 65
+     }
+    ]
+   }
+  ],
+  "reference_count": 15,
+  "et_passim": true,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "zēlus, i, m., (1) zeal, emulation, (2) jealousy. —(1), zelus, quocumque modo sumatur, ex intensione amoris provenit, PS. Q. 28. Art. 4 c; hoc ipsum, quod aliquis odio habet ea, quae repugnant amato, ex amore procedit unde zelus proprie ponitur effectus amoris magis quam odii, PS. Q. 28. Art. 4 ad 3. Cf. PS. Q. 28. Art. 8 (passim); SS. Q. 36. Art. 2; SS. Q. 60. Art. 6; PT. Q. 59. Art. 1; Nom. 4. 10; et passim. — On ira per zelum, see ira under 1. — Kinds of zelus in this sense are: (a), zelus invidiae, the zeal of envy or jealousy. Apostolus sibi loquitur de zelo invidiae, qui quidem est causa contentionis non contra rem amatam, sed pro re amata contra impedimenta ipsius, PS. Q. 28. Art. 4 ad 1. Cf. PS. Q. 28. Art. 4 ad 2. — (b), zelus iustitiae, the zeal for justice. Puta cum aliquis ignoranter vel zelo iustitiae legitimom occidit, SS. Q. 34. Art. 4 c. Cf. SS. Q. 33. Art. 1; SS. Q. 40. Art. 1; C. G. 3. 146; Regim. 3. 4. — (c), zelus vindicta, the zeal for revenge. Cf. Virt. 2. 8 ad 14. —(2), zelus addit super amorem quandam intensionem, est enim amor vehemens non patiens consortium in amato, Verit. 26. 4 ad 8; zelus vero et nemesis sub invidia continentur, PS. Q. 35. Art. 8 ad 2; tam in hominibus quam in animalibus invenitur maior zelus maris ad feminam quam e converso, 4 Sent. 33. 1. 1 ad 9. Cf. SS. Q. 36. Art. 2 (passim); SS. Q. 38. Art. 2 (bis); PTS. Q. 65. i. i. (bis); 3 Sent. 26. 1. 3 c, i Cor. 14. 1; et passim."
+ },
+ "Zephirinus": {
+  "headword": "Zephirinus",
+  "grammar": "i, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "definition": "Zephyrinus, Saint, Pope, (198-217)",
+  "examples": [
+   {
+    "latin": "He is quoted on the material of which chalices were to be made. Zephirinus autem Papa patens vitreis missas celebrari constituit",
+    "ref": "PT. Q. 83. Art. 3 ad 6, in quot",
+    "work": "Summa Theologica",
+    "part": "Pars Tertia",
+    "question": 83,
+    "article": 3,
+    "locus": "reply to objection 6",
+    "in_quotation": true
+   }
+  ],
+  "reference_count": 1,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zephirinus, i, m., Zephyrinus, Saint, Pope, (198-217). He is quoted on the material of which chalices were to be made. Zephirinus autem Papa patens vitreis missas celebrari constituit, PT. Q. 83. Art. 3 ad 6, in quot."
+ },
+ "zizānia": {
+  "headword": "zizānia",
+  "grammar": "ōrum, n.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "neuter"
+  ],
+  "definition": "darvel, cockle, (Eccl. Lat.)",
+  "examples": [
+   {
+    "latin": "Videtur quod infideles nullo modo compellendi sint ad fidem. dicitur enim Matthaei XIII, quod servi patrisfamilias, in cuius agro erant zizania seminata, quaesierunt ab eo",
+    "ref": "SS. Q. 10. Art. 8 ob. 1",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 10,
+    "article": 8,
+    "locus": "objection 1"
+   },
+   {
+    "latin": "ne cum ioiis et zizaniis simul eradicetur et triticum",
+    "ref": "PTS. Q. 22. Art. 5 c",
+    "work": "Summa Theologica",
+    "part": "Partis Tertiae Supplementum",
+    "question": 22,
+    "article": 5,
+    "locus": "corpus (body of article)"
+   }
+  ],
+  "cross_references": [
+   {
+    "ref": "SS. Q. 11. Art. 3 (ter)",
+    "occurrences": 3,
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 11,
+    "article": 3
+   },
+   {
+    "ref": "SS. Q. 64. Art. 2",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 64,
+    "article": 2
+   },
+   {
+    "ref": "SS. Q. 108. Art. 3 (passim)",
+    "occurrences": "passim",
+    "work": "Summa Theologica",
+    "part": "Secunda Secundae",
+    "question": 108,
+    "article": 3
+   }
+  ],
+  "reference_count": 5,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "zizānia, ōrum, n., darvel, cockle, (Eccl. Lat.). Videtur quod infideles nullo modo compellendi sint ad fidem. dicitur enim Matthaei XIII, quod servi patrisfamilias, in cuius agro erant zizania seminata, quaesierunt ab eo, SS. Q. 10. Art. 8 ob. 1; ne cum ioiis et zizaniis simul eradicetur et triticum, PTS. Q. 22. Art. 5 c. Cf. SS. Q. 11. Art. 3 (ter); SS. Q. 64. Art. 2; SS. Q. 108. Art. 3 (passim)."
+ },
+ "Zōdiacus": {
+  "headword": "Zōdiacus",
+  "grammar": "i, m.",
+  "part_of_speech": [
+   "noun"
+  ],
+  "gender": [
+   "masculine"
+  ],
+  "definition": "= ζωδιακός, the zodiac (pure Lat. orbis signifer)",
+  "examples": [
+   {
+    "latin": "Sicut caelum in quo sunt zidaera, per motum qui est secundum zodiacum, operatur diversitatem generationis ei corruptionis",
+    "ref": "PP. Q. 68. Art. 2 ad 3",
+    "work": "Summa Theologica",
+    "part": "Prima Pars",
+    "question": 68,
+    "article": 2,
+    "locus": "reply to objection 3"
+   },
+   {
+    "latin": "secundus autem motus, qui est per zodiacum",
+    "ref": "PP. Q. 104. Art. 2 c",
+    "work": "Summa Theologica",
+    "part": "Prima Pars",
+    "question": 104,
+    "article": 2,
+    "locus": "corpus (body of article)"
+   }
+  ],
+  "cross_references": [
+   {
+    "ref": "PS. Q. 102. Art. 5",
+    "work": "Summa Theologica",
+    "part": "Prima Secundae",
+    "question": 102,
+    "article": 5
+   }
+  ],
+  "reference_count": 3,
+  "page": 1185,
+  "pdf_page": 1192,
+  "text": "Zōdiacus, i, m., = ζωδιακός, the zodiac (pure Lat. orbis signifer). Sicut caelum in quo sunt zidaera, per motum qui est secundum zodiacum, operatur diversitatem generationis ei corruptionis, PP. Q. 68. Art. 2 ad 3; secundus autem motus, qui est per zodiacum, PP. Q. 104. Art. 2 c. Cf. PS. Q. 102. Art. 5."
+ }
+}

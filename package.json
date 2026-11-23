@@ -1,0 +1,26 @@
+{
+  "name": "learnlatin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Generates static JSON API files for the learnlatin Preact frontend, served by nginx",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    "./api": "./src/api/index.ts"
+  },
+  "scripts": {
+    "data:fetch": "sh scripts/fetch_sources.sh",
+    "data:convert": "python3 -I scripts/convert_perseus_ls.py && python3 -I scripts/convert_wiktionary.py",
+    "generate": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.1.1"
+  }
+}
