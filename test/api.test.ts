@@ -49,3 +49,13 @@ describe("dropSubsets", () => {
       .toEqual([["genitive", "singular"], ["dative", "singular"]]);
   });
 });
+
+describe("shortDefinition", () => {
+  it("skips L&S grammar labels and keeps English glosses", async () => {
+    const { shortDefinition } = await import("../src/endpoints/words.ts");
+    expect(shortDefinition([{ level: 1, definition: "", glosses: ["praes.", "Perf. sync.", "(2d pers.", "to say", "tell"] }]))
+      .toBe("to say, tell");
+    expect(shortDefinition([{ level: 1, definition: "", glosses: ["gen.", "voc. sing."], senses: [{ level: 2, definition: "", glosses: ["the earth", "land"] }] }]))
+      .toBe("the earth, land");
+  });
+});

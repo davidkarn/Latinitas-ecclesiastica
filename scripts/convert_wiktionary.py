@@ -27,8 +27,14 @@ def letter_of(word: str) -> str:
 
 
 def is_form_of(e: dict) -> bool:
+    """Inflected-form pages ("first-person singular of amō"). Alternative-spelling pages that carry their
+    own paradigm table ("conpellō, alternative form of compellō") are kept as lemmas instead."""
     senses = e.get("senses") or []
-    return bool(senses) and all("form_of" in s or "alt_of" in s or "form-of" in s.get("tags", []) for s in senses)
+    if not senses or not all("form_of" in s or "alt_of" in s or "form-of" in s.get("tags", []) for s in senses):
+        return False
+    has_table = any(f.get("source") in ("declension", "conjugation") for f in e.get("forms") or [])
+    only_alt = all("alt_of" in s and "form_of" not in s for s in senses)
+    return not (has_table and only_alt)
 
 
 def slim_forms(forms: list) -> tuple[list, list]:
@@ -60,8 +66,12 @@ def slim_entry(e: dict) -> dict:
         # Drop the machine "Etymology tree" preamble; keep the prose
         txt = e["etymology_text"]
         d["etymology"] = txt.split("\n")[-1] if txt.startswith("Etymology tree") else txt
+    canon_tags = next((p["tags"] for p in parts if "canonical" in p["tags"]), [])
+    if len(canon_tags) > 1: d["canonical_tags"] = [t for t in canon_tags if t != "canonical"]  # gender etc.
     d["principal_parts"] = [p for p in parts if "canonical" not in p["tags"]]
     d["forms"] = table
+    alt = [a["word"] for s in e.get("senses", []) for a in s.get("alt_of", []) if a.get("word")]
+    if alt: d["alt_of"] = list(dict.fromkeys(alt))
     d["senses"] = [{k: s[k] for k in ("glosses", "tags", "examples") if s.get(k)} for s in e.get("senses", [])
                    if s.get("glosses")]
     for s in d["senses"]:
@@ -90,7 +100,8 @@ def main():
                 for s in e["senses"]:
                     for ref in s.get("form_of", []) + s.get("alt_of", []):
                         if ref.get("word"):
-                            index[plain(e["word"])].add((plain(ref["word"]), e["pos"], -1))
+                            tags = tuple(sorted(set(s.get("tags", [])) - {"form-of", "alt-of", "alternative"}))
+                            index[plain(e["word"])].add((plain(ref["word"]), e["pos"], -1, tags))
                 continue
             n_lemma += 1
             d = slim_entry(e)
@@ -103,19 +114,24 @@ def main():
                     continue
                 # Multi-word forms ("amātus sum", "aquae rēgiae") are indexed only as whole phrases;
                 # splitting them would map "sum" to amō and "regis" to aqua rēgia.
-                index[plain(form)].add((key, d["pos"], i))
+                index[plain(form)].add((key, d["pos"], i, ()))
 
     (OUT / "lemmas").mkdir(parents=True, exist_ok=True)
     for letter, entries in sorted(lemmas.items()):
         (OUT / "lemmas" / f"{letter}.json").write_text(json.dumps(entries, ensure_ascii=False), encoding="utf-8")
 
-    # Prefer table hits (index >= 0) over form-of hits for the same lemma+pos
+    # Table hits (index >= 0) first, then form-of hits
     out_index = {}
     for form, hits in index.items():
+        # Keep one table hit and one form-of hit per lemma: form-of links ("dīcēns" → dīcō) are what let
+        # chains like dicentēs → dīcēns → dīcō resolve, even when dīcō's own table also lists dīcēns.
+        # Form-of hits carry the tag sets of their senses: [lemma, pos, -1, [[tags], ...]]
         best = {}
-        for lemma, pos, i in sorted(hits, key=lambda h: -h[2]):
-            best.setdefault((lemma, pos), [lemma, pos, i])
-        out_index[form] = sorted(best.values())
+        for lemma, pos, i, tags in sorted(hits, key=lambda h: -h[2]):
+            hit = best.setdefault((lemma, pos, i == -1), [lemma, pos, i] + ([[]] if i == -1 else []))
+            if i == -1 and tags and list(tags) not in hit[3]:
+                hit[3].append(list(tags))
+        out_index[form] = sorted(best.values(), key=lambda h: (h[0], h[1], h[2]))
     (OUT / "forms_index.json").write_text(json.dumps(out_index, ensure_ascii=False, sort_keys=True), encoding="utf-8")
 
     report = {"source": "https://kaikki.org/dictionary/Latin/kaikki.org-dictionary-Latin.jsonl",

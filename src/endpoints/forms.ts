@@ -43,19 +43,30 @@ export function dropSubsets(analyses: string[][]): string[][] {
     !analyses.some((b, j) => j !== i && b.length > a.length && a.every(t => b.includes(t))));
 }
 
-export function generateForms(out: Output, forms: Buckets<FormRec>) {
+/**
+ * @param idFor  resolves (lemma key, pos) to a word id, for Wiktionary form-of pages that only name the lemma
+ * @param want   form keys whose hits should be returned (e.g. every token of the texts)
+ */
+export function generateForms(
+  out: Output,
+  forms: Buckets<FormRec>,
+  idFor: (lemmaKey: string, pos: string) => string | undefined,
+  want: ReadonlySet<string> = new Set(),
+) {
   const shardNames: string[] = [];
+  const wanted = new Map<string, FormHit[]>();
   let formCount = 0;
 
   for (const bucket of forms.names()) {
-    // form key → (lemma key + pos) → hit
+    // form key → word id → hit
     const byForm = new Map<string, Map<string, FormHit>>();
     for (const r of forms.read(bucket)) {
+      const id = r.i ?? idFor(r.l, r.p);
+      if (!id) continue;                       // form-of page for a lemma Wiktionary has no entry for
       let hits = byForm.get(r.f);
       if (!hits) byForm.set(r.f, (hits = new Map()));
-      const id = `${r.l}\u0000${r.p}`;
       let hit = hits.get(id);
-      if (!hit) hits.set(id, (hit = { word: r.w, lemma: r.l, pos: r.p, analyses: [] }));
+      if (!hit) hits.set(id, (hit = { id, word: r.w, lemma: r.l, pos: r.p, analyses: [] }));
       if (r.t && !hit.analyses.some(a => a.join() === r.t!.join())) hit.analyses.push(r.t);
     }
 
@@ -64,9 +75,10 @@ export function generateForms(out: Output, forms: Buckets<FormRec>) {
     for (const [prefix, items] of plan) {
       const shard: FormShard = {};
       for (const { key } of items.sort((a, b) => (a.key < b.key ? -1 : 1))) {
-        const hits = [...byForm.get(key)!.values()].sort((a, b) => a.lemma.localeCompare(b.lemma));
+        const hits = [...byForm.get(key)!.values()].sort((a, b) => a.id.localeCompare(b.id));
         for (const h of hits) h.analyses = dropSubsets(h.analyses);
         shard[key] = hits;
+        if (want.has(key)) wanted.set(key, hits);
       }
       out.json(paths.formShard(prefix), shard);
       shardNames.push(prefix);
@@ -76,5 +88,5 @@ export function generateForms(out: Output, forms: Buckets<FormRec>) {
 
   const list: FormShardList = { shards: shardNames.sort() };
   out.json(paths.formShards(), list);
-  return { forms: formCount, formShards: shardNames.length };
+  return { counts: { forms: formCount, formShards: shardNames.length }, wanted };
 }

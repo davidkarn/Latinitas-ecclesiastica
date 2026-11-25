@@ -3,7 +3,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import type { LewisShortEntry, LsSense, WiktionaryEntry } from "../api/index.ts";
+import { lookupKey, type LewisShortEntry, type LexiconEntry, type LsSense, type WiktionaryEntry } from "../api/index.ts";
 
 export const DICT_DIR = path.resolve(import.meta.dirname, "../../resources/dictionaries");
 
@@ -22,6 +22,7 @@ interface RawWikt {
   forms: { form: string; tags: string[] }[];
   senses: { glosses: string[]; tags?: string[] }[];
   ipa?: string[];
+  alt_of?: string[];
 }
 interface RawLsSense {
   label?: string; level: number; definition: string; glosses?: string[];
@@ -43,13 +44,19 @@ function letterFiles(dir: string): string[] {
   return fs.readdirSync(dir).filter(f => /^[a-z_]\.json$/.test(f)).map(f => path.join(dir, f)).sort();
 }
 
-/** Yields Wiktionary lemma entries one letter file at a time. */
+/** Yields Wiktionary lemma entries one letter file at a time, each with a unique stable id. */
 export function* wiktionaryEntries(): Generator<WiktionaryEntry & { word: string }> {
+  const ids = new Set<string>();
   for (const file of letterFiles(path.join(DICT_DIR, "wiktionary/lemmas"))) {
     const byWord = readJson<Record<string, RawWikt[]>>(file);
     for (const entries of Object.values(byWord)) {
       for (const e of entries) {
+        const base = `${lookupKey(e.word)}:${e.pos}:${e.etymology_number ?? 1}`;
+        let id = base;
+        for (let n = 2; ids.has(id); n++) id = `${base}~${n}`;   // e.g. "Abel" vs "abel": same key, pos, etymology
+        ids.add(id);
         yield {
+          id,
           word: e.word,
           canonical: e.canonical,
           pos: e.pos,
@@ -60,6 +67,7 @@ export function* wiktionaryEntries(): Generator<WiktionaryEntry & { word: string
           forms: e.forms,
           senses: e.senses.map(s => ({ glosses: s.glosses, ...(s.tags?.length && { tags: s.tags }) })),
           ...(e.ipa && { ipa: e.ipa }),
+          ...(e.alt_of && { altOf: e.alt_of }),
         };
       }
     }
@@ -96,12 +104,29 @@ export function* lewisShortEntries(): Generator<LewisShortEntry> {
   }
 }
 
-/** Wiktionary "form of" pages that aren't in any paradigm table: plain form → [plain lemma, pos]. */
-export function formOfIndex(): Map<string, [lemma: string, pos: string][]> {
-  const raw = readJson<Record<string, [string, string, number][]>>(path.join(DICT_DIR, "wiktionary/forms_index.json"));
-  const out = new Map<string, [string, string][]>();
+/** Yields Lexicon of St. Thomas entries, dropping OCR bookkeeping (page numbers, raw text). */
+export function* lexiconEntries(): Generator<LexiconEntry> {
+  const drop = new Set(["page", "pdf_page", "text", "reference_count", "part_of_speech"]);
+  for (const file of letterFiles(path.join(DICT_DIR, "lexicon_of_st_thomas"))) {
+    const byHead = readJson<Record<string, Record<string, unknown> | Record<string, unknown>[]>>(file);
+    for (const v of Object.values(byHead)) {
+      for (const e of Array.isArray(v) ? v : [v]) {
+        const out: Record<string, unknown> = {};
+        for (const [k, val] of Object.entries(e)) if (!drop.has(k) && val != null) out[k] = val;
+        if (e.part_of_speech) out.partOfSpeech = e.part_of_speech;
+        yield out as unknown as LexiconEntry;
+      }
+    }
+  }
+}
+
+/** Wiktionary "form of" pages: plain form → [plain lemma, pos, tag sets from the page's senses]. */
+export function formOfIndex(): Map<string, [lemma: string, pos: string, tags: string[][]][]> {
+  type Hit = [string, string, number, string[][]?];
+  const raw = readJson<Record<string, Hit[]>>(path.join(DICT_DIR, "wiktionary/forms_index.json"));
+  const out = new Map<string, [string, string, string[][]][]>();
   for (const [form, hits] of Object.entries(raw)) {
-    const extra = hits.filter(h => h[2] === -1).map(h => [h[0], h[1]] as [string, string]);
+    const extra = hits.filter(h => h[2] === -1).map(h => [h[0], h[1], h[3] ?? []] as [string, string, string[][]]);
     if (extra.length) out.set(form, extra);
   }
   return out;

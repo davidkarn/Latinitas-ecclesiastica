@@ -19,6 +19,8 @@ export interface InflectedForm {
 }
 
 export interface WiktionaryEntry {
+  /** Stable word id, `${lookupKey}:${pos}:${etymologyNumber ?? 1}`, e.g. "amo:verb:1". Referenced by texts and forms. */
+  id: string;
   /** Headword with macrons, e.g. "amō" */
   canonical: string;
   pos: string;
@@ -30,6 +32,8 @@ export interface WiktionaryEntry {
   forms: InflectedForm[];
   senses: { glosses: string[]; tags?: string[] }[];
   ipa?: string[];
+  /** This is an alternative spelling of these lemmas (e.g. conpellō → ["compellō"]) */
+  altOf?: string[];
 }
 
 export interface LsSense {
@@ -54,7 +58,22 @@ export interface LewisShortEntry {
   senses: LsSense[];
 }
 
-/** GET /api/words/{slug}.json — everything for one lookup key, from both dictionaries */
+/** Deferrari, A Lexicon of St. Thomas Aquinas (OCR'd; fields vary by entry). */
+export interface LexiconEntry {
+  headword: string;
+  grammar?: string;
+  partOfSpeech?: string[];
+  gender?: string[];
+  conjugation?: number;
+  definition?: string;
+  senses?: unknown[];
+  examples?: { latin: string; ref?: string; work?: string }[];
+  phrases?: unknown[];
+  see?: unknown;
+  variants?: unknown;
+}
+
+/** GET /api/words/{slug}.json — everything for one lookup key, from all dictionaries */
 export interface WordFile {
   slug: string;
   words: {
@@ -62,11 +81,14 @@ export interface WordFile {
     key: string;
     wiktionary: WiktionaryEntry[];
     lewisShort: LewisShortEntry[];
+    lexicon: LexiconEntry[];
   }[];
 }
 
 /** One way an inflected form can be parsed. */
 export interface FormHit {
+  /** Word id (WiktionaryEntry.id) */
+  id: string;
   /** Slug of the word file: fetch /api/words/{word}.json */
   word: string;
   /** Lookup key of the lemma inside that word file */
@@ -83,3 +105,92 @@ export interface FormShardList {
 
 /** GET /api/forms/{prefix}.json — lookup key of a form → its parses */
 export type FormShard = Record<string, FormHit[]>;
+
+// ---------- texts ----------
+
+/** GET /api/texts/index.json */
+export interface TextIndex {
+  texts: {
+    id: string;
+    title: string;
+    chapters: { chapter: number; verses: number; file: string }[];
+    sources: TextSources;
+  }[];
+}
+
+export interface TextSources {
+  latin: string;
+  english: string;
+  audio: string;
+}
+
+/** Just enough about a word to show it inline and build its inflection table;
+ *  fetch `file` (a WordFile) for full definitions and every inflected form. */
+export interface WordSummary {
+  id: string;
+  /** Path of the full word file, relative to the API root */
+  file: string;
+  /** Lookup key inside the word file */
+  key: string;
+  /** Headword with macrons, e.g. "terra" */
+  lemma: string;
+  pos: string;
+  /** Wiktionary headword line, e.g. "terra f (genitive terrae); first declension" */
+  head?: string;
+  /** e.g. "first declension", "third conjugation", "irregular" */
+  inflectionClass?: string;
+  gender?: string[];
+  /** The forms that define the paradigm: the headword plus the genitive (nouns), feminine/neuter (adjectives),
+   *  or infinitive, perfect and supine (verbs). */
+  principalParts: InflectedForm[];
+  /** Short definition from Lewis & Short, when the word is in it */
+  lewisShort?: { key: string; definition: string };
+  /** First Wiktionary gloss, for words Lewis & Short lacks (often proper names) */
+  gloss?: string;
+  /** Alternative spelling of these lemmas; `lewisShort` then comes from the first of them */
+  altOf?: { lemma: string; id?: string }[];
+}
+
+export interface Token {
+  /** The word as written in the verse */
+  text: string;
+  /** Character offset of `text` in Verse.latin */
+  offset: number;
+  /** Seconds from the start of the verse's audio file */
+  start?: number;
+  end?: number;
+  /** Best-guess word (key into ChapterFile.words); null if no dictionary knows the form */
+  wordId: string | null;
+  /** Lookup key that matched, without any enclitic */
+  form: string;
+  /** Enclitic split off before lookup ("que" in "Dixitque") */
+  enclitic?: string;
+  /** Grammatical analyses of `form` as `wordId` */
+  analyses: string[][];
+  /** No dictionary knows the form and it is capitalized: almost always a proper name (Esau, Laban, Bethel) */
+  properName?: true;
+  /** Other words this form could belong to, most likely first */
+  alternatives?: { wordId: string; analyses: string[][] }[];
+}
+
+export interface Verse {
+  verse: number;
+  ref: string;
+  latin: string;
+  english: string;
+  /** English verse numbers when they differ from the Latin (Genesis 5:31 = Douay-Rheims 5:31–32) */
+  englishVerses?: number[];
+  audio: { file: string; duration: number } | null;
+  tokens: Token[];
+}
+
+/** GET /api/texts/{text}/{chapter}.json */
+export interface ChapterFile {
+  text: string;
+  title: string;
+  chapter: number;
+  verses: Verse[];
+  /** Every word referenced by a token (including alternatives), by id */
+  words: Record<string, WordSummary>;
+  sources: TextSources;
+}

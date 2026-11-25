@@ -6,6 +6,10 @@ export const paths = {
   word: (wordOrSlug: string) => `words/${slug(wordOrSlug)}.json`,
   formShards: () => "forms/_shards.json",
   formShard: (prefix: string) => `forms/${prefix || "_"}.json`,
+  texts: () => "texts/index.json",
+  chapter: (text: string, chapter: number) => `texts/${text}/${chapter}.json`,
+  /** Audio files keep their source-relative path, e.g. "audio/vulgate/Genesis/Genesis_01_01.mp3" */
+  audio: (rel: string) => `audio/${rel}`,
 };
 
 /** Shard file holding a form: the longest prefix in _shards.json that the form's slug starts with.

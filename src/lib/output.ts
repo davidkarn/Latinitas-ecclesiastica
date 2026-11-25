@@ -37,6 +37,22 @@ export class Output {
     this.bytes += body.length;
   }
 
+  /** Place a binary file (audio) at `rel`: hard link when possible (no extra disk), copy otherwise. */
+  link(rel: string, src: string): void {
+    const file = path.join(this.staging, rel);
+    const dir = path.dirname(file);
+    if (!this.dirs.has(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+      this.dirs.add(dir);
+    }
+    try {
+      fs.linkSync(src, file);
+    } catch {
+      fs.copyFileSync(src, file);
+    }
+    this.files++;
+  }
+
   /** Atomically replace finalDir with the staged build and delete scratch files. */
   commit(): void {
     const old = `${this.finalDir}.old-${this.buildId}`;
