@@ -5,6 +5,7 @@ import {
 } from "../../src/api/index.ts";
 import { getWordFile } from "./api.ts";
 import { describeAnalyses, ENCLITIC, POS_LABEL } from "./grammar.ts";
+import { hasInflections, Inflections } from "./Inflections.tsx";
 
 interface Props {
   token: Token;
@@ -13,7 +14,9 @@ interface Props {
   onClose(): void;
 }
 
-type Tab = "ls" | "wikt" | "lex";
+type Tab = "forms" | "ls" | "wikt" | "lex";
+/** The tab last chosen, so a reader who wants inflections keeps getting them */
+let preferredTab: Tab | null = null;
 
 export function WordPopup({ token, anchor, words, onClose }: Props) {
   const readings = token.wordId
@@ -23,7 +26,8 @@ export function WordPopup({ token, anchor, words, onClose }: Props) {
   const reading = readings.find(r => r.wordId === wordId);
   const summary = wordId ? words[wordId] : undefined;
   const entries = useEntries(summary);
-  const [tab, setTab] = useState<Tab | null>(null);
+  const [tab, setTabState] = useState<Tab | null>(preferredTab);
+  const setTab = (t: Tab | null) => { if (t) preferredTab = t; setTabState(t); };
 
   const ref = useRef<HTMLDivElement>(null);
   const style = usePlacement(anchor, ref);
@@ -46,11 +50,14 @@ export function WordPopup({ token, anchor, words, onClose }: Props) {
   }, [anchor, onClose]);
 
   const available: Record<Tab, number> = {
+    forms: entries.data?.paradigm ? 1 : 0,
     ls: entries.data?.lewisShort.length ?? 0,
     wikt: entries.data?.wiktionary ? 1 : 0,
     lex: entries.data?.lexicon.length ?? 0,
   };
-  const shownTab: Tab = tab ?? (available.ls ? "ls" : available.wikt ? "wikt" : available.lex ? "lex" : "ls");
+  // The chosen tab if this word has it (prepositions have no inflection), else the first dictionary that does
+  const shownTab: Tab = tab && (!entries.data || available[tab]) ? tab
+    : (["ls", "wikt", "lex", "forms"] as const).find(t => available[t]) ?? "ls";
 
   return (
     <div ref={ref} className="popup" role="dialog" aria-modal="false" aria-labelledby="popup-title" tabIndex={-1} style={style}>
@@ -116,7 +123,7 @@ export function WordPopup({ token, anchor, words, onClose }: Props) {
       {summary && (
         <div className="popup-body">
           <div className="tabs" role="tablist" aria-label="Dictionaries">
-            {([["ls", "Lewis & Short"], ["wikt", "Wiktionary"], ["lex", "St. Thomas"]] as const).map(([id, label]) => (
+            {([["ls", "Lewis & Short"], ["wikt", "Wiktionary"], ["lex", "St. Thomas"], ["forms", "Inflection"]] as const).map(([id, label]) => (
               <button key={id} role="tab" aria-selected={shownTab === id} className={shownTab === id ? "on" : ""}
                 disabled={entries.data !== undefined && !available[id]} onClick={() => setTab(id)}>
                 {label}
@@ -129,6 +136,20 @@ export function WordPopup({ token, anchor, words, onClose }: Props) {
             {entries.data && shownTab === "ls" && <LewisShort entries={entries.data.lewisShort} matched={summary.lewisShort?.key} />}
             {entries.data && shownTab === "wikt" && entries.data.wiktionary && <Wiktionary entry={entries.data.wiktionary} />}
             {entries.data && shownTab === "lex" && <Lexicon entries={entries.data.lexicon} />}
+            {entries.data && shownTab === "forms" && entries.data.paradigm && (
+              <>
+                {entries.data.paradigm.id !== summary.id && (
+                  <p className="muted">Forms of <span lang="la">{entries.data.paradigm.canonical}</span>, of which this is a spelling.</p>
+                )}
+                <Inflections entry={entries.data.paradigm}
+                  form={wordId === token.wordId || token.alternatives?.some(a => a.wordId === wordId) ? token.form : undefined} />
+                <Attribution>
+                  Inflected forms from <a href={`https://en.wiktionary.org/wiki/${encodeURIComponent(plain(entries.data.paradigm.canonical))}#Latin`}
+                    target="_blank" rel="noreferrer">Wiktionary</a>, by its contributors, via kaikki.org (wiktextract);
+                  licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0</a>.
+                </Attribution>
+              </>
+            )}
             {entries.data && !available[shownTab] && <p className="muted">No entry in this dictionary.</p>}
           </div>
         </div>
@@ -139,7 +160,13 @@ export function WordPopup({ token, anchor, words, onClose }: Props) {
 
 // ---------- data ----------
 
-interface Entries { wiktionary?: WiktionaryEntry; lewisShort: LewisShortEntry[]; lexicon: LexiconEntry[] }
+interface Entries {
+  wiktionary?: WiktionaryEntry;
+  /** Entry whose forms make the inflection table: this one, or for an alternative spelling, the main one's */
+  paradigm?: WiktionaryEntry;
+  lewisShort: LewisShortEntry[];
+  lexicon: LexiconEntry[];
+}
 
 /** Loads the word file and picks out this word's entries. Alternative spellings borrow the
  *  Lewis & Short / Lexicon entries of the spelling they point to. */
@@ -155,6 +182,12 @@ function useEntries(summary: WordSummary | undefined): { data?: Entries; error?:
       let lewisShort = group?.lewisShort ?? [];
       let lexicon = group?.lexicon ?? [];
       const target = summary.altOf?.find(a => a.id)?.id;
+      let paradigm = hasInflections(wiktionary) ? wiktionary : undefined;
+      if (target && !paradigm) {
+        const other: WordFile = await getWordFile(paths.word(target.split(":")[0]!));
+        const e = other.words.flatMap(w => w.wiktionary).find(e => e.id === target);
+        if (hasInflections(e)) paradigm = e;
+      }
       if (target && ((summary.lewisShort && !lewisShort.some(e => e.key === summary.lewisShort!.key)) || !lexicon.length)) {
         const key = target.split(":")[0]!;
         const other: WordFile = await getWordFile(paths.word(key));
@@ -168,7 +201,7 @@ function useEntries(summary: WordSummary | undefined): { data?: Entries; error?:
       // The entry matched to this word first
       const k = summary.lewisShort?.key;
       lewisShort = [...lewisShort].sort((a, b) => Number(b.key === k) - Number(a.key === k));
-      if (live) setState({ id: summary.id, data: { wiktionary, lewisShort, lexicon } });
+      if (live) setState({ id: summary.id, data: { wiktionary, paradigm, lewisShort, lexicon } });
     })().catch(() => { if (live) setState({ id: summary.id, error: true }); });
     return () => { live = false; };
   }, [summary]);

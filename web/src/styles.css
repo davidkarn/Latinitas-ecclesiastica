@@ -435,3 +435,22 @@ h3.sub { margin: 0.6rem 0 0.1rem; font-size: 0.72rem; text-transform: uppercase;
 .meanings::after { content: " —"; font-style: normal; font-weight: 400; color: var(--muted); }
 .ls-text { color: var(--muted); font-size: 0.85rem; }
 .ls-text.clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ---------- inflection tables ---------- */
+.inflections details { margin: 0.2rem 0 0.5rem; }
+.inflections summary { cursor: pointer; font-weight: 600; font-size: 0.85rem; padding: 0.2rem 0; }
+.paradigm { width: 100%; border-collapse: collapse; margin: 0.3rem 0; font-size: 0.86rem; }
+.paradigm th, .paradigm td { padding: 0.22rem 0.4rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.paradigm thead th { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.paradigm tbody th { font-weight: 500; color: var(--muted); font-size: 0.78rem; white-space: nowrap; }
+.paradigm td { font-family: var(--serif); font-size: 0.98rem; }
+.paradigm td .variant { display: block; color: var(--muted); font-size: 0.85rem; }
+.current-form { background: var(--speak); color: var(--speak-text); border-radius: 4px; }
+td.current-form { box-shadow: inset 0 0 0 2px var(--speak); }
+.periphrastic { list-style: none; padding: 0; margin: 0.2rem 0; font-size: 0.85rem; }
+.periphrastic li { margin: 0.15rem 0; }
+.periphrastic [lang="la"] { font-family: var(--serif); }
+.comparison { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; font-family: var(--serif); }
+.comparison .label { min-width: 0; }
+.table-scroll { overflow-x: auto; }
+.table-scroll .paradigm td { white-space: nowrap; }
