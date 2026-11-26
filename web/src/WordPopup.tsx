@@ -197,8 +197,10 @@ function usePlacement(anchor: HTMLElement, ref: RefObject<HTMLDivElement | null>
       const room = innerHeight - BAR - GAP * 2;
       const h = Math.min(ref.current?.scrollHeight ?? 560, room, 640);
       // Beside the word, over the other column, so the verse stays readable
-      const english = document.querySelector(".verse .english")?.getBoundingClientRect().left ?? innerWidth / 2;
-      let left = Math.max(r.right + GAP * 3, english - GAP * 2);
+      // Over the English column, or just right of the Latin when English is hidden
+      const english = document.querySelector(".verse .english")?.getBoundingClientRect().left
+        ?? (document.querySelector(".verse .latin")?.getBoundingClientRect().right ?? innerWidth / 2) + GAP * 3;
+      let left = Math.max(r.right + GAP * 3, Math.min(english - GAP * 2, innerWidth - width - 12));
       if (left + width > innerWidth - 12) left = r.left - GAP * 3 - width;
       if (left < 12) {
         // No room beside it: centre under or over the word

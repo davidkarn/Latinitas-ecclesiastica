@@ -8,17 +8,24 @@ For each source mp3 (a LibriVox "Biblia Sacra / Vulgata Clementina" part):
      with wildcard (*) tokens on both sides to absorb chapter announcements / LibriVox intros
   4. cut one mp3 per verse and write <part>.json with per-word times relative to the verse file
 
-Usage: .venv/bin/python scripts/align_split.py audio/vulgate/*.mp3
+Usage: .venv/bin/python scripts/align_split.py resources/audio/vulgate/bibliasacra_*_128kb.mp3
 """
 import difflib, json, pathlib, re, subprocess, sys, unicodedata
 import numpy as np
 import torch, torchaudio
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TEXT_DIR = ROOT / "text" / "vulgate"
+TEXT_DIR = ROOT / "resources" / "text" / "vulgate"
 WHISPER_DIR = ROOT / "work" / "whisper"
-OUT_DIR = ROOT / "audio" / "vulgate" / "verses"
-BOOK_FILES = {"Genesis": "Gn"}  # book name in ID3 title -> vulsearch text file stem
+OUT_DIR = ROOT / "resources" / "audio" / "vulgate" / "verses"
+# book name in the ID3 title -> (book name used in output, vulsearch text file stem)
+BOOKS = {
+    "Genesis": ("Genesis", "Gn"),
+    "Liber Exodus": ("Exodus", "Ex"),
+    "Liber Leviticus": ("Leviticus", "Lv"),
+    "Liber Numeri": ("Numbers", "Nm"),
+    "Liber Deuteronomii": ("Deuteronomy", "Dt"),
+}
 SR = 16000
 PAD_PRE, PAD_POST = 0.25, 0.45  # seconds of padding around each verse (capped at midpoint of gap)
 DEVICE = "cpu"  # MPS lacks the wav2vec2 feature-extractor conv for long inputs
@@ -27,7 +34,7 @@ DEVICE = "cpu"  # MPS lacks the wav2vec2 feature-extractor conv for long inputs
 # ---------- text ----------
 def load_book(book):
     verses = []
-    for line in (TEXT_DIR / f"{BOOK_FILES[book]}.txt").read_text(encoding="utf-8").splitlines():
+    for line in (TEXT_DIR / f"{BOOKS[book][1]}.txt").read_text(encoding="utf-8").splitlines():
         m = re.match(r"(\d+):(\d+)\s+(.*)", line)
         if not m:
             continue
@@ -110,8 +117,9 @@ def whisper_anchors(stem, ref_words):
 
 def process(mp3, model, tokenizer, aligner):
     mp3 = pathlib.Path(mp3)
-    title, book, c0, c1 = part_info(mp3)
-    verses = [v for v in load_book(book) if c0 <= v["chapter"] <= c1]
+    title, title_book, c0, c1 = part_info(mp3)
+    book = BOOKS[title_book][0]
+    verses = [v for v in load_book(title_book) if c0 <= v["chapter"] <= c1]
     print(f"== {mp3.name}: {title} ({len(verses)} verses)", flush=True)
 
     wav = decode(mp3, SR)
@@ -223,6 +231,8 @@ def main():
     model = bundle.get_model(with_star=True).to(DEVICE).eval()
     tokenizer = bundle.get_tokenizer()
     for f in sys.argv[1:]:
+        if (OUT_DIR / f"{pathlib.Path(f).stem}.json").exists():
+            continue  # already aligned
         process(f, model, tokenizer, None)
 
 

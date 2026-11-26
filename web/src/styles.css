@@ -62,7 +62,8 @@ a { color: var(--accent); }
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
 }
 .masthead h1 {
   margin: 0;
@@ -81,6 +82,40 @@ a { color: var(--accent); }
   background: var(--surface);
   color: var(--text);
 }
+
+.masthead-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: none;
+  border: 0;
+  padding: 0.3rem 0.2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.toggle-track {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--line);
+  transition: background-color 0.15s;
+}
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+  transition: transform 0.15s;
+}
+.toggle[aria-checked="true"] .toggle-track { background: var(--accent); }
+.toggle[aria-checked="true"] .toggle-thumb { transform: translateX(14px); }
 
 /* ---------- reader ---------- */
 .page {
@@ -173,6 +208,10 @@ a { color: var(--accent); }
   color: var(--muted);
 }
 .text-sources p { margin: 0.2rem 0; }
+
+/* Latin only: one comfortable reading column */
+.latin-only { max-width: 760px; margin: 0 auto; }
+.latin-only .columns-head, .latin-only .verse { grid-template-columns: minmax(0, 1fr); }
 
 /* ---------- player bar ---------- */
 .player-bar {

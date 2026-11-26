@@ -15,7 +15,7 @@ import {
   type ChapterFile, type FormHit, type TextIndex, type Token, type Verse, type WordSummary,
 } from "../api/index.ts";
 import type { Output } from "../lib/output.ts";
-import { AUDIO_DIR, englishVerses, TEXTS, vulgateVerses, type AlignedVerse, type TextDef } from "../sources/texts.ts";
+import { AUDIO_DIR, availableTexts, englishVerses, vulgateVerses, type AlignedVerse, type TextDef } from "../sources/texts.ts";
 
 export interface LoadedText {
   def: TextDef;
@@ -24,7 +24,7 @@ export interface LoadedText {
 }
 
 export function loadTexts(): LoadedText[] {
-  return TEXTS.map(def => ({ def, verses: vulgateVerses(def.vulgateBook), english: englishVerses(def.englishBook) }));
+  return availableTexts().map(def => ({ def, verses: vulgateVerses(def.vulgateBook), english: englishVerses(def.englishBook) }));
 }
 
 const tokenWords = (v: AlignedVerse) => v.words.map(w => w.word);

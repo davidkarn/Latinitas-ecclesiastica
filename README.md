@@ -22,6 +22,20 @@ npm run generate          # ~25 s → dist/api   (add -- --gzip to precompress, 
 npm test && npm run typecheck
 ```
 
+Texts and audio (the Pentateuch: Genesis–Deuteronomy). The Latin is the Clementine Vulgate
+(`resources/text/vulgate/{Gn,Ex,Lv,Nm,Dt}.txt`, from BibleGet-I-O/Clementine-Vulgate), the English
+the Douay-Rheims, and the audio the LibriVox *Biblia Sacra Vulgata Clementina* parts 001–020
+(archive.org item `Vulgata_Clementina`, saved to `resources/audio/vulgate/`). Verse clips and word
+timings come from a Python 3 venv with `mlx-whisper`, `torch` and `torchaudio`:
+
+```sh
+.venv/bin/python scripts/transcribe.py  resources/audio/vulgate/bibliasacra_0*_128kb.mp3   # Whisper anchors → work/whisper
+.venv/bin/python scripts/align_split.py resources/audio/vulgate/bibliasacra_0*_128kb.mp3   # → resources/audio/vulgate/verses
+```
+
+Both skip parts already done. To add a book, add it to `BOOKS` in `align_split.py` and to `TEXTS`
+in `src/sources/texts.ts`; books without aligned verses are skipped by `npm run generate`.
+
 Frontend:
 
 ```sh

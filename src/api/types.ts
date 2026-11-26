@@ -143,8 +143,8 @@ export interface WordSummary {
   /** The forms that define the paradigm: the headword plus the genitive (nouns), feminine/neuter (adjectives),
    *  or infinitive, perfect and supine (verbs). */
   principalParts: InflectedForm[];
-  /** Short definition from Lewis & Short, when the word is in it */
-  lewisShort?: { key: string; definition: string };
+  /** The matching Lewis & Short entry, and its English meanings when L&S gives them as glosses */
+  lewisShort?: { key: string; definition?: string };
   /** First Wiktionary gloss, for words Lewis & Short lacks (often proper names) */
   gloss?: string;
   /** Alternative spelling of these lemmas; `lewisShort` then comes from the first of them */

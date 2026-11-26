@@ -47,7 +47,8 @@ try {
       if (!id) continue;
       alt.id = id;
       const target = words.summaries.get(id);
-      if (!s.lewisShort && target?.lewisShort) s.lewisShort = target.lewisShort;
+      // Alternative spellings borrow the main spelling's L&S entry when their own is only a cross-reference ("foeteo, v. feteo")
+      if (!s.lewisShort?.definition && target?.lewisShort?.definition) s.lewisShort = target.lewisShort;
     }
   }
   step("forms");

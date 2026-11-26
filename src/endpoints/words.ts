@@ -69,12 +69,33 @@ function pickLewisShort(entries: LewisShortEntry[], e: WiktionaryEntry): LewisSh
  *  a gloss must contain at least one word that is not such an abbreviation. */
 const LS_ABBR = new Set(("gen dat acc abl voc nom sing plur pl pers indic subj subst pres praes imperf perf pluperf fut futur " +
   "imper imp inf part partt pass act dep conj init fin adv adj comp sup neutr masc fem lit prop transf trop poet " +
-  "absol tempp perff supine freq inch esp cf id ib ii iii ellipt al gr sc etc sync syncop praet contr orig").split(" "));
+  "absol tempp perff supine freq inch esp cf id ib ii iii ellipt al gr sc etc sync syncop praet contr orig " +
+  "pron praep prep advv dem demonstr demonstratives med neg rel interrog indef num interj sq sqq lat sanscr dub etym " +
+  "v n m f a p clause object impers irr irreg comm dim dimin poss foll art lu posit superl").split(" "));
+/** Latin words L&S italicizes to show a construction ("ut, ne", "cum", "alicui aliquid"): not English meanings */
+const LS_LATIN = new Set(("ad ut ne cum de ab ex e per sub super inter atque ac et sed is ea id ce cine quantus tantus " +
+  "alicui aliquid aliquem aliquis aliqua alicujus quod quia si num an ui non qui quae quis quam ubi aut vel neque nec " +
+  "se sibi suus esse est sum habere re rem contra adversus erga apud pro prae ob propter quando ubi quo unde").split(" "));
+/** A gloss needs one word that is neither of these, an abbreviation nor Latin ("of the demonstr" fails) */
+const EN_FUNCTION = new Set("of the to a an and or with by in on at for from".split(" "));
+/** Two-letter English words that can stand as a meaning */
+const EN2 = new Set("to be go do in on at by up so no of or as if it he we me my us".split(" "));
+
 function isGloss(g: string): boolean {
   const t = g.trim().replace(/[\s.,;:]+$/, "");
   if ((t.match(/\(/g) ?? []).length !== (t.match(/\)/g) ?? []).length) return false;   // "(2d pers."
   if (/(^|\s)\p{L}{1,7}\.\s/u.test(t)) return false;                                     // "Perf. sync", "v. facio fin"
-  return t.split(/[\s.,;:()\d]+/).some(w => w.length > 1 && !LS_ABBR.has(w.toLowerCase()));
+  if (/-(clause|sentence)$/.test(t)) return false;                                      // "rel.-clause", "subject-sentence"
+  const words = t.normalize("NFD").replace(/\p{M}/gu, "").split(/[\s.,;:()\d—–-]+/).filter(Boolean).map(w => w.toLowerCase());
+  if (words.length === 1 && words[0]!.length <= 2 && !EN2.has(words[0]!)) return false; // "ui"
+  return words.some(w => w.length > 1 && !LS_ABBR.has(w) && !LS_LATIN.has(w) && !EN_FUNCTION.has(w));
+}
+
+/** Drops leading grammar labels L&S runs into a gloss: "Act., to move" → "to move" */
+function stripLabels(g: string): string {
+  let t = g.trim().replace(/^[—–-]+\s*/, "");
+  for (let m; (m = /^(\p{L}{1,8})\.[\s,—–-]*/u.exec(t)) && LS_ABBR.has(m[1]!.toLowerCase());) t = t.slice(m[0].length);
+  return t.replace(/[\s.,;:]+$/, "");
 }
 
 /** Content words of English glosses, for matching homographs across dictionaries. */
@@ -108,12 +129,23 @@ export function shortDefinition(senses: LsSense[]): string | undefined {
     }
   };
   const s = walk(senses);
-  if (s) {
-    const glosses = [...new Set(s.glosses!.map(g => g.replace(/[\s.,;:]+$/, "")).filter(g => g.length > 1 && isGloss(g)))];
-    if (glosses.length) return glosses.slice(0, 5).join(", ");
+  if (!s) {
+    // No italic glosses: use the first sense's text only if it reads as a plain definition
+    // ("to have an ill smell, to stink"), not grammar notes ("fin.", "v. the foll. art.")
+    const text = senses[0]?.definition?.trim().replace(/[\s.,;:—-]+$/, "");
+    return text && text.length <= 120 && !/\p{L}{1,7}\.(\s|,|$)/u.test(text) && isGloss(text) ? text : undefined;
   }
-  const text = senses[0]?.definition?.trim();
-  return text ? (text.length > 160 ? `${text.slice(0, 157)}…` : text) : undefined;
+  const glosses: string[] = [];
+  const raw = s.glosses!.map(stripLabels);
+  for (let i = 0; i < raw.length; i++) {
+    let g = raw[i]!;
+    // L&S sets "of or belonging to" with "or" in roman, so the italics split into "of" + "belonging to"
+    if (/^of$/i.test(g) && raw[i + 1] && isGloss(raw[i + 1]!)) g = `${g} or ${raw[++i]}`;
+    if (g.length > 1 && isGloss(g) && !glosses.includes(g)) glosses.push(g);
+  }
+  // "easily appeased, placable" already says "placable"
+  const whole = glosses.filter(g => !glosses.some(u => u !== g && u.split(/[,;]\s*/).includes(g)));
+  return whole.length ? whole.slice(0, 5).join(", ") : undefined;
 }
 
 const GENDERS = ["masculine", "feminine", "neuter"];
@@ -141,7 +173,7 @@ function summarize(e: WiktionaryEntry, key: string, ls: LewisShortEntry[], weigh
     ...(inflectionClass && { inflectionClass }),
     ...(gender.length && { gender }),
     principalParts: [{ form: e.canonical, tags: ["canonical"] }, ...e.principalParts],
-    ...(lsEntry && lsDef && { lewisShort: { key: lsEntry.key, definition: lsDef } }),
+    ...(lsEntry && { lewisShort: { key: lsEntry.key, ...(lsDef && { definition: lsDef }) } }),
     ...(e.senses[0]?.glosses[0] && { gloss: e.senses[0].glosses[0] }),
     ...(e.altOf && { altOf: e.altOf.map(lemma => ({ lemma })) }),
   };

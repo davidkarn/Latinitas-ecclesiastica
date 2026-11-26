@@ -30,19 +30,29 @@ export interface TextDef {
   sources: TextSources;
 }
 
-export const TEXTS: TextDef[] = [
-  {
-    id: "genesis",
-    title: "Genesis",
-    vulgateBook: "Genesis",
-    englishBook: "Genesis",
-    sources: {
-      latin: "Clementine Vulgate (vulsearch.sourceforge.net, via github.com/BibleGet-I-O/Clementine-Vulgate)",
-      english: "Douay-Rheims Bible, 1899 American Edition (public domain, via github.com/midvash/bible-data)",
-      audio: "LibriVox, Biblia Sacra Vulgata Clementina (public domain); verse clips by forced alignment",
-    },
-  },
-];
+const VULGATE_SOURCES: TextSources = {
+  latin: "Clementine Vulgate (vulsearch.sourceforge.net, via github.com/BibleGet-I-O/Clementine-Vulgate)",
+  english: "Douay-Rheims Bible, 1899 American Edition (public domain, via github.com/midvash/bible-data)",
+  audio: "LibriVox, Biblia Sacra Vulgata Clementina (public domain); verse clips by forced alignment",
+};
+
+/** The Pentateuch. `id` is the URL segment; the aligned audio and the Douay-Rheims both use the English book name. */
+export const TEXTS: TextDef[] = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy"].map(title => ({
+  id: title.toLowerCase(),
+  title,
+  vulgateBook: title,
+  englishBook: title,
+  sources: VULGATE_SOURCES,
+}));
+
+/** Books whose verses have been aligned (scripts/align_split.py); the rest are skipped with a warning. */
+export function availableTexts(): TextDef[] {
+  const books = new Set<string>();
+  for (const f of fs.readdirSync(AUDIO_DIR).filter(f => f.endsWith(".json"))) {
+    books.add((JSON.parse(fs.readFileSync(path.join(AUDIO_DIR, f), "utf8")) as { book: string }).book);
+  }
+  return TEXTS.filter(t => books.has(t.vulgateBook) || (console.warn(`skipping ${t.title}: no aligned verses`), false));
+}
 
 /** Aligned Latin verses of a book, in order. */
 export function vulgateVerses(book: string): AlignedVerse[] {

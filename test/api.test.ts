@@ -59,3 +59,29 @@ describe("shortDefinition", () => {
       .toBe("the earth, land");
   });
 });
+
+describe("shortDefinition filters", () => {
+  const def = async (glosses: string[]) =>
+    (await import("../src/endpoints/words.ts")).shortDefinition([{ level: 1, definition: "", glosses }]);
+  it("drops Latin construction words and grammar labels", async () => {
+    expect(await def(["cum", "pron"])).toBeUndefined();
+    expect(await def(["to commit to one's charge", "order", "alicui aliquid", "ut", "ne"])).toBe("to commit to one's charge, order");
+    expect(await def(["Act., to move", "stir"])).toBe("to move, stir");
+    expect(await def(["praep", "on the right of"])).toBe("on the right of");
+    expect(await def(["to remember", "de", "rel.-clause"])).toBe("to remember");
+    expect(await def(["fin."])).toBeUndefined();
+    expect(await def(["impers", "it is lawful", "of the demonstr"])).toBe("it is lawful");
+    expect(await def(["to threaten", "alicui aliquā re"])).toBe("to threaten");
+    expect(await def(["to arm", "contra", "adversus", "fin.—Impers"])).toBe("to arm");
+    expect(await def(["easily appeased, placable", "placable", "mild"])).toBe("easily appeased, placable, mild");
+  });
+  it("falls back to plain sense text, not grammar notes", async () => {
+    const { shortDefinition } = await import("../src/endpoints/words.ts");
+    expect(shortDefinition([{ level: 1, definition: "to have an ill smell, to stink" }])).toBe("to have an ill smell, to stink");
+    expect(shortDefinition([{ level: 1, definition: "v. the foll. art." }])).toBeUndefined();
+    expect(shortDefinition([{ level: 1, definition: "fin." }])).toBeUndefined();
+  });
+  it("rejoins L&S's split \"of or belonging to\"", async () => {
+    expect(await def(["of", "belonging to the people"])).toBe("of or belonging to the people");
+  });
+});

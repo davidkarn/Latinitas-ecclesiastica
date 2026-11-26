@@ -6,10 +6,11 @@ interface Props {
   chapter: ChapterFile;
   audio: ChapterAudio;
   selectedToken: Token | null;
+  showEnglish: boolean;
   onSelect(token: Token, anchor: HTMLElement): void;
 }
 
-export function Reader({ chapter, audio, selectedToken, onSelect }: Props) {
+export function Reader({ chapter, audio, selectedToken, showEnglish, onSelect }: Props) {
   const rows = useRef<(HTMLElement | null)[]>([]);
 
   // Keep the verse being read in view
@@ -23,10 +24,10 @@ export function Reader({ chapter, audio, selectedToken, onSelect }: Props) {
   }, [audio.verseIndex, audio.playing]);
 
   return (
-    <article className="reader">
+    <article className={`reader${showEnglish ? "" : " latin-only"}`}>
       <div className="columns-head" aria-hidden="true">
         <div>Latin <span>Vulgata Clementina</span></div>
-        <div>English <span>Douay–Rheims</span></div>
+        {showEnglish && <div>English <span>Douay–Rheims</span></div>}
       </div>
 
       {chapter.verses.map((v, i) => {
@@ -44,12 +45,14 @@ export function Reader({ chapter, audio, selectedToken, onSelect }: Props) {
                 selected={selectedToken && v.tokens.includes(selectedToken) ? selectedToken : null}
                 onSelect={onSelect} />
             </div>
-            <div className="english" lang="en">
-              <span className="verse-no static" aria-hidden="true">
-                {v.englishVerses ? `${v.englishVerses[0]}–${v.englishVerses.at(-1)}` : v.verse}
-              </span>
-              {v.english || <em className="muted">(no English text)</em>}
-            </div>
+            {showEnglish && (
+              <div className="english" lang="en">
+                <span className="verse-no static" aria-hidden="true">
+                  {v.englishVerses ? `${v.englishVerses[0]}–${v.englishVerses.at(-1)}` : v.verse}
+                </span>
+                {v.english || <em className="muted">(no English text)</em>}
+              </div>
+            )}
           </section>
         );
       })}

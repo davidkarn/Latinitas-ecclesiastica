@@ -5,18 +5,20 @@ interface Props {
   verseCount?: number;
   canPlay: boolean;
   onToggle(): void;
-  prev?: number;
-  next?: number;
-  onGo(chapter: number): void;
+  /** Labels of the previous/next chapter ("Chapter 4", "Exodus 1"), if any */
+  prev?: string;
+  next?: string;
+  onPrev(): void;
+  onNext(): void;
 }
 
-export function PlayerBar({ title, playing, verse, verseCount, canPlay, onToggle, prev, next, onGo }: Props) {
+export function PlayerBar({ title, playing, verse, verseCount, canPlay, onToggle, prev, next, onPrev, onNext }: Props) {
   return (
     <nav className="player-bar" aria-label="Chapter navigation and audio">
-      <button className="nav-btn prev" disabled={prev === undefined} onClick={() => prev !== undefined && onGo(prev)}
-        aria-label={prev !== undefined ? `Previous chapter, ${prev}` : "No previous chapter"}>
+      <button className="nav-btn prev" disabled={prev === undefined} onClick={onPrev}
+        aria-label={prev !== undefined ? `Previous: ${prev}` : "No previous chapter"}>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
-        <span className="nav-label">{prev !== undefined ? `Chapter ${prev}` : "—"}</span>
+        <span className="nav-label">{prev ?? "—"}</span>
       </button>
 
       <div className="player-center">
@@ -32,9 +34,9 @@ export function PlayerBar({ title, playing, verse, verseCount, canPlay, onToggle
         </div>
       </div>
 
-      <button className="nav-btn next" disabled={next === undefined} onClick={() => next !== undefined && onGo(next)}
-        aria-label={next !== undefined ? `Next chapter, ${next}` : "No next chapter"}>
-        <span className="nav-label">{next !== undefined ? `Chapter ${next}` : "—"}</span>
+      <button className="nav-btn next" disabled={next === undefined} onClick={onNext}
+        aria-label={next !== undefined ? `Next: ${next}` : "No next chapter"}>
+        <span className="nav-label">{next ?? "—"}</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
       </button>
     </nav>
