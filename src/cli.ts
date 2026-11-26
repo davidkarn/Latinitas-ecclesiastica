@@ -9,6 +9,7 @@ import path from "node:path";
 import { parseArgs } from "node:util";
 import { API_VERSION, lookupKey, paths, type Manifest } from "./api/index.ts";
 import { generateForms } from "./endpoints/forms.ts";
+import { GrammarNotes, loadGrammar, writeGrammar } from "./endpoints/grammar.ts";
 import { generateTexts, loadTexts, wantedForms } from "./endpoints/texts.ts";
 import { generateWords, type FormRec } from "./endpoints/words.ts";
 import { Buckets, Output } from "./lib/output.ts";
@@ -53,17 +54,25 @@ try {
   }
   step("forms");
   const formsOut = generateForms(out, forms, idFor, wantedForms(texts));
+  step("grammar");
+  const grammar = loadGrammar();
+  const notes = grammar && new GrammarNotes(grammar);
+  if (grammar) writeGrammar(out, grammar);
   step("texts");
-  const textCounts = generateTexts(out, texts, formsOut.wanted, words.summaries, words.weights);
+  const textCounts = generateTexts(out, texts, formsOut.wanted, words.summaries, words.weights, notes);
+  const noteCounts = notes ? { grammarNotesCited: notes.counts.cited, grammarNotesCitedOnWords: notes.counts.citedMatched,
+    grammarNotesConstruction: notes.counts.construction } : {} as Record<string, number>;
 
   const manifest: Manifest = {
     apiVersion: API_VERSION,
     generatedAt: new Date(started).toISOString(),
     buildId,
-    counts: { ...words.counts, ...formsOut.counts, ...textCounts },
+    counts: { ...words.counts, ...formsOut.counts, ...textCounts, ...noteCounts },
     sources: [
       ...SOURCES,
       { name: "Deferrari, A Lexicon of St. Thomas Aquinas", url: "", license: "unverified: check copyright before publishing" },
+      ...(grammar ? [{ name: "W. E. Plater & H. J. White, A Grammar of the Vulgate (Oxford, 1926); OCR text",
+        url: "", license: "public domain" }] : []),
       ...texts.flatMap(t => Object.values(t.def.sources).map(name => ({ name, url: "", license: "public domain" }))),
     ],
   };

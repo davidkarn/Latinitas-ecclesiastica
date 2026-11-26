@@ -1,16 +1,20 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode, type RefObject } from "react";
 import {
   paths,
-  type LewisShortEntry, type LexiconEntry, type LsSense, type Token, type WiktionaryEntry, type WordFile, type WordSummary,
+  type GrammarNote, type LewisShortEntry, type LexiconEntry, type LsSense, type Token, type WiktionaryEntry, type WordFile, type WordSummary,
 } from "../../src/api/index.ts";
 import { getWordFile } from "./api.ts";
 import { describeAnalyses, ENCLITIC, POS_LABEL } from "./grammar.ts";
+import { GrammarNotesBox } from "./GrammarNotes.tsx";
 import { hasInflections, Inflections } from "./Inflections.tsx";
 
 interface Props {
   token: Token;
   anchor: HTMLElement;
   words: Record<string, WordSummary>;
+  /** Grammar notes on this word */
+  notes: GrammarNote[];
+  onOpenGrammar(section: number): void;
   onClose(): void;
 }
 
@@ -18,7 +22,7 @@ type Tab = "forms" | "ls" | "wikt" | "lex";
 /** The tab last chosen, so a reader who wants inflections keeps getting them */
 let preferredTab: Tab | null = null;
 
-export function WordPopup({ token, anchor, words, onClose }: Props) {
+export function WordPopup({ token, anchor, words, notes, onOpenGrammar, onClose }: Props) {
   const readings = token.wordId
     ? [{ wordId: token.wordId, analyses: token.analyses }, ...(token.alternatives ?? [])]
     : [];
@@ -31,23 +35,7 @@ export function WordPopup({ token, anchor, words, onClose }: Props) {
 
   const ref = useRef<HTMLDivElement>(null);
   const style = usePlacement(anchor, ref);
-
-  // Escape / outside click closes; focus moves in, and back to the word on close
-  useEffect(() => {
-    ref.current?.focus();
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
-    const onDown = (e: PointerEvent) => {
-      const t = e.target as Node;
-      if (!ref.current?.contains(t) && !anchor.contains(t)) onClose();
-    };
-    addEventListener("keydown", onKey);
-    addEventListener("pointerdown", onDown);
-    return () => {
-      removeEventListener("keydown", onKey);
-      removeEventListener("pointerdown", onDown);
-      if (anchor.isConnected) anchor.focus({ preventScroll: true });
-    };
-  }, [anchor, onClose]);
+  useDismiss(ref, anchor, onClose);
 
   const available: Record<Tab, number> = {
     forms: entries.data?.paradigm ? 1 : 0,
@@ -100,6 +88,8 @@ export function WordPopup({ token, anchor, words, onClose }: Props) {
             </p>
           </>
         )}
+
+        {notes.length > 0 && <GrammarNotesBox notes={notes} onOpen={onOpenGrammar} />}
 
         {readings.length > 1 && (
           <div className="readings">
@@ -216,10 +206,29 @@ function conjugationOf(inflectionClass?: string): number | undefined {
 
 // ---------- placement ----------
 
+/** Escape or a click outside closes the popup; focus moves into it, and back to the anchor on close */
+export function useDismiss(ref: RefObject<HTMLDivElement | null>, anchor: HTMLElement, onClose: () => void) {
+  useEffect(() => {
+    ref.current?.focus();
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const onDown = (e: PointerEvent) => {
+      const t = e.target as Node;
+      if (!ref.current?.contains(t) && !anchor.contains(t)) onClose();
+    };
+    addEventListener("keydown", onKey);
+    addEventListener("pointerdown", onDown);
+    return () => {
+      removeEventListener("keydown", onKey);
+      removeEventListener("pointerdown", onDown);
+      if (anchor.isConnected) anchor.focus({ preventScroll: true });
+    };
+  }, [ref, anchor, onClose]);
+}
+
 const BAR = 84;     // fixed player bar
 const GAP = 8;
 
-function usePlacement(anchor: HTMLElement, ref: RefObject<HTMLDivElement | null>): CSSProperties {
+export function usePlacement(anchor: HTMLElement, ref: RefObject<HTMLDivElement | null>): CSSProperties {
   const [style, setStyle] = useState<CSSProperties>({ visibility: "hidden" });
   useLayoutEffect(() => {
     let raf = 0;

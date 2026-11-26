@@ -454,3 +454,81 @@ td.current-form { box-shadow: inset 0 0 0 2px var(--speak); }
 .comparison .label { min-width: 0; }
 .table-scroll { overflow-x: auto; }
 .table-scroll .paradigm td { white-space: nowrap; }
+
+/* ---------- grammar notes ---------- */
+.w.has-note { text-decoration: underline 2px color-mix(in srgb, var(--accent) 55%, transparent); text-underline-offset: 0.28em; }
+.w.has-note.unknown { text-decoration-style: dotted; }
+.verse-note {
+  flex: none;
+  align-self: flex-start;
+  margin-left: 0.2rem;
+  padding: 0 0.35rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 999px;
+  background: none;
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.verse-note:hover { background: var(--accent-soft); }
+.grammar-link { font-size: 0.9rem; color: var(--accent); text-decoration: none; padding: 0.3rem 0.2rem; }
+.grammar-link:hover { text-decoration: underline; }
+.grammar-notes { margin-top: 0.7rem; }
+.grammar-note {
+  margin: 0.4rem 0;
+  padding: 0.5rem 0.7rem 0.55rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: color-mix(in srgb, var(--accent-soft) 45%, var(--surface));
+}
+.grammar-note header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.5rem; }
+.grammar-note .label { min-width: 0; margin: 0; }
+.section-link { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font-size: 0.82rem; text-decoration: underline; text-underline-offset: 0.15em; }
+.note-label { margin: 0.25rem 0 0; font-weight: 600; font-size: 0.88rem; }
+.grammar-note blockquote { margin: 0.25rem 0 0; font-family: var(--serif); font-size: 0.95rem; line-height: 1.45; }
+.note-source { margin: 0.2rem 0 0; font-size: 0.72rem; color: var(--muted); }
+
+/* ---------- grammar page ---------- */
+.grammar-head { align-items: center; justify-content: flex-start; gap: 1rem; position: sticky; top: 0; z-index: 5;
+  background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(8px); padding-bottom: 0.75rem; max-width: none; }
+.grammar-head h1 { font-size: clamp(1.4rem, 3vw, 2rem); }
+.grammar-head p { margin: 0.1rem 0 0; font-size: 0.85rem; }
+.back-btn { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 0.35rem 0.8rem; cursor: pointer; font-size: 0.88rem; }
+.back-btn:hover { background: var(--surface-2); }
+.grammar-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1.25rem 4rem;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 2.5rem;
+}
+.grammar-toc { position: sticky; top: 7rem; align-self: start; max-height: calc(100vh - 8rem); overflow-y: auto; font-size: 0.86rem; }
+.grammar-toc summary { cursor: pointer; font-weight: 600; padding: 0.3rem 0; }
+.grammar-toc ol { list-style: none; margin: 0; padding: 0; }
+.grammar-toc > details > ol > li { margin: 0.6rem 0; }
+.toc-chapter { display: block; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.2rem; }
+.grammar-toc li li a { display: block; padding: 0.15rem 0.4rem; border-radius: 6px; color: var(--text); text-decoration: none; }
+.grammar-toc li li a:hover { background: var(--surface-2); }
+.grammar-toc li li a.on { background: var(--accent-soft); color: var(--accent); }
+.grammar-text { font-family: var(--serif); font-size: 1.05rem; line-height: 1.65; max-width: 46rem; }
+.grammar-source { font-family: var(--sans); font-size: 0.8rem; color: var(--muted); margin-top: 0; }
+.grammar-chapter h2 { font-size: 1.35rem; margin: 2rem 0 0.5rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--line); }
+.grammar-section { scroll-margin-top: 7rem; padding: 0.3rem 0.8rem; margin: 0 -0.8rem; border-radius: 10px; }
+.grammar-section.current { background: var(--current); }
+.grammar-section h3 { font-size: 1.05rem; margin: 1rem 0 0.3rem; }
+.grammar-section p { margin: 0.5rem 0; }
+.section-tag { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); margin: 1.2rem 0 0.2rem !important; }
+.grammar-text i { color: color-mix(in srgb, var(--text) 85%, var(--accent)); }
+.grammar-text table { border-collapse: collapse; font-size: 0.9rem; margin: 0.5rem 0; }
+.grammar-text td, .grammar-text th { border-bottom: 1px solid var(--line); padding: 0.2rem 0.5rem; text-align: left; vertical-align: top; }
+.g-list li { margin: 0.25rem 0; }
+.g-footnotes { margin: 0.4rem 0 0.8rem; padding-left: 0.8rem; border-left: 2px solid var(--line); font-size: 0.85rem; color: var(--muted); }
+.g-footnotes p { margin: 0.3rem 0; }
+@media (max-width: 899px) {
+  .grammar-layout { grid-template-columns: minmax(0, 1fr); gap: 0.5rem; }
+  .grammar-toc { position: static; max-height: none; }
+}

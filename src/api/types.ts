@@ -173,6 +173,22 @@ export interface Token {
   alternatives?: { wordId: string; analyses: string[][] }[];
 }
 
+/** A note from Plater & White's Grammar of the Vulgate on something in this verse. */
+export interface GrammarNote {
+  /** Section of the grammar (§ 1-144); read it whole in GrammarFile */
+  section: number;
+  /** The section's topic, e.g. "Number, Gender, Case" */
+  topic: string;
+  /** Short name of the construction, for notes found by pattern ("Cognate ablative") */
+  label?: string;
+  /** The book's own words about it (plain text) */
+  text: string;
+  /** Indices into Verse.tokens of the words it is about; empty when it concerns the verse as a whole */
+  tokens: number[];
+  /** "cited": the grammar cites this verse; "construction": the same construction the grammar describes */
+  source: "cited" | "construction";
+}
+
 export interface Verse {
   verse: number;
   ref: string;
@@ -182,6 +198,7 @@ export interface Verse {
   englishVerses?: number[];
   audio: { file: string; duration: number } | null;
   tokens: Token[];
+  notes?: GrammarNote[];
 }
 
 /** GET /api/texts/{text}/{chapter}.json */
@@ -193,4 +210,30 @@ export interface ChapterFile {
   /** Every word referenced by a token (including alternatives), by id */
   words: Record<string, WordSummary>;
   sources: TextSources;
+}
+
+// ---------- grammar ----------
+
+/** A block of a grammar section: sanitized HTML using only i, b, sup, br and table/list tags */
+export interface GrammarBlock { type: "p" | "h" | "list" | "table"; html: string }
+
+export interface GrammarSection {
+  /** § number; 0 is the untitled opening of the Introduction */
+  n: number;
+  chapter: string;
+  topic: string;
+  blocks: GrammarBlock[];
+  footnotes: string[];
+}
+
+/** GET /api/grammar.json — W. E. Plater & H. J. White, A Grammar of the Vulgate (1926), whole */
+export interface GrammarFile {
+  title: string;
+  authors: string[];
+  published: string;
+  license: string;
+  source: string;
+  chapters: { id: string; title: string; sections: [number, number] }[];
+  sections: GrammarSection[];
+  conclusion: { blocks: GrammarBlock[]; footnotes: string[] };
 }

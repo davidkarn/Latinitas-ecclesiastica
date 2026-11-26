@@ -36,6 +36,17 @@ timings come from a Python 3 venv with `mlx-whisper`, `torch` and `torchaudio`:
 Both skip parts already done. To add a book, add it to `BOOKS` in `align_split.py` and to `TEXTS`
 in `src/sources/texts.ts`; books without aligned verses are skipped by `npm run generate`.
 
+Grammar notes come from W. E. Plater & H. J. White, *A Grammar of the Vulgate* (Oxford, 1926; public
+domain), OCR'd with Surya. `scripts/convert_grammar.py` turns the OCR output
+(`resources/text/plater_white/surya.json`) into sections and Pentateuch citations
+(`resources/text/plater_white/grammar.json`); the generator then writes `grammar.json` and attaches
+`notes` to verses: the book's own remarks on verses it cites, matched to the words it quotes, and the
+constructions it describes (`RULES` in `src/endpoints/grammar.ts`) wherever they occur.
+
+```sh
+python3 -I scripts/convert_grammar.py [path/to/surya/results.json]
+```
+
 Frontend:
 
 ```sh
@@ -60,6 +71,7 @@ nginx keeps serving the previous build until the new one is complete.
 | `texts/{text}/{chapter}.json` | `ChapterFile` | verses (Latin, English, audio clip, timed tokens with word ids) + a `WordSummary` per word id: principal parts, inflection class, gender, short L&S definition |
 | `audio/vulgate/Genesis/*.mp3` | — | one clip per verse (hard-linked from `resources/audio`) |
 | `words/{slug}.json` | `WordFile` | Wiktionary entries (full paradigms), Lewis & Short and Lexicon of St. Thomas entries for one lookup key; a token's `wordId` is a `WiktionaryEntry.id` in `words/{summary.file}` |
+| `grammar.json` | `GrammarFile` | Plater & White, *A Grammar of the Vulgate*: every section (§ 1–144), for the grammar reader |
 | `forms/_shards.json` | `FormShardList` | shard prefixes for form lookup |
 | `forms/{prefix}.json` | `FormShard` | inflected form → lemma(s) with grammatical analyses |
 

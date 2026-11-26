@@ -15,6 +15,7 @@ import {
   type ChapterFile, type FormHit, type TextIndex, type Token, type Verse, type WordSummary,
 } from "../api/index.ts";
 import type { Output } from "../lib/output.ts";
+import type { GrammarNotes } from "./grammar.ts";
 import { AUDIO_DIR, availableTexts, englishVerses, vulgateVerses, type AlignedVerse, type TextDef } from "../sources/texts.ts";
 
 export interface LoadedText {
@@ -60,6 +61,8 @@ export function generateTexts(
   summaries: Map<string, WordSummary>,
   /** L&S citation counts by word id: a frequency proxy */
   weights: Map<string, number> = new Map(),
+  /** Notes from Plater & White's Grammar of the Vulgate */
+  grammar?: GrammarNotes,
 ) {
   const index: TextIndex = { texts: [] };
   let tokens = 0, unknown = 0, ambiguous = 0, audio = 0;
@@ -105,6 +108,7 @@ export function generateTexts(
       const use = (id: string) => { const s = summaries.get(id); if (s) words[id] = s; };
       const out_verses: Verse[] = [];
       const latinNums = new Set(cvs.map(v => v.verse));
+      const seen = new Set<string>();   // once-per-chapter grammar notes
 
       for (const v of cvs) {
         // English: this verse, plus any following English verses the Latin merges into it
@@ -147,6 +151,7 @@ export function generateTexts(
           audioRef = { file: rel, duration: v.duration };
           audio++;
         }
+        const notes = grammar?.notesFor(def.id, chapter, v.verse, v.text, toks, seen) ?? [];
         out_verses.push({
           verse: v.verse,
           ref: v.ref,
@@ -155,6 +160,7 @@ export function generateTexts(
           ...(englishNums.length > 1 && { englishVerses: englishNums }),
           audio: audioRef,
           tokens: toks,
+          ...(notes.length && { notes }),
         });
       }
 

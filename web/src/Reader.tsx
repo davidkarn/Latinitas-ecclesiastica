@@ -7,10 +7,14 @@ interface Props {
   audio: ChapterAudio;
   selectedToken: Token | null;
   showEnglish: boolean;
-  onSelect(token: Token, anchor: HTMLElement): void;
+  /** Mark words and verses that have notes from the grammar */
+  showNotes: boolean;
+  onSelect(token: Token, anchor: HTMLElement, verse: Verse): void;
+  /** Open the notes about a verse as a whole */
+  onVerseNotes(verse: Verse, anchor: HTMLElement): void;
 }
 
-export function Reader({ chapter, audio, selectedToken, showEnglish, onSelect }: Props) {
+export function Reader({ chapter, audio, selectedToken, showEnglish, showNotes, onSelect, onVerseNotes }: Props) {
   const rows = useRef<(HTMLElement | null)[]>([]);
 
   // Keep the verse being read in view
@@ -43,7 +47,12 @@ export function Reader({ chapter, audio, selectedToken, showEnglish, onSelect }:
               <LatinVerse verse={v}
                 activeToken={current && audio.active?.verse === i ? audio.active.token : -1}
                 selected={selectedToken && v.tokens.includes(selectedToken) ? selectedToken : null}
+                showNotes={showNotes}
                 onSelect={onSelect} />
+              {showNotes && v.notes?.some(n => !n.tokens.length) && (
+                <button className="verse-note" onClick={e => onVerseNotes(v, e.currentTarget)} aria-haspopup="dialog"
+                  title="The grammar comments on this verse" aria-label={`Grammar notes on ${v.ref}`}>§</button>
+              )}
             </div>
             {showEnglish && (
               <div className="english" lang="en">
@@ -70,19 +79,21 @@ interface VerseProps {
   verse: Verse;
   activeToken: number;
   selected: Token | null;
-  onSelect(token: Token, anchor: HTMLElement): void;
+  showNotes: boolean;
+  onSelect(token: Token, anchor: HTMLElement, verse: Verse): void;
 }
 
 /** The verse text with each token as a clickable word; punctuation and spacing come from the original text. */
-const LatinVerse = memo(function LatinVerse({ verse, activeToken, selected, onSelect }: VerseProps) {
+const LatinVerse = memo(function LatinVerse({ verse, activeToken, selected, showNotes, onSelect }: VerseProps) {
+  const noted = new Set(showNotes ? verse.notes?.flatMap(n => n.tokens) : []);
   const parts: ReactNode[] = [];
   let at = 0;
   verse.tokens.forEach((t, i) => {
     if (t.offset > at) parts.push(verse.latin.slice(at, t.offset));
-    const cls = ["w", i === activeToken && "speaking", t === selected && "selected", !t.wordId && "unknown"]
+    const cls = ["w", i === activeToken && "speaking", t === selected && "selected", !t.wordId && "unknown", noted.has(i) && "has-note"]
       .filter(Boolean).join(" ");
     parts.push(
-      <button key={i} className={cls} onClick={e => onSelect(t, e.currentTarget)}
+      <button key={i} className={cls} onClick={e => onSelect(t, e.currentTarget, verse)}
         aria-haspopup="dialog">
         {verse.latin.slice(t.offset, t.offset + t.text.length) || t.text}
       </button>,

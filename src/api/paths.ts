@@ -8,6 +8,8 @@ export const paths = {
   formShard: (prefix: string) => `forms/${prefix || "_"}.json`,
   texts: () => "texts/index.json",
   chapter: (text: string, chapter: number) => `texts/${text}/${chapter}.json`,
+  /** Plater & White, A Grammar of the Vulgate: every section, for the grammar reader */
+  grammar: () => "grammar.json",
   /** Audio files keep their source-relative path, e.g. "audio/vulgate/Genesis/Genesis_01_01.mp3" */
   audio: (rel: string) => `audio/${rel}`,
 };

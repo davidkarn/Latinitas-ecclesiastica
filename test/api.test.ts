@@ -85,3 +85,17 @@ describe("shortDefinition filters", () => {
     expect(await def(["of", "belonging to the people"])).toBe("of or belonging to the people");
   });
 });
+
+describe("grammar quotations", () => {
+  it("matches the Oxford Vulgate's spelling to the Clementine text", async () => {
+    const { findQuote, norm } = await import("../src/endpoints/grammar.ts");
+    expect(norm("uespere")).toBe(norm("vespere"));
+    expect(norm("inluminent")).toBe(norm("illuminent"));
+    const verse = "Et vidit Deus lucem quod esset bona et divisit lucem a tenebris".split(" ").map(norm);
+    expect(findQuote("uidit Deus lucem quod esset bona", verse)).toEqual([1, 2, 3, 4, 5, 6]);
+    expect(findQuote("uidit . . . bona", verse)).toEqual([1, 6]);
+    expect(findQuote("os ad os", "ore enim ad os loquor ei".split(" ").map(norm))).toEqual([2, 3]);
+    expect(findQuote("Nullus, nullum", "quam suscitare nullus audebit".split(" ").map(norm))).toEqual([2]);
+    expect(findQuote("ad imaginem nostram", verse)).toEqual([]);
+  });
+});
