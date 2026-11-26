@@ -17,7 +17,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "web:dev": "npm --prefix web run dev",
-    "web:build": "npm --prefix web run build"
+    "web:build": "npm --prefix web run build",
+    "deploy": "npm run web:build && rsync -av --delete --delay-updates --exclude='/api.*' web/dist/ \"${DEPLOY_TARGET:?set DEPLOY_TARGET, e.g. host:/srv/learnlatin/web}\""
   },
   "devDependencies": {
     "@types/node": "26.6.6",

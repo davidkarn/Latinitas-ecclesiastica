@@ -6,7 +6,7 @@ nginx serves; there is no application server.
 ```
 scripts/fetch_sources.sh      download Perseus Lewis & Short + Wiktionary (kaikki.org)
 scripts/convert_*.py          slim the raw dumps into resources/dictionaries/{perseus_ls,wiktionary}
-src/cli.ts                    generate dist/api/** from the converted dictionaries
+src/cli.ts                    generate web/dist/api/** from the converted dictionaries
 src/api/                      types, paths and Latin normalization shared with the frontend (no Node deps)
 web/                          React reader (Vite): Latin | English verses, audio with word highlighting, dictionary popups
 deploy/nginx.conf             example server block
@@ -18,7 +18,7 @@ deploy/nginx.conf             example server block
 npm install
 npm run data:fetch        # ~1.3 GB download, only needed once
 npm run data:convert      # ~20 s
-npm run generate          # ~25 s → dist/api   (add -- --gzip to precompress, --out <dir> to change target)
+npm run generate          # ~25 s → web/dist/api   (add -- --gzip to precompress, --out <dir> to change target)
 npm test && npm run typecheck
 ```
 
@@ -51,9 +51,16 @@ Frontend:
 
 ```sh
 npm --prefix web install
-npm run web:dev           # http://localhost:5173/genesis/1, serves dist/api at /api (API_DIR=... to change)
-npm run web:build         # → web/dist, deploy to /srv/learnlatin/web
+npm run web:dev           # http://localhost:5173/genesis/1, serves web/dist/api at /api (API_DIR=... to change)
+npm run web:build         # → web/dist (empties it first, except web/dist/api)
+DEPLOY_TARGET=host:/srv/learnlatin/web npm run deploy   # build, then rsync all of web/dist
 ```
+
+`web/dist` is the whole site: the frontend build at the top and the generated API in `web/dist/api`, so
+one rsync deploys both. `npm run deploy` uses `--delete` to remove stale assets on the server and
+`--delay-updates` so the new files appear together at the end rather than one by one (otherwise a reader
+could pick up the new `manifest.json` before the files it points to have arrived). It skips the
+generator's in-progress `api.staging-*` directories.
 
 The reader plays a chapter one verse clip at a time and highlights each word from the token timings
 (space = play/pause, ←/→ = chapter). Clicking a word opens its Lewis & Short, Wiktionary and

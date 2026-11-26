@@ -1,4 +1,4 @@
-/** Fetching the static JSON API (served at /api by nginx, or by the Vite dev server from ../dist/api). */
+/** Fetching the static JSON API (served at /api by nginx, or by the Vite dev server from web/dist/api). */
 import { paths, type ChapterFile, type Manifest, type TextIndex, type WordFile } from "../../src/api/index.ts";
 
 export const API_ROOT = "/api/";

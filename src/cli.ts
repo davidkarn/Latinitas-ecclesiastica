@@ -1,7 +1,7 @@
 /**
  * Generate the static JSON API.
  *
- *   npm run generate -- [--out dist/api] [--gzip]
+ *   npm run generate -- [--out web/dist/api] [--gzip]
  *
  * Writes to <out>.staging-<id> and swaps it into <out> only when every endpoint succeeded.
  */
@@ -17,7 +17,7 @@ import { SOURCES } from "./sources/index.ts";
 
 const { values: args } = parseArgs({
   options: {
-    out: { type: "string", default: "dist/api" },
+    out: { type: "string", default: "web/dist/api" },
     gzip: { type: "boolean", default: false },
   },
 });
