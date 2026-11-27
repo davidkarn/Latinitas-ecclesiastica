@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { ChapterFile, GrammarNote, TextIndex, Token, Verse } from "../../src/api/index.ts";
 import { getChapter, getTextIndex } from "./api.ts";
+import { TopBar } from "./Contents.tsx";
 import { VerseNotesPopup } from "./GrammarNotes.tsx";
 import { GrammarPage } from "./GrammarPage.tsx";
 import { PlayerBar } from "./PlayerBar.tsx";
@@ -139,6 +140,17 @@ export function App() {
     setSelection({ kind: "verse", verse, anchor, seq: ++selectionSeq }), []);
   const closePopup = useCallback(() => setSelection(null), []);
 
+  // The compact top bar shows once the masthead has scrolled out of view
+  const masthead = useRef<HTMLElement>(null);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const el = masthead.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([e]) => setScrolled(!e!.isIntersecting));
+    io.observe(el);
+    return () => io.disconnect();
+  }, [grammarAt]);
+
   const current = chapter && chapter.text === route.text && chapter.chapter === route.chapter ? chapter : undefined;
 
   if (grammarAt !== undefined) {
@@ -146,22 +158,31 @@ export function App() {
       backLabel={`${text?.title ?? "Back"} ${route.chapter}`} />;
   }
 
+  const switches = (
+    <>
+      <button className="toggle" role="switch" aria-checked={showEnglish} onClick={toggleEnglish}
+        title="Show or hide the English translation (E)">
+        <span className="toggle-track" aria-hidden="true"><span className="toggle-thumb" /></span>
+        English
+      </button>
+      <button className="toggle" role="switch" aria-checked={showNotes} onClick={toggleNotes}
+        title="Mark words the Grammar of the Vulgate comments on (G)">
+        <span className="toggle-track" aria-hidden="true"><span className="toggle-thumb" /></span>
+        Grammar
+      </button>
+    </>
+  );
+
   return (
     <>
-      <header className="masthead">
+      <TopBar visible={scrolled} texts={index?.texts} route={route} onGo={go} onOpenGrammar={() => openGrammar(1)}>
+        {switches}
+      </TopBar>
+      <header className="masthead" ref={masthead}>
         <h1>{text?.title ?? ""} <span className="chapter-no">{route.chapter}</span>
           {text?.aka && <span className="book-aka">{text.aka} {route.chapter}</span>}</h1>
         <div className="masthead-tools">
-        <button className="toggle" role="switch" aria-checked={showEnglish} onClick={toggleEnglish}
-          title="Show or hide the English translation (E)">
-          <span className="toggle-track" aria-hidden="true"><span className="toggle-thumb" /></span>
-          English
-        </button>
-        <button className="toggle" role="switch" aria-checked={showNotes} onClick={toggleNotes}
-          title="Mark words the Grammar of the Vulgate comments on (G)">
-          <span className="toggle-track" aria-hidden="true"><span className="toggle-thumb" /></span>
-          Grammar
-        </button>
+        {switches}
         <a className="grammar-link" href="/grammar" onClick={e => { e.preventDefault(); openGrammar(1); }}>§ Grammar</a>
         {index && index.texts.length > 1 && (
           <label className="chapter-select">
