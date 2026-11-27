@@ -23,6 +23,8 @@ export interface AlignedVerse {
 export interface TextDef {
   id: string;
   title: string;
+  /** Modern English name, where it differs from the Vulgate/Douay-Rheims one ("1 Samuel" for 1 Kings) */
+  aka?: string;
   /** Book name in the aligned audio metadata */
   vulgateBook: string;
   /** Book name in the Douay-Rheims JSON */
@@ -36,14 +38,29 @@ const VULGATE_SOURCES: TextSources = {
   audio: "LibriVox, Biblia Sacra Vulgata Clementina (public domain); verse clips by forced alignment",
 };
 
-/** The Pentateuch. `id` is the URL segment; the aligned audio and the Douay-Rheims both use the English book name. */
-export const TEXTS: TextDef[] = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy"].map(title => ({
-  id: title.toLowerCase(),
+/**
+ * Genesis to 4 Kings. `id` is the URL segment; `vulgateBook` is the book name scripts/align_split.py writes.
+ * The Vulgate and the Douay-Rheims count four books of Kings (1–2 Samuel and 1–2 Kings in modern Bibles);
+ * the titles follow them, as the Latin does, and `aka` gives the modern name. The Douay-Rheims JSON uses
+ * modern names, and its verse numbering matches the Clementine text exactly in all of these books.
+ */
+const book = (title: string, vulgateBook = title, englishBook = title, aka?: string): TextDef => ({
+  id: title.toLowerCase().replace(/\s+/g, "-"),
   title,
-  vulgateBook: title,
-  englishBook: title,
+  ...(aka ? { aka } : {}),
+  vulgateBook,
+  englishBook,
   sources: VULGATE_SOURCES,
-}));
+});
+
+export const TEXTS: TextDef[] = [
+  book("Genesis"), book("Exodus"), book("Leviticus"), book("Numbers"), book("Deuteronomy"),
+  book("Joshua"), book("Judges"), book("Ruth"),
+  book("1 Kings", "1Kings", "1 Samuel", "1 Samuel"),
+  book("2 Kings", "2Kings", "2 Samuel", "2 Samuel"),
+  book("3 Kings", "3Kings", "1 Kings", "1 Kings"),
+  book("4 Kings", "4Kings", "2 Kings", "2 Kings"),
+];
 
 /** Books whose verses have been aligned (scripts/align_split.py); the rest are skipped with a warning. */
 export function availableTexts(): TextDef[] {

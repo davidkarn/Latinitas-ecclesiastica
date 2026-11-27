@@ -154,7 +154,7 @@ export function generateTexts(
         const notes = grammar?.notesFor(def.id, chapter, v.verse, v.text, toks, seen) ?? [];
         out_verses.push({
           verse: v.verse,
-          ref: v.ref,
+          ref: `${def.title} ${v.chapter}:${v.verse}`,
           latin: v.text,
           english: englishText,
           ...(englishNums.length > 1 && { englishVerses: englishNums }),
@@ -168,7 +168,7 @@ export function generateTexts(
       out.json(paths.chapter(def.id, chapter), file);
       chapterList.push({ chapter, verses: out_verses.length, file: paths.chapter(def.id, chapter) });
     }
-    index.texts.push({ id: def.id, title: def.title, chapters: chapterList, sources: def.sources });
+    index.texts.push({ id: def.id, title: def.title, ...(def.aka ? { aka: def.aka } : {}), chapters: chapterList, sources: def.sources });
   }
 
   out.json(paths.texts(), index);

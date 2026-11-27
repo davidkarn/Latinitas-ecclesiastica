@@ -22,10 +22,13 @@ npm run generate          # ~25 s → web/dist/api   (add -- --gzip to precompre
 npm test && npm run typecheck
 ```
 
-Texts and audio (the Pentateuch: Genesis–Deuteronomy). The Latin is the Clementine Vulgate
-(`resources/text/vulgate/{Gn,Ex,Lv,Nm,Dt}.txt`, from BibleGet-I-O/Clementine-Vulgate), the English
-the Douay-Rheims, and the audio the LibriVox *Biblia Sacra Vulgata Clementina* parts 001–020
-(archive.org item `Vulgata_Clementina`, saved to `resources/audio/vulgate/`). Verse clips and word
+Texts and audio (Genesis to 4 Kings: the Pentateuch, Joshua, Judges, Ruth and the four books of Kings,
+which modern Bibles call 1–2 Samuel and 1–2 Kings). The Latin is the Clementine Vulgate
+(`resources/text/vulgate/{Gn,Ex,Lv,Nm,Dt,Jos,Jdc,Rt,1Rg,2Rg,3Rg,4Rg}.txt`, from
+BibleGet-I-O/Clementine-Vulgate `src/iso-encoded`, converted from cp1252), the English the Douay-Rheims
+(whose verse numbering matches the Latin exactly in these books), and the audio the LibriVox
+*Biblia Sacra Vulgata Clementina* parts 001–042 (archive.org item `Vulgata_Clementina`, saved to
+`resources/audio/vulgate/`). Verse clips and word
 timings come from a Python 3 venv with `mlx-whisper`, `torch` and `torchaudio`:
 
 ```sh
@@ -38,7 +41,7 @@ in `src/sources/texts.ts`; books without aligned verses are skipped by `npm run 
 
 Grammar notes come from W. E. Plater & H. J. White, *A Grammar of the Vulgate* (Oxford, 1926; public
 domain), OCR'd with Surya. `scripts/convert_grammar.py` turns the OCR output
-(`resources/text/plater_white/surya.json`) into sections and Pentateuch citations
+(`resources/text/plater_white/surya.json`) into sections and citations of Genesis–4 Kings
 (`resources/text/plater_white/grammar.json`); the generator then writes `grammar.json` and attaches
 `notes` to verses: the book's own remarks on verses it cites, matched to the words it quotes, and the
 constructions it describes (`RULES` in `src/endpoints/grammar.ts`) wherever they occur.
@@ -57,9 +60,11 @@ DEPLOY_TARGET=host:/srv/learnlatin/web npm run deploy   # build, then rsync all 
 ```
 
 `web/dist` is the whole site: the frontend build at the top and the generated API in `web/dist/api`, so
-one rsync deploys both. `npm run deploy` uses `--delete` to remove stale assets on the server and
-`--delay-updates` so the new files appear together at the end rather than one by one (otherwise a reader
-could pick up the new `manifest.json` before the files it points to have arrived). It skips the
+one rsync deploys both. `npm run deploy` uses `--delay-updates` so the new files appear together at the
+end rather than one by one (otherwise a reader could pick up the new `manifest.json` or `index.html` before
+the files they point to have arrived), and `--delete-delay` so stale files are removed only after that
+(plain `--delete` removes the old assets while the old `index.html` is still live, leaving a blank page
+until the upload finishes, or for good if it's interrupted). It skips the
 generator's in-progress `api.staging-*` directories.
 
 The reader plays a chapter one verse clip at a time and highlights each word from the token timings

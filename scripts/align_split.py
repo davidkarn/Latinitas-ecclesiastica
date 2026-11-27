@@ -25,6 +25,13 @@ BOOKS = {
     "Liber Leviticus": ("Leviticus", "Lv"),
     "Liber Numeri": ("Numbers", "Nm"),
     "Liber Deuteronomii": ("Deuteronomy", "Dt"),
+    "Liber Josue": ("Joshua", "Jos"),
+    "Liber Judicum": ("Judges", "Jdc"),
+    "Liber Ruth": ("Ruth", "Rt"),
+    "Liber Primus Regum": ("1Kings", "1Rg"),      # = 1 Samuel; the Vulgate and Douay-Rheims count four books of Kings
+    "Liber Secundus Regum": ("2Kings", "2Rg"),
+    "Liber Tertius Regum": ("3Kings", "3Rg"),
+    "Liber Quartus Regum": ("4Kings", "4Rg"),
 }
 SR = 16000
 PAD_PRE, PAD_POST = 0.25, 0.45  # seconds of padding around each verse (capped at midpoint of gap)
@@ -97,7 +104,10 @@ def part_info(mp3):
         ["ffprobe", "-v", "error", "-show_entries", "format_tags=title", "-of", "json", str(mp3)],
         check=True, capture_output=True, text=True).stdout)["format"]["tags"]["title"]
     m = re.match(r"\s*\d+\s*-\s*(.+?)\s+(\d+)\s*-\s*(\d+)\s*$", title)
-    return title, m.group(1), int(m.group(2)), int(m.group(3))
+    if m:
+        return title, m.group(1), int(m.group(2)), int(m.group(3))
+    book = re.match(r"\s*\d+\s*-\s*(.+?)\s*$", title).group(1)   # a whole book in one part ("027 - Liber Ruth")
+    return title, book, 1, max(v["chapter"] for v in load_book(book))
 
 
 def whisper_anchors(stem, ref_words):

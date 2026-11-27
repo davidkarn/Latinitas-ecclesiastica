@@ -113,6 +113,8 @@ export interface TextIndex {
   texts: {
     id: string;
     title: string;
+    /** Modern English name, where it differs ("1 Samuel" for 1 Kings) */
+    aka?: string;
     chapters: { chapter: number; verses: number; file: string }[];
     sources: TextSources;
   }[];

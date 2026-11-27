@@ -149,7 +149,8 @@ export function App() {
   return (
     <>
       <header className="masthead">
-        <h1>{text?.title ?? ""} <span className="chapter-no">{route.chapter}</span></h1>
+        <h1>{text?.title ?? ""} <span className="chapter-no">{route.chapter}</span>
+          {text?.aka && <span className="book-aka">{text.aka} {route.chapter}</span>}</h1>
         <div className="masthead-tools">
         <button className="toggle" role="switch" aria-checked={showEnglish} onClick={toggleEnglish}
           title="Show or hide the English translation (E)">
@@ -169,7 +170,7 @@ export function App() {
               const t = index.texts.find(x => x.id === e.target.value);
               if (t?.chapters[0]) go({ text: t.id, chapter: t.chapters[0].chapter });
             }}>
-              {index.texts.map(t => <option key={t.id} value={t.id}>{t.title}</option>)}
+              {index.texts.map(t => <option key={t.id} value={t.id}>{t.aka ? `${t.title} (${t.aka})` : t.title}</option>)}
             </select>
           </label>
         )}

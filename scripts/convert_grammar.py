@@ -118,19 +118,30 @@ def plain(h):
 
 # ---------- citations ----------
 BOOKS = {"Gen": "genesis", "Gn": "genesis", "Ex": "exodus", "Exod": "exodus", "Lev": "leviticus",
-         "Num": "numbers", "Deut": "deuteronomy", "Dt": "deuteronomy"}
+         "Num": "numbers", "Deut": "deuteronomy", "Dt": "deuteronomy",
+         "Jos": "joshua", "Josh": "joshua", "Jud": "judges", "Judg": "judges", "Ruth": "ruth",   # Judith is never abbreviated
+         # Samuel and Kings are cited with both names, "I Sam. (I Reg.) 9. 15", "II Kgs. (IV Reg.) 2. 3"; text ids
+         # follow the Vulgate count (src/sources/texts.ts)
+         "I Reg": "1-kings", "II Reg": "2-kings", "III Reg": "3-kings", "IV Reg": "4-kings"}
 # Any book abbreviation (to know where a run of references for one book ends)
 ANY_BOOK = r"(?:[1-4I]{1,3}\s+)?[A-Z][a-z]{1,7}\.?(?:\s+\([^)]*\))?"
-REF = re.compile(r"\b(Gen|Gn|Exod|Ex|Lev|Num|Deut|Dt)\.?\s+(\d+)\.\s*(\d+)(?:\s*-\s*(\d+))?")
+REF = re.compile(r"\b(Gen|Gn|Exod|Ex|Lev|Num|Deut|Dt|Josh|Jos|Judg|Jud|Ruth"
+                 r"|(?:I{1,2}\s+(?:Sam|Kgs)\.?\s*\(\s*)?(?:IV|I{1,3})\s+Reg\.?\s*\)?)\.?\s+(\d+)\.\s*(\d+)(?:\s*-\s*(\d+))?")
+
+
+def book_id(abbr):
+    """'Gen' → 'genesis'; 'I Kgs. (III Reg.)' and 'III Reg.' → '3-kings' (by the Vulgate name in either form)"""
+    m = re.search(r"\b(IV|I{1,3})\s+Reg", abbr)
+    return BOOKS[f"{m.group(1)} Reg"] if m else BOOKS[abbr]
 CONT = re.compile(r"\s*(?:,|;|,?\s*cf\.|and)\s*(?:cf\.\s*)?(\d+)(?:\.\s*(\d+))?(?:\s*-\s*(\d+))?(?![\d.]*\s*[A-Z])")
 
 
 def refs_in(text):
-    """[(book, chapter, verse, start, end)] for every Pentateuch verse cited, following runs like
+    """[(book, chapter, verse, start, end)] for every verse cited from Genesis–4 Kings, following runs like
     'Gen. 1. 26, 27, 2. 5, cf. 13. 10' (bare numbers continue the chapter; 'n. m' starts a new one)."""
     out = []
     for m in REF.finditer(text):
-        book, ch, v, v2 = BOOKS[m.group(1)], int(m.group(2)), int(m.group(3)), m.group(4)
+        book, ch, v, v2 = book_id(m.group(1)), int(m.group(2)), int(m.group(3)), m.group(4)
         out += [(book, ch, x, m.start(), m.end()) for x in range(v, int(v2) + 1 if v2 and int(v2) - v < 10 else v + 1)]
         pos = m.end()
         while True:
@@ -297,7 +308,7 @@ def main():
     (OUT_DIR / "grammar.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     nums = [s["n"] for s in out_sections if s["n"]]
     missing = sorted(set(range(1, 145)) - set(nums))
-    print(f"{len(nums)} sections (missing {missing}), {len(uniq)} Pentateuch citations "
+    print(f"{len(nums)} sections (missing {missing}), {len(uniq)} citations (Genesis–4 Kings) "
           f"on {len({(c['text'], c['chapter'], c['verse']) for c in uniq})} verses")
 
 

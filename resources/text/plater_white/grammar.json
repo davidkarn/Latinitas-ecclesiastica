@@ -5282,6 +5282,30 @@
  },
  "citations": [
   {
+   "text": "1-kings",
+   "chapter": 23,
+   "verse": 28,
+   "section": 8,
+   "clause": "e.g. I Sam. (I Reg.) 23. 28 'Saul returned from pursuing after David, and went against the Philistines: therefore they called that place Sela-hammahlekoth' is not very illuminating in the English",
+   "quotes": [
+    "Saul returned from pursuing after David, and went against the Philistines: therefore they called that place Sela-hammahlekoth"
+   ],
+   "lead": "",
+   "in": "footnote"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 15,
+   "verse": 13,
+   "section": 8,
+   "clause": "the Hebr. nachal includes the (sometimes dry) river-bed into which the torrens flows: cf. I Kgs. (III Reg.) 15. 13 'combussit [simulacrum] in torrente Cedron'",
+   "quotes": [
+    "combussit [simulacrum] in torrente Cedron"
+   ],
+   "lead": "",
+   "in": "footnote"
+  },
+  {
    "text": "numbers",
    "chapter": 16,
    "verse": 1,
@@ -5304,6 +5328,23 @@
    "clause": "1 Hence confusion was always possible, as in the case of Gen. 47. 31, quoted in Hebr. 11. 21",
    "quotes": [],
    "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 12,
+   "verse": 6,
+   "section": 12,
+   "clause": "de Genesi , under S ) writes: 'Siquidem apud Hebraeos tres sunt S literae: una quae dicitur Samech D , et simpliciter legitur, quasi per S nostram literam describatur: alia sin v , in qua stridor quidam non nostri sermonis interstrepit: tertia sade Y , quam nostrae aures penitus reformidant.' So in the famous case of shibboleth and sibboleth in Judg. 12. 6, the difference in the Hebrew is between שַׁבְּשָׁ and דַּבְּשָׁ",
+   "quotes": [
+    "de Genesi",
+    "Samech",
+    "sade",
+    "shibboleth",
+    "sibboleth",
+    "sibboleth"
+   ],
+   "lead": "Jerome ( de nomin.",
    "in": "text"
   },
   {
@@ -5336,6 +5377,18 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 9,
+   "verse": 15,
+   "section": 14,
+   "clause": "= uncover), cf. I Sam. (I Reg.) 9. 15. 1 brachium : used of God (with excelsum, extentum, sacrum, etc.), and of man (br. peccatorum, etc.)",
+   "quotes": [
+    "brachium"
+   ],
+   "lead": "auris :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 1,
    "verse": 2,
@@ -5345,6 +5398,123 @@
     "a facie aquilonis"
    ],
    "lead": "facies :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 2,
+   "verse": 16,
+   "section": 14,
+   "clause": "confundere, auertere faciem = to shame a person by refusing his request, I Kgs. (III Reg.) 2. 16. 20.",
+   "quotes": [],
+   "lead": "facies :",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 17,
+   "verse": 5,
+   "section": 14,
+   "clause": "'implere manum' = to consecrate, Jud. 17. 5, 12, I Kgs. (III Reg.) 13. 33.",
+   "quotes": [
+    "implere manum"
+   ],
+   "lead": "manus :",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 17,
+   "verse": 12,
+   "section": 14,
+   "clause": "'implere manum' = to consecrate, Jud. 17. 5, 12, I Kgs. (III Reg.) 13. 33.",
+   "quotes": [
+    "implere manum"
+   ],
+   "lead": "manus :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 13,
+   "verse": 33,
+   "section": 14,
+   "clause": "'implere manum' = to consecrate, Jud. 17. 5, 12, I Kgs. (III Reg.) 13. 33.",
+   "quotes": [
+    "implere manum"
+   ],
+   "lead": "manus :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 11,
+   "section": 14,
+   "clause": "'in oculis solis ... throni' II Sam. (II Reg.) 12. 11, Apoc. 1. 4 (conspectu).",
+   "quotes": [
+    "in oculis solis ... throni"
+   ],
+   "lead": "oculus :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 12,
+   "verse": 14,
+   "section": 14,
+   "clause": "os : 'exasperare os Domini' I Sam. (I Reg.) 12. 14",
+   "quotes": [
+    "exasperare os Domini"
+   ],
+   "lead": "os :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 21,
+   "verse": 13,
+   "section": 14,
+   "clause": "'immutare os suum' (= to change his behaviour) I Sam. (I Reg.) 21. 13",
+   "quotes": [
+    "immutare os suum"
+   ],
+   "lead": "os :",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 21,
+   "verse": 16,
+   "section": 14,
+   "clause": "'usque ad os' (= from end to end) II Kgs. (IV Reg.) 21. 16, but see 10. 21 where the same Hebrew is translated 'a summo usque ad summum'",
+   "quotes": [
+    "usque ad os",
+    "a summo usque ad summum"
+   ],
+   "lead": "os :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 23,
+   "verse": 22,
+   "section": 14,
+   "clause": "'ubi sit pes eius' I Sam. (I Reg.) 23. 22",
+   "quotes": [
+    "ubi sit pes eius"
+   ],
+   "lead": "pes :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 12,
+   "verse": 24,
+   "section": 14,
+   "clause": "reuertatur uir in domum suam I Kgs. (III Reg.) 12. 24, cf. Ex. 11. 2, Isa. 3. 5, 14. 18, Jer. 31. 34, Zach. 3. 10, 14. 13.",
+   "quotes": [],
+   "lead": "uir :",
    "in": "text"
   },
   {
@@ -5384,6 +5554,18 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 17,
+   "verse": 7,
+   "section": 15,
+   "clause": "'post dies' (= after a while) I Kgs. (III Reg.) 17. 7",
+   "quotes": [
+    "post dies"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 31,
    "verse": 2,
@@ -5393,6 +5575,44 @@
     "heri et nudiustertius"
    ],
    "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 20,
+   "verse": 2,
+   "section": 16,
+   "clause": "angulus : 'anguli populorum' (= the chief men) Jud. 20. 2, cf. I Sam. (I Reg.) 14. 38, and 'in caput anguli' Ps. 118 (117). 22",
+   "quotes": [
+    "anguli populorum",
+    "in caput anguli"
+   ],
+   "lead": "angulus :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 14,
+   "verse": 38,
+   "section": 16,
+   "clause": "angulus : 'anguli populorum' (= the chief men) Jud. 20. 2, cf. I Sam. (I Reg.) 14. 38, and 'in caput anguli' Ps. 118 (117). 22",
+   "quotes": [
+    "anguli populorum",
+    "in caput anguli"
+   ],
+   "lead": "angulus :",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 17,
+   "verse": 5,
+   "section": 16,
+   "clause": "so 'funes ceciderunt mihi in praeclaris' Ps. 16 (15). 6, cf. Jos. 17. 5",
+   "quotes": [
+    "funes ceciderunt mihi in praeclaris"
+   ],
+   "lead": "funis and funiculus :",
    "in": "text"
   },
   {
@@ -5408,6 +5628,18 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 15,
+   "verse": 5,
+   "section": 16,
+   "clause": "'excepto sermone Uriae Hethaei' I Kgs. (III Reg.) 15. 5",
+   "quotes": [
+    "excepto sermone Uriae Hethaei"
+   ],
+   "lead": "sermo, uerbum :",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 2,
    "verse": 14,
@@ -5417,6 +5649,113 @@
     "quomodo palam factum est uerbum istud?"
    ],
    "lead": "sermo, uerbum :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 29,
+   "section": 16,
+   "clause": "'numquid non uerbum est?' (= is there not a cause?) I Sam. (I Reg.) 17. 29.",
+   "quotes": [
+    "numquid non uerbum est?"
+   ],
+   "lead": "sermo, uerbum :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 12,
+   "verse": 23,
+   "section": 16,
+   "clause": "frequent in Pss., as 25 (24). 4, cf. I Sam. (I Reg.) 12. 23, Act. 13. 10. So in the N.T., especially Acts (2. 28, 9. 2 etc.), of the (Christian) Way.",
+   "quotes": [],
+   "lead": "uia, semita :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 16,
+   "verse": 7,
+   "section": 17,
+   "clause": "But there are other plurals which are not really Latin at all, but are simply literal renderings of the Hebrew, e. g. carnes Lev. 4. II, uir sanguinum II Sam. (II Reg.) 16. 7.",
+   "quotes": [
+    "carnes",
+    "uir sanguinum"
+   ],
+   "lead": "But there are other plurals which are not really Latin at all, but are simply literal renderings of the Hebrew, e. g. carnes Lev. 4. II, uir sanguinum II Sam. (II Reg.) 16. 7.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 25,
+   "verse": 17,
+   "section": 20,
+   "clause": "also 'filius Belial' = a worthless man, I Sam. (I Reg.) 25. 17, cf. 25, and I Sam. (I Reg.) 1. 16",
+   "quotes": [
+    "filius Belial"
+   ],
+   "lead": "Qualitative Genitive.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 25,
+   "verse": 25,
+   "section": 20,
+   "clause": "also 'filius Belial' = a worthless man, I Sam. (I Reg.) 25. 17, cf. 25, and I Sam. (I Reg.) 1. 16",
+   "quotes": [
+    "filius Belial"
+   ],
+   "lead": "Qualitative Genitive.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 1,
+   "verse": 16,
+   "section": 20,
+   "clause": "also 'filius Belial' = a worthless man, I Sam. (I Reg.) 25. 17, cf. 25, and I Sam. (I Reg.) 1. 16",
+   "quotes": [
+    "filius Belial"
+   ],
+   "lead": "Qualitative Genitive.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 20,
+   "verse": 31,
+   "section": 20,
+   "clause": "'filius mortis' = a man worthy of death, i. e. who ought to be executed, I Sam. (I Reg.) 20. 31, II Sam. (II Reg.) 12. 5",
+   "quotes": [
+    "filius mortis"
+   ],
+   "lead": "Qualitative Genitive.",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 5,
+   "section": 20,
+   "clause": "'filius mortis' = a man worthy of death, i. e. who ought to be executed, I Sam. (I Reg.) 20. 31, II Sam. (II Reg.) 12. 5",
+   "quotes": [
+    "filius mortis"
+   ],
+   "lead": "Qualitative Genitive.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 13,
+   "verse": 1,
+   "section": 20,
+   "clause": "'filius unius anni erat Saul cum regnare coepisset' I Sam. (I Reg.) 13. 1 literally means that Saul was one year old, which is impossible",
+   "quotes": [
+    "filius unius anni erat Saul cum regnare coepisset"
+   ],
+   "lead": "Qualitative Genitive.",
    "in": "text"
   },
   {
@@ -5468,6 +5807,30 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 15,
+   "verse": 15,
+   "section": 22,
+   "clause": "'interfecit in ea (maxilla) mille uiros' Jud. 15. 15, 16",
+   "quotes": [
+    "interfecit in ea (maxilla) mille uiros"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 15,
+   "verse": 16,
+   "section": 22,
+   "clause": "'interfecit in ea (maxilla) mille uiros' Jud. 15. 15, 16",
+   "quotes": [
+    "interfecit in ea (maxilla) mille uiros"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 1,
    "verse": 5,
@@ -5477,6 +5840,18 @@
     "dies unus"
    ],
    "lead": "Cardinal for Ordinal (as in French with titles):",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 5,
+   "verse": 24,
+   "section": 23,
+   "clause": "Superlative expressed by inter or super : 'benedicta inter mulieres' Jud. 5. 24",
+   "quotes": [
+    "benedicta inter mulieres"
+   ],
+   "lead": "Superlative expressed by inter or super :",
    "in": "text"
   },
   {
@@ -5492,6 +5867,82 @@
     "quis dabit"
    ],
    "lead": "The interrogative is sometimes equivalent to a wish; 'who will give?' = 'Oh, that some one would give!' So 'quis det talem eos habere mentem' Dt. 5. 29, 'quis dabit' Ps. 14 (13). 7, 53. 8 (52. 7).",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 21,
+   "verse": 10,
+   "section": 25,
+   "clause": "and so finally to curse! so 'benedic Deo et morere' Job 2. 9, cf. 1. 5, and I Kgs. (III Reg.) 21. 10, 13.",
+   "quotes": [
+    "benedic Deo et morere"
+   ],
+   "lead": "benedicere , to bless, then to say farewell to, then to have nothing to do with, to renounce; and so finally to curse! so 'benedic Deo et morere' Job 2. 9, cf. 1. 5, and I Kgs. (III Reg.) 21. 10, 13.",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 21,
+   "verse": 13,
+   "section": 25,
+   "clause": "and so finally to curse! so 'benedic Deo et morere' Job 2. 9, cf. 1. 5, and I Kgs. (III Reg.) 21. 10, 13.",
+   "quotes": [
+    "benedic Deo et morere"
+   ],
+   "lead": "benedicere , to bless, then to say farewell to, then to have nothing to do with, to renounce; and so finally to curse! so 'benedic Deo et morere' Job 2. 9, cf. 1. 5, and I Kgs. (III Reg.) 21. 10, 13.",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 22,
+   "verse": 6,
+   "section": 25,
+   "clause": "debere = 'am I to' (Fr. 'dois-je?'): 'ire debeo in Ramoth Galaad?' I Kgs. (III Reg.) 22. 6, cf. II Kgs. (IV Reg.) 5. 13.",
+   "quotes": [
+    "am I to",
+    "dois-je?",
+    "ire debeo in Ramoth Galaad?"
+   ],
+   "lead": "debere = 'am I to' (Fr. 'dois-je?'):",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 13,
+   "section": 25,
+   "clause": "debere = 'am I to' (Fr. 'dois-je?'): 'ire debeo in Ramoth Galaad?' I Kgs. (III Reg.) 22. 6, cf. II Kgs. (IV Reg.) 5. 13.",
+   "quotes": [
+    "am I to",
+    "dois-je?",
+    "ire debeo in Ramoth Galaad?"
+   ],
+   "lead": "debere = 'am I to' (Fr. 'dois-je?'):",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 55,
+   "section": 25,
+   "clause": "'uiuit anima tua, rex, si noui' I Sam. (I Reg.) 17. 55, II Sam. (II Reg.) 12. 5",
+   "quotes": [
+    "uiuit anima tua, rex, si noui"
+   ],
+   "lead": "uiuere :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 5,
+   "section": 25,
+   "clause": "'uiuit anima tua, rex, si noui' I Sam. (I Reg.) 17. 55, II Sam. (II Reg.) 12. 5",
+   "quotes": [
+    "uiuit anima tua, rex, si noui"
+   ],
+   "lead": "uiuere :",
    "in": "text"
   },
   {
@@ -5518,6 +5969,70 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 2,
+   "verse": 24,
+   "section": 27,
+   "clause": "also by conlocare (= set, causative of sit) I Kgs. (III Reg.) 2. 24.",
+   "quotes": [
+    "conlocare"
+   ],
+   "lead": "(b) Causative.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 3,
+   "verse": 21,
+   "section": 28,
+   "clause": "it is reproduced literally in Latin, e.g. 'addidit Dominus ut appareret' I Sam. (I Reg.) 3. 21, and through the Greek 'addidit . . . mittere' Lk. 20. 11, 12",
+   "quotes": [
+    "addidit Dominus ut appareret",
+    "addidit . . . mittere"
+   ],
+   "lead": "(c) Repeated action :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 3,
+   "verse": 8,
+   "section": 28,
+   "clause": "also 'adiecit . . . rursum uocare', 'adiecit . . . et uocauit' I Sam. (I Reg.) 3. 8, cf. Isa. 7. 10, Nah. 1. 15",
+   "quotes": [
+    "adiecit . . . rursum uocare",
+    "adiecit . . . et uocauit"
+   ],
+   "lead": "(c) Repeated action :",
+   "in": "text"
+  },
+  {
+   "text": "ruth",
+   "chapter": 1,
+   "verse": 17,
+   "section": 28,
+   "clause": "So also in the phrase translated into English as 'and more also' the Vulgate renders literally 'haec mihi faciat Dominus et haec addat' Ruth 1. 17, cf. I Kgs. (III Reg.) 19. 2",
+   "quotes": [
+    "and more also",
+    "haec mihi faciat Dominus et haec addat"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 19,
+   "verse": 2,
+   "section": 28,
+   "clause": "So also in the phrase translated into English as 'and more also' the Vulgate renders literally 'haec mihi faciat Dominus et haec addat' Ruth 1. 17, cf. I Kgs. (III Reg.) 19. 2",
+   "quotes": [
+    "and more also",
+    "haec mihi faciat Dominus et haec addat"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "deuteronomy",
    "chapter": 32,
    "verse": 36,
@@ -5527,6 +6042,33 @@
     "in seruis suis miserebitur"
    ],
    "lead": "misereri in :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 24,
+   "verse": 16,
+   "section": 29,
+   "clause": "misereri super : 'misertus est Dominus super afflictione' II Sam. (II Reg.) 24. 16, cf. Amos 7. 3, 6",
+   "quotes": [
+    "misertus est Dominus super afflictione"
+   ],
+   "lead": "misereri super :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 18,
+   "verse": 3,
+   "section": 29,
+   "clause": "pauere a : 'a facie nominis mei pauebat' Mal. 2. 5. pauere ad : 'pauebant ad Dominum' (shall come with fear unto the Lord R.V.) Hos. 3. 5. pauere super : 'super quo pauet anima uestra' Ezek. 24. 21. pertinere de : 'de nobis pertinebit' II Sam. (II Reg.) 18. 3",
+   "quotes": [
+    "a facie nominis mei pauebat",
+    "pauebant ad Dominum",
+    "super quo pauet anima uestra",
+    "de nobis pertinebit"
+   ],
+   "lead": "pauere a :",
    "in": "text"
   },
   {
@@ -5570,6 +6112,18 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 22,
+   "verse": 25,
+   "section": 32,
+   "clause": "'cubiculum intra cubiculum' (= an inner chamber) I Kgs. (III Reg.) 22. 25.",
+   "quotes": [
+    "cubiculum intra cubiculum"
+   ],
+   "lead": "Repetition with Prepositions :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 6,
    "verse": 7,
@@ -5579,6 +6133,19 @@
     "ab homine usque ad animantia"
    ],
    "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 9,
+   "verse": 26,
+   "section": 32,
+   "clause": "see also Ps. 132 (131). 3, 4, Mk. 8. 12. On the other hand 'si non . . . reddam tibi' (= I will surely require thee) II Kgs. (IV Reg.) 9. 26, 'nisi domus multae desertae fuerint' (= of a truth many houses shall be deserted) Isa. 5. 9, cf. Jer. 49. 20. This si is not really a negative.",
+   "quotes": [
+    "si non . . . reddam tibi",
+    "nisi domus multae desertae fuerint"
+   ],
+   "lead": "si. In emphatic speech, especially in adjurations, si = a negative, si . . . non or nisi = an affirmative:",
    "in": "text"
   },
   {
@@ -5602,6 +6169,16 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 21,
+   "verse": 4,
+   "section": 40,
+   "clause": "ib. 6. 5), laicus (I Sam. = I Reg. 21. 4",
+   "quotes": [],
+   "lead": "These are not very numerous, but the following may be noted:",
+   "in": "text"
+  },
+  {
    "text": "leviticus",
    "chapter": 20,
    "verse": 27,
@@ -5615,6 +6192,16 @@
    "text": "genesis",
    "chapter": 30,
    "verse": 32,
+   "section": 41,
+   "clause": "see Gen. 30. 32, II Sam. (II Reg.) 5. 23, Judith 13. 12, I Macc. 13. 20, Ecclus. 29. 25, 43. 13",
+   "quotes": [],
+   "lead": "More frequent than adjectives:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 5,
+   "verse": 23,
    "section": 41,
    "clause": "see Gen. 30. 32, II Sam. (II Reg.) 5. 23, Judith 13. 12, I Macc. 13. 20, Ecclus. 29. 25, 43. 13",
    "quotes": [],
@@ -5652,6 +6239,19 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 15,
+   "verse": 23,
+   "section": 44,
+   "clause": "The ‘accusative of respect’ is also found: ‘doluit pedes’ I Kgs. (III Reg.) 15. 23 (= he was diseased in his feet)",
+   "quotes": [
+    "accusative of respect",
+    "doluit pedes"
+   ],
+   "lead": "The ‘accusative of respect’ is also found:",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 1,
    "verse": 15,
@@ -5677,6 +6277,20 @@
    "text": "deuteronomy",
    "chapter": 15,
    "verse": 6,
+   "section": 47,
+   "clause": "16. 13, Dt. 15. 6, Jud. 8. 22. 23, Isa. 54. 5, Jer. 31. 32 etc. implere : 1 'implebo montes eius occisorum suorum' Ezek. 35. 8, 'impletae sunt nuptiae discumbentium' Mt. 22. 10. regnare : 'regnabit Dominus illorum' Wisd. (Sap.) 3. 8.",
+   "quotes": [
+    "implebo montes eius occisorum suorum",
+    "impletae sunt nuptiae discumbentium",
+    "regnabit Dominus illorum"
+   ],
+   "lead": "16. 13, Dt. 15. 6, Jud. 8. 22. 23, Isa. 54. 5, Jer. 31. 32 etc. implere :",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 8,
+   "verse": 22,
    "section": 47,
    "clause": "16. 13, Dt. 15. 6, Jud. 8. 22. 23, Isa. 54. 5, Jer. 31. 32 etc. implere : 1 'implebo montes eius occisorum suorum' Ezek. 35. 8, 'impletae sunt nuptiae discumbentium' Mt. 22. 10. regnare : 'regnabit Dominus illorum' Wisd. (Sap.) 3. 8.",
    "quotes": [
@@ -5720,6 +6334,18 @@
    "in": "text"
   },
   {
+   "text": "4-kings",
+   "chapter": 12,
+   "verse": 8,
+   "section": 50,
+   "clause": "(f) Infinitive after Prohibitions : 'prohibiti sunt accipere' II Kgs. (IV Reg.) 12. 8, 'uetati sunt . . . loqui Act. 16. 6 (= κωλυθέντες . . . λαλήσαι ).",
+   "quotes": [
+    "prohibiti sunt accipere"
+   ],
+   "lead": "(f) Infinitive after Prohibitions :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 11,
    "verse": 8,
@@ -5729,6 +6355,16 @@
     "cessauerunt aedificare ciuitatem"
    ],
    "lead": "The Vulgate follows the Greek in using the Present Participle instead of the Infinitive after verbs of ceasing and continuing:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 22,
+   "verse": 3,
+   "section": 62,
+   "clause": "§ 62. Masculine: (a) Agents in -sor , -tor , thus (of God) circumspector Ecclus. 7. 12, conspector 36. 19, eleuator II Sam. (II Reg.) 22. 3, operator Job 36. 3, Prov. 22. 2, proeliator Isa. 42. 13, redditor Ecclus. 5. 4, susceptor Ps. 3. 4 etc. Also, of men, ascensor Ex. 15. 1 etc. (= rider",
+   "quotes": [],
+   "lead": "Masculine:",
    "in": "text"
   },
   {
@@ -5796,11 +6432,51 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 7,
+   "verse": 26,
+   "section": 63,
+   "clause": "( f ) Abstracts in -do and -go : disertitudo Isa. 33. 19, grossitudo I Kgs. (III Reg.) 7. 26, Jer. 52. 21, inquietudo Judith 14. 9, nigredo Nah. 2. 10, pigredo Prov. 19. 15, pinguedo, putredo, salsugo.",
+   "quotes": [],
+   "lead": "( f ) Abstracts in -do and -go :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 6,
+   "verse": 19,
+   "section": 63,
+   "clause": "alligatura, assatura II Sam. (II Reg.) 6. 19, capillatura I Pet. 3. 3, combustura Lev. 13. 28, creatura, delatura, fixura Joh. 20. 25, laesura (= hurtfulness), ligatura, paratura II Chron. 5. 5, percussura, pressura, rasura.",
+   "quotes": [],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "leviticus",
    "chapter": 13,
    "verse": 28,
    "section": 63,
    "clause": "alligatura, assatura II Sam. (II Reg.) 6. 19, capillatura I Pet. 3. 3, combustura Lev. 13. 28, creatura, delatura, fixura Joh. 20. 25, laesura (= hurtfulness), ligatura, paratura II Chron. 5. 5, percussura, pressura, rasura.",
+   "quotes": [],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 7,
+   "verse": 2,
+   "section": 64,
+   "clause": "( l ) Other forms: cremium Ps. 102. 3 (101. 4), deambulacrum I Kgs. (III Reg.) 7. 2, fundibulum I Macc. 6. 51, gaudimonium Bar. 4. 34, sanctificium Ps. 78 (77). 69, uestibulum.",
+   "quotes": [],
+   "lead": "( l ) Other forms:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 17,
+   "section": 67,
+   "clause": "burdo (a mule) II Kgs. (IV Reg.) 5. 17, camus (a bridle), catta (a cat or weasel) Bar. 6. 21, cochlea (a winding staircase), expensa (a levy), framea (a sword), grossus, lamia (the night monster), papilio (a tent), 2 quaternio, refrigerium, sanctuarium, sarabala (hose) Dan. 3. 94, semicinctium (an apron",
    "quotes": [],
    "lead": "",
    "in": "text"
@@ -5823,6 +6499,56 @@
    "clause": "§ 71. Verbals in -atus , -itus : ceruicatus Ecclus. 16. 11, cordatus, crapulatus, disciplinatus, linguatus, muratus (= walled) Num. 13. 20, murratus (mingled with myrrh), rubricatus, timoratus (= εὐλαβής ) Lk. 2. 25, Act. 8. 2, uiratus (virtuous) Ecclus. 28. 19. In -itus : compeditus, ignitus, etc.",
    "quotes": [],
    "lead": "Verbals in -atus , -itus :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 23,
+   "verse": 23,
+   "section": 72,
+   "clause": "§ 72. Verbals in -arius , -orius , often used as nouns, denoting the follower of a trade or calling : administratorius Hebr. 1. 14, arcarius, auricularius (a secreto = a privy councillor) II Sam. (II Reg.) 23. 23, caementarius, focarius, plagiarius (kidnapper) I Tim. 1. 10, scenofactorius, stabularius.",
+   "quotes": [],
+   "lead": "Verbals in -arius , -orius , often used as nouns, denoting the follower of a trade or calling :",
+   "in": "text"
+  },
+  {
+   "text": "ruth",
+   "chapter": 1,
+   "verse": 12,
+   "section": 75,
+   "clause": "§ 75. Adjectives compounded with prepositions : cum : coequalis, commendaticius II Cor. 3. 1, complacitus Ps. 77. 7 (76. 8 complacitior), concorporalis Eph. 3. 6, condignus, conducticius I Mac. 6. 29, configuratus, conformis Rom. 8. 29, coniugalis Ruth 1. 12, consanguineus. per : perantiquus Jos. 9. 5, pergrandis Jos. 24. 26, perlucidus Apoc. 21. 21, permagnificus Esth. 2. 18, permodicus II Chron. 24. 24, perpaucus, persenilis Jos. 23. 1, perualidus Isa. 30. 14.",
+   "quotes": [],
+   "lead": "Adjectives compounded with prepositions :",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 9,
+   "verse": 5,
+   "section": 75,
+   "clause": "§ 75. Adjectives compounded with prepositions : cum : coequalis, commendaticius II Cor. 3. 1, complacitus Ps. 77. 7 (76. 8 complacitior), concorporalis Eph. 3. 6, condignus, conducticius I Mac. 6. 29, configuratus, conformis Rom. 8. 29, coniugalis Ruth 1. 12, consanguineus. per : perantiquus Jos. 9. 5, pergrandis Jos. 24. 26, perlucidus Apoc. 21. 21, permagnificus Esth. 2. 18, permodicus II Chron. 24. 24, perpaucus, persenilis Jos. 23. 1, perualidus Isa. 30. 14.",
+   "quotes": [],
+   "lead": "Adjectives compounded with prepositions :",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 24,
+   "verse": 26,
+   "section": 75,
+   "clause": "§ 75. Adjectives compounded with prepositions : cum : coequalis, commendaticius II Cor. 3. 1, complacitus Ps. 77. 7 (76. 8 complacitior), concorporalis Eph. 3. 6, condignus, conducticius I Mac. 6. 29, configuratus, conformis Rom. 8. 29, coniugalis Ruth 1. 12, consanguineus. per : perantiquus Jos. 9. 5, pergrandis Jos. 24. 26, perlucidus Apoc. 21. 21, permagnificus Esth. 2. 18, permodicus II Chron. 24. 24, perpaucus, persenilis Jos. 23. 1, perualidus Isa. 30. 14.",
+   "quotes": [],
+   "lead": "Adjectives compounded with prepositions :",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 23,
+   "verse": 1,
+   "section": 75,
+   "clause": "§ 75. Adjectives compounded with prepositions : cum : coequalis, commendaticius II Cor. 3. 1, complacitus Ps. 77. 7 (76. 8 complacitior), concorporalis Eph. 3. 6, condignus, conducticius I Mac. 6. 29, configuratus, conformis Rom. 8. 29, coniugalis Ruth 1. 12, consanguineus. per : perantiquus Jos. 9. 5, pergrandis Jos. 24. 26, perlucidus Apoc. 21. 21, permagnificus Esth. 2. 18, permodicus II Chron. 24. 24, perpaucus, persenilis Jos. 23. 1, perualidus Isa. 30. 14.",
+   "quotes": [],
+   "lead": "Adjectives compounded with prepositions :",
    "in": "text"
   },
   {
@@ -5851,6 +6577,16 @@
    "text": "genesis",
    "chapter": 29,
    "verse": 2,
+   "section": 80,
+   "clause": "ad : adaquare Gen. 29. 2, addecimare I Kgs. (III Reg.) 8. 15, adimplere, adleuiare, adpretiare, adpropiare, adproximare Ps. 32. 10 (31. 9), adunare.",
+   "quotes": [],
+   "lead": "ad :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 8,
+   "verse": 15,
    "section": 80,
    "clause": "ad : adaquare Gen. 29. 2, addecimare I Kgs. (III Reg.) 8. 15, adimplere, adleuiare, adpretiare, adpropiare, adproximare Ps. 32. 10 (31. 9), adunare.",
    "quotes": [],
@@ -5888,6 +6624,16 @@
    "in": "text"
   },
   {
+   "text": "2-kings",
+   "chapter": 6,
+   "verse": 16,
+   "section": 80,
+   "clause": "sub : subinferre II Pet. 1. 5, subintrare, sublimare, subnauigare Act. 27. 4, subneruare (= to hamstring), subsannare (= to laugh at), subsilire II Sam. (II Reg.) 6. 16.",
+   "quotes": [],
+   "lead": "sub :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 7,
    "verse": 13,
@@ -5900,6 +6646,18 @@
    "in": "text"
   },
   {
+   "text": "2-kings",
+   "chapter": 6,
+   "verse": 15,
+   "section": 83,
+   "clause": "iubilum = joyful shout : II Sam. (II Reg.) 6. 15.",
+   "quotes": [
+    "iubilum"
+   ],
+   "lead": "iubilum = joyful shout :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 7,
    "verse": 4,
@@ -5908,6 +6666,57 @@
    "quotes": [
     "stabulum",
     "substantia"
+   ],
+   "lead": "redemptor = redeemer (Hebr. gō'ēl ):",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 18,
+   "verse": 18,
+   "section": 83,
+   "clause": "= goods, possessions: Lk. 8. 43, 15. 12 etc. susceptor = helper (frequent in Pss.). testamentum = covenant. testimonium = witness, often used of the ark and of the tabernacle. titulus = monument (in Old Test.) II Sam. (II Reg.) 18. 18. traductio = reproof: Wisd. (Sap.) 2. 14 etc., and so the verb = to expose to reproach: Mt. 1. 19, Col. 2. 15. uacuitas = leisure, indolence: Wisd. (Sap.) 13. 13. uirga = rod, sceptre. uirtus = power, army",
+   "quotes": [
+    "susceptor",
+    "testamentum",
+    "testimonium",
+    "titulus",
+    "traductio",
+    "uacuitas",
+    "uirga",
+    "uirtus"
+   ],
+   "lead": "redemptor = redeemer (Hebr. gō'ēl ):",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 5,
+   "verse": 13,
+   "section": 83,
+   "clause": "cf. Ps. 68. 18 (67. 19) etc. desiderium = thing desired: Ps. 21 (20). 3, 78. 30 (77. 29). indictio = men forming a levy: I Kgs. (III Reg.) 5. 13, 14. obligatio = bond: Act. 8. 23. sanctificatio = sanctuary: Ps. 114 (113). 2. transmigratio = captives: Ezek. 3. 11, 15 etc. Abstract nouns are constantly used in the Plural—especially in the Pss.—to denote concrete instances",
+   "quotes": [
+    "desiderium",
+    "indictio",
+    "obligatio",
+    "sanctificatio",
+    "transmigratio"
+   ],
+   "lead": "redemptor = redeemer (Hebr. gō'ēl ):",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 5,
+   "verse": 14,
+   "section": 83,
+   "clause": "cf. Ps. 68. 18 (67. 19) etc. desiderium = thing desired: Ps. 21 (20). 3, 78. 30 (77. 29). indictio = men forming a levy: I Kgs. (III Reg.) 5. 13, 14. obligatio = bond: Act. 8. 23. sanctificatio = sanctuary: Ps. 114 (113). 2. transmigratio = captives: Ezek. 3. 11, 15 etc. Abstract nouns are constantly used in the Plural—especially in the Pss.—to denote concrete instances",
+   "quotes": [
+    "desiderium",
+    "indictio",
+    "obligatio",
+    "sanctificatio",
+    "transmigratio"
    ],
    "lead": "redemptor = redeemer (Hebr. gō'ēl ):",
    "in": "text"
@@ -5953,6 +6762,27 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 23,
+   "verse": 13,
+   "section": 85,
+   "clause": "(4) permit: Mt. 3. 15. dissimulare = forbear: I Sam. (I Reg.) 23. 13. dormire = die: I Cor. 7. 39 etc. emendare = chastise (παιδεύειν): Lk. 23. 16. eructare = utter: Pss., and Mt. 13. 35. euacuare = bring to naught: Rom. 3. 3. festinare = strive: Hebr. 4. 11. intendere = look on, regard. meditari = imagine (with acc.) mittere = put (Fr. mettre )",
+   "quotes": [
+    "dissimulare",
+    "dormire",
+    "emendare",
+    "eructare",
+    "euacuare",
+    "festinare",
+    "intendere",
+    "meditari",
+    "mittere",
+    "mettre"
+   ],
+   "lead": "deferre = respect, defer to:",
+   "in": "text"
+  },
+  {
    "text": "deuteronomy",
    "chapter": 24,
    "verse": 6,
@@ -5975,6 +6805,26 @@
   {
    "text": "genesis",
    "chapter": 4,
+   "verse": 1,
+   "section": 85,
+   "clause": "also = cast 1 : Mt. 22. 13. nubere = marry (general). opponere = take in pledge: Dt. 24. 6. peregrinari ( in ) = take strangely, be surprised at: I Pet. 4. 12. perire : be lost. possidere = acquire: Gen. 4. 1, Lk. 18. 12. praeterire = pass by: Mt. 24. 35, Lk. 10. 31. regnare = become king: II Kgs. (IV Reg.) 12. 1. retinere = keep in mind: II Thess. 2. 5. silere = rest Lk. 23. 56",
+   "quotes": [
+    "nubere",
+    "opponere",
+    "peregrinari",
+    "perire",
+    "possidere",
+    "praeterire",
+    "regnare",
+    "retinere",
+    "silere"
+   ],
+   "lead": "deferre = respect, defer to:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 12,
    "verse": 1,
    "section": 85,
    "clause": "also = cast 1 : Mt. 22. 13. nubere = marry (general). opponere = take in pledge: Dt. 24. 6. peregrinari ( in ) = take strangely, be surprised at: I Pet. 4. 12. perire : be lost. possidere = acquire: Gen. 4. 1, Lk. 18. 12. praeterire = pass by: Mt. 24. 35, Lk. 10. 31. regnare = become king: II Kgs. (IV Reg.) 12. 1. retinere = keep in mind: II Thess. 2. 5. silere = rest Lk. 23. 56",
@@ -6153,6 +7003,80 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 16,
+   "verse": 19,
+   "section": 86,
+   "clause": "elongare = be far: Ps. 55. 7 (54. 8). mediare : Joh. 7. 14. prosperare : Ps. 118 (117). 25. recordari ( aduersum ): Neh. (II Esdr.) 13. 29. retardare : Ecclus. 16. 14, 51. 32. (b) Intransitives as transitives: complacere : Ps. 35 (34). 14. emanare : Jac. 3. 11 (emanat . . . aquam). germinare : Gen. 1. 11, 3. 18 etc. pluere : Ex. 9. 18, 23, Lk. 17. 29 etc. potare : Ps. 36. 8 (35. 9), Apoc. 14. 8 etc. reclinare : Judg. 16. 19, Mt. 8. 20, Lk. 2. 7. transmigrare : Lam. 4. 22. tremere (sermones meos): Isa. 66. 2. (c) Personal as impersonal: capit = it is possible: Lk. 13. 33. complacet = it is a pleasant thing to: Ps. 40. 16 (39. 14), Lk. 12. 32 etc. (d) Impersonal as personal: paenitere : Mk. 1. 15, Apoc. 2. 21 etc. taedere : II Kgs. (IV Reg.) 10. 32, Mk. 14. 33. (e) Active as deponent, i. e. used in passive form with active meaning: certari : Ecclus. 11. 9. murmurari : Ex. 16. 8, Num. 14. 2. obscurari = hide: Ps. 139. 11 (138. 12). (f) Deponent used in active form: gratificare : Eph. 1. 6. lamentare : Mt. 11. 17, Lk. 7. 32. (g) Deponent with passive meaning: admirari = be admired: Ecclus 24. 3. consolari : II Sam. (II Reg.) 13. 39, Ps. 77. 2 (76. 3) etc. demoliri : Ezek. 6. 6, Joel 1. 17, 2. 8.",
+   "quotes": [
+    "elongare",
+    "mediare",
+    "prosperare",
+    "recordari",
+    "aduersum",
+    "retardare",
+    "complacere",
+    "emanare",
+    "germinare",
+    "pluere",
+    "potare",
+    "reclinare",
+    "transmigrare",
+    "tremere",
+    "capit",
+    "complacet",
+    "paenitere",
+    "taedere",
+    "certari",
+    "murmurari",
+    "obscurari",
+    "gratificare",
+    "lamentare",
+    "admirari",
+    "consolari",
+    "demoliri"
+   ],
+   "lead": "elongare = be far:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 10,
+   "verse": 32,
+   "section": 86,
+   "clause": "elongare = be far: Ps. 55. 7 (54. 8). mediare : Joh. 7. 14. prosperare : Ps. 118 (117). 25. recordari ( aduersum ): Neh. (II Esdr.) 13. 29. retardare : Ecclus. 16. 14, 51. 32. (b) Intransitives as transitives: complacere : Ps. 35 (34). 14. emanare : Jac. 3. 11 (emanat . . . aquam). germinare : Gen. 1. 11, 3. 18 etc. pluere : Ex. 9. 18, 23, Lk. 17. 29 etc. potare : Ps. 36. 8 (35. 9), Apoc. 14. 8 etc. reclinare : Judg. 16. 19, Mt. 8. 20, Lk. 2. 7. transmigrare : Lam. 4. 22. tremere (sermones meos): Isa. 66. 2. (c) Personal as impersonal: capit = it is possible: Lk. 13. 33. complacet = it is a pleasant thing to: Ps. 40. 16 (39. 14), Lk. 12. 32 etc. (d) Impersonal as personal: paenitere : Mk. 1. 15, Apoc. 2. 21 etc. taedere : II Kgs. (IV Reg.) 10. 32, Mk. 14. 33. (e) Active as deponent, i. e. used in passive form with active meaning: certari : Ecclus. 11. 9. murmurari : Ex. 16. 8, Num. 14. 2. obscurari = hide: Ps. 139. 11 (138. 12). (f) Deponent used in active form: gratificare : Eph. 1. 6. lamentare : Mt. 11. 17, Lk. 7. 32. (g) Deponent with passive meaning: admirari = be admired: Ecclus 24. 3. consolari : II Sam. (II Reg.) 13. 39, Ps. 77. 2 (76. 3) etc. demoliri : Ezek. 6. 6, Joel 1. 17, 2. 8.",
+   "quotes": [
+    "elongare",
+    "mediare",
+    "prosperare",
+    "recordari",
+    "aduersum",
+    "retardare",
+    "complacere",
+    "emanare",
+    "germinare",
+    "pluere",
+    "potare",
+    "reclinare",
+    "transmigrare",
+    "tremere",
+    "capit",
+    "complacet",
+    "paenitere",
+    "taedere",
+    "certari",
+    "murmurari",
+    "obscurari",
+    "gratificare",
+    "lamentare",
+    "admirari",
+    "consolari",
+    "demoliri"
+   ],
+   "lead": "elongare = be far:",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 16,
    "verse": 8,
@@ -6193,6 +7117,43 @@
    "text": "numbers",
    "chapter": 14,
    "verse": 2,
+   "section": 86,
+   "clause": "elongare = be far: Ps. 55. 7 (54. 8). mediare : Joh. 7. 14. prosperare : Ps. 118 (117). 25. recordari ( aduersum ): Neh. (II Esdr.) 13. 29. retardare : Ecclus. 16. 14, 51. 32. (b) Intransitives as transitives: complacere : Ps. 35 (34). 14. emanare : Jac. 3. 11 (emanat . . . aquam). germinare : Gen. 1. 11, 3. 18 etc. pluere : Ex. 9. 18, 23, Lk. 17. 29 etc. potare : Ps. 36. 8 (35. 9), Apoc. 14. 8 etc. reclinare : Judg. 16. 19, Mt. 8. 20, Lk. 2. 7. transmigrare : Lam. 4. 22. tremere (sermones meos): Isa. 66. 2. (c) Personal as impersonal: capit = it is possible: Lk. 13. 33. complacet = it is a pleasant thing to: Ps. 40. 16 (39. 14), Lk. 12. 32 etc. (d) Impersonal as personal: paenitere : Mk. 1. 15, Apoc. 2. 21 etc. taedere : II Kgs. (IV Reg.) 10. 32, Mk. 14. 33. (e) Active as deponent, i. e. used in passive form with active meaning: certari : Ecclus. 11. 9. murmurari : Ex. 16. 8, Num. 14. 2. obscurari = hide: Ps. 139. 11 (138. 12). (f) Deponent used in active form: gratificare : Eph. 1. 6. lamentare : Mt. 11. 17, Lk. 7. 32. (g) Deponent with passive meaning: admirari = be admired: Ecclus 24. 3. consolari : II Sam. (II Reg.) 13. 39, Ps. 77. 2 (76. 3) etc. demoliri : Ezek. 6. 6, Joel 1. 17, 2. 8.",
+   "quotes": [
+    "elongare",
+    "mediare",
+    "prosperare",
+    "recordari",
+    "aduersum",
+    "retardare",
+    "complacere",
+    "emanare",
+    "germinare",
+    "pluere",
+    "potare",
+    "reclinare",
+    "transmigrare",
+    "tremere",
+    "capit",
+    "complacet",
+    "paenitere",
+    "taedere",
+    "certari",
+    "murmurari",
+    "obscurari",
+    "gratificare",
+    "lamentare",
+    "admirari",
+    "consolari",
+    "demoliri"
+   ],
+   "lead": "elongare = be far:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 13,
+   "verse": 39,
    "section": 86,
    "clause": "elongare = be far: Ps. 55. 7 (54. 8). mediare : Joh. 7. 14. prosperare : Ps. 118 (117). 25. recordari ( aduersum ): Neh. (II Esdr.) 13. 29. retardare : Ecclus. 16. 14, 51. 32. (b) Intransitives as transitives: complacere : Ps. 35 (34). 14. emanare : Jac. 3. 11 (emanat . . . aquam). germinare : Gen. 1. 11, 3. 18 etc. pluere : Ex. 9. 18, 23, Lk. 17. 29 etc. potare : Ps. 36. 8 (35. 9), Apoc. 14. 8 etc. reclinare : Judg. 16. 19, Mt. 8. 20, Lk. 2. 7. transmigrare : Lam. 4. 22. tremere (sermones meos): Isa. 66. 2. (c) Personal as impersonal: capit = it is possible: Lk. 13. 33. complacet = it is a pleasant thing to: Ps. 40. 16 (39. 14), Lk. 12. 32 etc. (d) Impersonal as personal: paenitere : Mk. 1. 15, Apoc. 2. 21 etc. taedere : II Kgs. (IV Reg.) 10. 32, Mk. 14. 33. (e) Active as deponent, i. e. used in passive form with active meaning: certari : Ecclus. 11. 9. murmurari : Ex. 16. 8, Num. 14. 2. obscurari = hide: Ps. 139. 11 (138. 12). (f) Deponent used in active form: gratificare : Eph. 1. 6. lamentare : Mt. 11. 17, Lk. 7. 32. (g) Deponent with passive meaning: admirari = be admired: Ecclus 24. 3. consolari : II Sam. (II Reg.) 13. 39, Ps. 77. 2 (76. 3) etc. demoliri : Ezek. 6. 6, Joel 1. 17, 2. 8.",
    "quotes": [
@@ -6275,6 +7236,18 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 9,
+   "verse": 19,
+   "section": 87,
+   "clause": "mane = to-morrow: I Sam. (I Reg.) 9. 19",
+   "quotes": [
+    "mane"
+   ],
+   "lead": "mane = to-morrow:",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 46,
    "verse": 7,
@@ -6321,6 +7294,50 @@
    "in": "text"
   },
   {
+   "text": "joshua",
+   "chapter": 10,
+   "verse": 28,
+   "section": 88,
+   "clause": "saltem with negative = ne . . . quidem: Jos. 10. 28, II Sam. (II Reg.) 13. 30.",
+   "quotes": [
+    "saltem"
+   ],
+   "lead": "saltem with negative = ne . . . quidem:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 13,
+   "verse": 30,
+   "section": 88,
+   "clause": "saltem with negative = ne . . . quidem: Jos. 10. 28, II Sam. (II Reg.) 13. 30.",
+   "quotes": [
+    "saltem"
+   ],
+   "lead": "saltem with negative = ne . . . quidem:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 6,
+   "verse": 19,
+   "section": 91,
+   "clause": "First for third : collyridam II Sam. (II Reg.) 6. 19",
+   "quotes": [],
+   "lead": "First for third :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 10,
+   "verse": 22,
+   "section": 91,
+   "clause": "pauos I Kgs. (III Reg.) 10. 22",
+   "quotes": [],
+   "lead": "Second for third :",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 27,
    "verse": 14,
@@ -6331,6 +7348,36 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 7,
+   "verse": 5,
+   "section": 93,
+   "clause": "conjugations are confused: e.g. second and third, attondent and -entur Ezek. 44. 20, Nah. 1. 12, lambuerunt, etc. Jud. 7. 5, 6, 7",
+   "quotes": [],
+   "lead": "conjugations are confused:",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 7,
+   "verse": 6,
+   "section": 93,
+   "clause": "conjugations are confused: e.g. second and third, attondent and -entur Ezek. 44. 20, Nah. 1. 12, lambuerunt, etc. Jud. 7. 5, 6, 7",
+   "quotes": [],
+   "lead": "conjugations are confused:",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 7,
+   "verse": 7,
+   "section": 93,
+   "clause": "conjugations are confused: e.g. second and third, attondent and -entur Ezek. 44. 20, Nah. 1. 12, lambuerunt, etc. Jud. 7. 5, 6, 7",
+   "quotes": [],
+   "lead": "conjugations are confused:",
+   "in": "text"
+  },
+  {
    "text": "leviticus",
    "chapter": 14,
    "verse": 42,
@@ -6338,6 +7385,26 @@
    "clause": "third and fourth, liniunt Ezek. 13. 11, 15, liniri Lev. 14. 42, accersire Act. 10. 22.",
    "quotes": [],
    "lead": "conjugations are confused:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 6,
+   "verse": 19,
+   "section": 93,
+   "clause": "frixus II Sam. (II Reg.) 6. 19, 17. 28, I Chron. 16. 3",
+   "quotes": [],
+   "lead": "Ecclus.",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 17,
+   "verse": 28,
+   "section": 93,
+   "clause": "frixus II Sam. (II Reg.) 6. 19, 17. 28, I Chron. 16. 3",
+   "quotes": [],
+   "lead": "Ecclus.",
    "in": "text"
   },
   {
@@ -6361,6 +7428,16 @@
    "in": "text"
   },
   {
+   "text": "ruth",
+   "chapter": 2,
+   "verse": 7,
+   "section": 95,
+   "clause": "de mane Ruth 2. 7, e contra, in palam, in semel (Hebr. 10. 10), in super, etc.",
+   "quotes": [],
+   "lead": "de foris, de intus, de retro, de super, de sursum, etc.; de mane Ruth 2. 7, e contra, in palam, in semel (Hebr. 10. 10), in super, etc.; uisa . . . turba de retro et ab ante Bar. 6. 5.",
+   "in": "text"
+  },
+  {
    "text": "leviticus",
    "chapter": 16,
    "verse": 27,
@@ -6370,6 +7447,42 @@
     "foras"
    ],
    "lead": "foras :",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 23,
+   "verse": 6,
+   "section": 95,
+   "clause": "foras : f. castra Lev. 16. 27, f. Hierusalem II Kgs. (IV Reg.) 23. 6, f. portam Ezek. 47. 2, Act. 16. 13, f. ciuitatem Act. 21. 5.",
+   "quotes": [
+    "foras"
+   ],
+   "lead": "foras :",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 23,
+   "verse": 4,
+   "section": 95,
+   "clause": "foris : f. Hierusalem II Kgs. (IV Reg.) 23. 4, Neh. (II Esdr.) 13. 20 and often, f. templum Apoc. 11. 2. The distinction between foras and foris is not always observed.",
+   "quotes": [
+    "foris"
+   ],
+   "lead": "foris :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 22,
+   "verse": 37,
+   "section": 95,
+   "clause": "subtus : s. me II Sam. (II Reg.) 22. 37, subtus altare, etc. Apoc. 6. 9 and often.",
+   "quotes": [
+    "subtus"
+   ],
+   "lead": "subtus :",
    "in": "text"
   },
   {
@@ -6403,6 +7516,16 @@
    "in": "text"
   },
   {
+   "text": "2-kings",
+   "chapter": 14,
+   "verse": 6,
+   "section": 96,
+   "clause": "so, rixati sunt aduersum se, II Sam. (II Reg.) 14. 6.",
+   "quotes": [],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 14,
    "verse": 20,
@@ -6423,6 +7546,26 @@
    "in": "text"
   },
   {
+   "text": "4-kings",
+   "chapter": 3,
+   "verse": 23,
+   "section": 96,
+   "clause": "caesi sunt mutuo, II Kgs. (IV Reg.) 3. 23",
+   "quotes": [],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 14,
+   "verse": 6,
+   "section": 96,
+   "clause": "percussit alter alterum (of two brothers), II Sam. (II Reg.) 14. 6 (see above)",
+   "quotes": [],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "numbers",
    "chapter": 14,
    "verse": 4,
@@ -6430,6 +7573,18 @@
    "clause": "alter ad alterum, dixerunt, Num. 14. 4",
    "quotes": [],
    "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 13,
+   "verse": 36,
+   "section": 97,
+   "clause": "leuauerunt uocem suam II Sam. (II Reg.) 13. 36, Act. 14. 11, 22. 22",
+   "quotes": [
+    "leuauerunt uocem suam"
+   ],
+   "lead": "leuauerunt uocem suam II Sam. (II Reg.) 13. 36, Act. 14. 11, 22. 22; quaestiones quasdam de sua superstitione Act. 25. 19.",
    "in": "text"
   },
   {
@@ -6442,6 +7597,42 @@
     "the honour due to me",
     "the fear of you",
     "in remembrance of me"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 22,
+   "verse": 20,
+   "section": 99,
+   "clause": "unus and alius I Kgs. (III Reg.) 22. 20",
+   "quotes": [
+    "unus",
+    "unus",
+    "unus",
+    "alius",
+    "unus",
+    "alius",
+    "alius"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 1,
+   "section": 99,
+   "clause": "unus and alter II Sam. (II Reg.) 12. 1, Lk. 18. 10 etc.",
+   "quotes": [
+    "alter",
+    "unus",
+    "unus",
+    "unus",
+    "unus",
+    "alter",
+    "alter"
    ],
    "lead": "",
    "in": "text"
@@ -6463,6 +7654,19 @@
    "text": "numbers",
    "chapter": 24,
    "verse": 9,
+   "section": 102,
+   "clause": "1 Nullus, nullum for nemo, nihil : nullus te prohibere poterit Gen. 23. 6, cf. Num. 24. 9, Jud. 3. 25",
+   "quotes": [
+    "Nullus, nullum",
+    "nemo, nihil"
+   ],
+   "lead": "Nullus, nullum for nemo, nihil :",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 3,
+   "verse": 25,
    "section": 102,
    "clause": "1 Nullus, nullum for nemo, nihil : nullus te prohibere poterit Gen. 23. 6, cf. Num. 24. 9, Jud. 3. 25",
    "quotes": [
@@ -6499,6 +7703,19 @@
    "in": "text"
   },
   {
+   "text": "2-kings",
+   "chapter": 18,
+   "verse": 10,
+   "section": 106,
+   "clause": "II Sam. (II Reg.) 18. 10 ' an oak ' A.V., R.V., and Douay, Vulg. ' quercu'.",
+   "quotes": [
+    "an oak",
+    "quercu"
+   ],
+   "lead": "Among passages in the original having the article we find :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 24,
    "verse": 24,
@@ -6511,6 +7728,44 @@
    ],
    "lead": "Reproduced by ipse :",
    "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 20,
+   "verse": 28,
+   "section": 107,
+   "clause": "I Kgs. (III Reg.) 20. 28, 'unus uir Dei' = 'a man of God'",
+   "quotes": [
+    "unus uir Dei",
+    "a man of God"
+   ],
+   "lead": "So Lk. 9. 19, 'propheta unus' = προφήτης τις ; 1 Dan. 6. 17, 'allatusque est lapis unus' = 'a stone was brought'; II Chron.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 49,
+   "section": 107,
+   "clause": "I Sam. (I Reg.) 17. 49 'unum lapidem' = 'a stone'.",
+   "quotes": [
+    "unum lapidem",
+    "a stone"
+   ],
+   "lead": "So Lk. 9. 19, 'propheta unus' = προφήτης τις ; 1 Dan. 6. 17, 'allatusque est lapis unus' = 'a stone was brought'; II Chron.",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 1,
+   "verse": 1,
+   "section": 107,
+   "clause": "' But I Sam. (I Reg.) 1. 1 'uir unus' is deceptive",
+   "quotes": [
+    "But I Sam. (I Reg.) 1. 1"
+   ],
+   "lead": "",
+   "in": "footnote"
   },
   {
    "text": "genesis",
@@ -6573,6 +7828,31 @@
    "in": "text"
   },
   {
+   "text": "4-kings",
+   "chapter": 10,
+   "verse": 32,
+   "section": 109,
+   "clause": "used personally 'caepit taedere' Num. 21. 4, II Kgs. (IV Reg.) 10. 32, cf. Mk. 14. 33.",
+   "quotes": [
+    "caepit taedere"
+   ],
+   "lead": "taedet :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 4,
+   "verse": 10,
+   "section": 109,
+   "clause": "in the Old Test. notice II Sam. (II Reg.) 4. 10 'cui oportebat mercedem dare pro nuntio' = which was the fitting reward for his tidings ('which was the reward I gave him for his tidings' R.V.)",
+   "quotes": [
+    "cui oportebat mercedem dare pro nuntio",
+    "which was the reward I gave him for his tidings"
+   ],
+   "lead": "oportet :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 16,
    "verse": 6,
@@ -6583,6 +7863,18 @@
     "passer quo libet uadens"
    ],
    "lead": "libet :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 19,
+   "verse": 31,
+   "section": 110,
+   "clause": "and traducere : 'Berzellai . . . traduxit regem Iordanem' II Sam. (II Reg.) 19. 31.",
+   "quotes": [
+    "Berzellai . . . traduxit regem Iordanem"
+   ],
+   "lead": "and traducere :",
    "in": "text"
   },
   {
@@ -6622,6 +7914,18 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 6,
+   "verse": 22,
+   "section": 111,
+   "clause": "ad (1) = to : 'facie ad faciem' Ex. 33. 11, Dt. 5. 4, Jud. 6. 22, I Cor. 13. 12",
+   "quotes": [
+    "facie ad faciem"
+   ],
+   "lead": "ad (1) = to :",
+   "in": "text"
+  },
+  {
    "text": "numbers",
    "chapter": 12,
    "verse": 8,
@@ -6631,6 +7935,30 @@
     "os ad os"
    ],
    "lead": "ad (1) = to :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 12,
+   "verse": 22,
+   "section": 111,
+   "clause": "'factus est sermo Domini ad' I Kgs. (III Reg.) 12. 22, Jerem. 13. 3, Ezek. 6. 1 and often",
+   "quotes": [
+    "factus est sermo Domini ad"
+   ],
+   "lead": "ad (1) = to :",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 16,
+   "verse": 14,
+   "section": 111,
+   "clause": "'ad aquilonem' = on the north, II Kgs. (IV Reg.) 16. 14",
+   "quotes": [
+    "ad aquilonem"
+   ],
+   "lead": "(2) = towards :",
    "in": "text"
   },
   {
@@ -6694,6 +8022,30 @@
    "in": "text"
   },
   {
+   "text": "joshua",
+   "chapter": 14,
+   "verse": 11,
+   "section": 111,
+   "clause": "cf. § 129 (1): 'ad bellandum' Dt. 3. 1, 20. 9, Jos. 14. 11, Jud. 5. 14, etc.",
+   "quotes": [
+    "ad bellandum"
+   ],
+   "lead": "(6) = for (purpose), esp. with gerund; cf. § 129 (1):",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 5,
+   "verse": 14,
+   "section": 111,
+   "clause": "cf. § 129 (1): 'ad bellandum' Dt. 3. 1, 20. 9, Jos. 14. 11, Jud. 5. 14, etc.",
+   "quotes": [
+    "ad bellandum"
+   ],
+   "lead": "(6) = for (purpose), esp. with gerund; cf. § 129 (1):",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 30,
    "verse": 38,
@@ -6722,6 +8074,20 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 18,
+   "verse": 15,
+   "section": 111,
+   "clause": "ante = before , used more frequently of place than of time, especially in the Hebraisms ante faciem, ante oculos, ante uultum , etc. Gen. 30. 38, Ex. 34. 11, I Kgs. (III Reg.) 18. 15 etc.",
+   "quotes": [
+    "ante",
+    "before",
+    "ante faciem, ante oculos, ante uultum"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "deuteronomy",
    "chapter": 4,
    "verse": 42,
@@ -6731,6 +8097,18 @@
     "ante unum et alterum diem"
    ],
    "lead": "Of time:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 27,
+   "verse": 10,
+   "section": 111,
+   "clause": "cf. contrarius , § 84: 'contra meridiem' I Sam. (I Reg.) 27. 10, cf. Dt. 2. 3, Num. 24. 1, Dan. 6. 10",
+   "quotes": [
+    "contra meridiem"
+   ],
+   "lead": "contra = against, opposite to, towards ; cf. contrarius , § 84:",
    "in": "text"
   },
   {
@@ -6753,6 +8131,19 @@
    "clause": "cf. contrarius , § 84: 'contra meridiem' I Sam. (I Reg.) 27. 10, cf. Dt. 2. 3, Num. 24. 1, Dan. 6. 10",
    "quotes": [
     "contra meridiem"
+   ],
+   "lead": "contra = against, opposite to, towards ; cf. contrarius , § 84:",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 8,
+   "verse": 44,
+   "section": 111,
+   "clause": "1 in I Kgs. (III Reg.) 8. 44 the first contra = against, the others = towards",
+   "quotes": [
+    "contra",
+    "contra"
    ],
    "lead": "contra = against, opposite to, towards ; cf. contrarius , § 84:",
    "in": "text"
@@ -6818,6 +8209,18 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 22,
+   "section": 111,
+   "clause": "'erga fratres tuos' (with regard to) Gen. 37. 14, I Sam. (I Reg.) 17. 22",
+   "quotes": [
+    "erga fratres tuos"
+   ],
+   "lead": "erga = towards, with a view to :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 19,
    "verse": 17,
@@ -6854,6 +8257,18 @@
     "within",
     "intra portas",
     "extra"
+   ],
+   "lead": "intra = within :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 20,
+   "verse": 22,
+   "section": 111,
+   "clause": "'intra te' (on this side of thee) I Sam. (I Reg.) 20. 22.",
+   "quotes": [
+    "intra te"
    ],
    "lead": "intra = within :",
    "in": "text"
@@ -6897,6 +8312,18 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 21,
+   "verse": 11,
+   "section": 111,
+   "clause": "'per choros' (in dances) I Sam. (I Reg.) 21. 11.",
+   "quotes": [
+    "per choros"
+   ],
+   "lead": "(3) = by means of:",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 22,
    "verse": 16,
@@ -6906,6 +8333,30 @@
     "per memetipsum iuraui"
    ],
    "lead": "(4) In oaths:",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 22,
+   "verse": 19,
+   "section": 111,
+   "clause": "'altari praeter altare Domini' Jos. 22. 19, 29.",
+   "quotes": [
+    "altari praeter altare Domini"
+   ],
+   "lead": "(2) = besides, in addition to:",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 22,
+   "verse": 29,
+   "section": 111,
+   "clause": "'altari praeter altare Domini' Jos. 22. 19, 29.",
+   "quotes": [
+    "altari praeter altare Domini"
+   ],
+   "lead": "(2) = besides, in addition to:",
    "in": "text"
   },
   {
@@ -6942,6 +8393,19 @@
     "secundum speciem suam"
    ],
    "lead": "secundum (lit. 'following'):",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 14,
+   "verse": 1,
+   "section": 111,
+   "clause": "trans = across : 'trans locum illum' I Sam. (I Reg.) 14. 1, cf. Mt. 14. 22, Joh. 6. 22: 'trans Iordanen' (beyond Jordan) Dt. 1. 1, 5, 3. 8, Num. 22. 1, Jos. 9. 1.",
+   "quotes": [
+    "trans locum illum",
+    "trans Iordanen"
+   ],
+   "lead": "trans = across :",
    "in": "text"
   },
   {
@@ -6997,6 +8461,47 @@
    "in": "text"
   },
   {
+   "text": "joshua",
+   "chapter": 9,
+   "verse": 1,
+   "section": 111,
+   "clause": "trans = across : 'trans locum illum' I Sam. (I Reg.) 14. 1, cf. Mt. 14. 22, Joh. 6. 22: 'trans Iordanen' (beyond Jordan) Dt. 1. 1, 5, 3. 8, Num. 22. 1, Jos. 9. 1.",
+   "quotes": [
+    "trans locum illum",
+    "trans Iordanen"
+   ],
+   "lead": "trans = across :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 20,
+   "verse": 22,
+   "section": 111,
+   "clause": "ultra = beyond : 'ultra te' I Sam. (I Reg.) 20. 22, 37, 'ultra uos' II Cor. 10. 16, 'ultra uires' Ex. 18. 18",
+   "quotes": [
+    "ultra te",
+    "ultra uos",
+    "ultra uires"
+   ],
+   "lead": "ultra = beyond :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 20,
+   "verse": 37,
+   "section": 111,
+   "clause": "ultra = beyond : 'ultra te' I Sam. (I Reg.) 20. 22, 37, 'ultra uos' II Cor. 10. 16, 'ultra uires' Ex. 18. 18",
+   "quotes": [
+    "ultra te",
+    "ultra uos",
+    "ultra uires"
+   ],
+   "lead": "ultra = beyond :",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 18,
    "verse": 18,
@@ -7034,6 +8539,16 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 7,
+   "verse": 8,
+   "section": 111,
+   "clause": "sometimes used as adverb, Dt. 28. 13, Jud. 7. 8, Isa. 14. 9, Amos 2. 9.",
+   "quotes": [],
+   "lead": "subter = under :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 1,
    "verse": 7,
@@ -7041,6 +8556,18 @@
    "clause": "super = over , upon (strictly of motion, but also of rest): 'super firmamentum' Gen. 1. 7, cf. Mt. 24. 2, Joh. 19. 19",
    "quotes": [
     "super firmamentum"
+   ],
+   "lead": "super = over , upon (strictly of motion, but also of rest):",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 4,
+   "verse": 7,
+   "section": 111,
+   "clause": "Expressing authority over: 'super omnem Isr.' I Kgs. (III Reg.) 4. 7. cf. 11. 28, Act. 6. 3, Phil. 2. 9, Hebr. 2. 7.",
+   "quotes": [
+    "super omnem Isr."
    ],
    "lead": "super = over , upon (strictly of motion, but also of rest):",
    "in": "text"
@@ -7096,6 +8623,32 @@
    "in": "text"
   },
   {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 18,
+   "section": 112,
+   "clause": "so ministrare Mt. 4. 11, seruire Rom. 1. 9, apparere Act. 1. 3, praecipere 1. 2, uideri I Cor. 15. 5, 8, ignoscere with dat. of person Dt. 29. 20, II Kgs. (IV Reg.) 5. 18, of thing Jos. 24. 19, Wisd. (Sap.) 13. 8, Dan. 4. 24, nocere (but also accus., see Num. 5. 19, Lk. 4. 35, Act. 7. 26",
+   "quotes": [
+    "person",
+    "thing"
+   ],
+   "lead": "2. With verbs which have no direct object:",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 24,
+   "verse": 19,
+   "section": 112,
+   "clause": "so ministrare Mt. 4. 11, seruire Rom. 1. 9, apparere Act. 1. 3, praecipere 1. 2, uideri I Cor. 15. 5, 8, ignoscere with dat. of person Dt. 29. 20, II Kgs. (IV Reg.) 5. 18, of thing Jos. 24. 19, Wisd. (Sap.) 13. 8, Dan. 4. 24, nocere (but also accus., see Num. 5. 19, Lk. 4. 35, Act. 7. 26",
+   "quotes": [
+    "person",
+    "thing"
+   ],
+   "lead": "2. With verbs which have no direct object:",
+   "in": "text"
+  },
+  {
    "text": "numbers",
    "chapter": 5,
    "verse": 19,
@@ -7116,6 +8669,25 @@
    "clause": "18. 10), nubere Lev. 21. 3 (used for marriage in general, e. g. Mt. 22. 30, I Cor. 7. 9, I Tim. 4. 3), studere Prov. 23. 30: expedit (frequently)",
    "quotes": [],
    "lead": "18. 10), nubere Lev. 21. 3 (used for marriage in general, e. g. Mt. 22. 30, I Cor. 7. 9, I Tim. 4. 3), studere Prov. 23. 30:",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 21,
+   "verse": 2,
+   "section": 112,
+   "clause": "4. Dative after adjectives, often as predicatives with esse : 'tolerabilius erit terrae Sodomorum' Mt. 10. 15. 'carissimum . . . mihi' Philem. 16, 'commodius tibi' I Kgs. (III Reg.) 21. 2, 'nihil mihi conscius sum' I Cor. 4. 4, 'nimium credulus uerbis coniugis' Gen. 39. 19, 2 'inimica est Deo' Rom. 8. 7, 3 'uictui necessaria' Gen. 42. 7, 'paria Deo sentire'",
+   "quotes": [
+    "tolerabilius erit terrae Sodomorum",
+    "carissimum . . . mihi",
+    "commodius tibi",
+    "nihil mihi conscius sum",
+    "nimium credulus uerbis coniugis",
+    "inimica est Deo",
+    "uictui necessaria",
+    "paria Deo sentire"
+   ],
+   "lead": "4. Dative after adjectives, often as predicatives with esse :",
    "in": "text"
   },
   {
@@ -7173,6 +8745,20 @@
     "paria Deo sentire"
    ],
    "lead": "4. Dative after adjectives, often as predicatives with esse :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 19,
+   "verse": 42,
+   "section": 112,
+   "clause": "II Macc. 9. 12, 'mihi proprior est rex' II Sam. (II Reg.) 19. 42, 'his qui ei proximi sunt' Num. 27. 11, cf. Dt. 1. 7, Hebr. 6. 8, 'prope est Dominus omnibus inuocantibus eum' Ps. 145 (144). 18, cf. Jer. 12. 2",
+   "quotes": [
+    "mihi proprior est rex",
+    "his qui ei proximi sunt",
+    "prope est Dominus omnibus inuocantibus eum"
+   ],
+   "lead": "",
    "in": "text"
   },
   {
@@ -7315,6 +8901,44 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 18,
+   "verse": 19,
+   "section": 113,
+   "clause": "'in monte Carmeli' I Kgs. (III Reg.) 18. 19",
+   "quotes": [
+    "in monte Carmeli"
+   ],
+   "lead": "This Genitive is found with names of places, where, in classical usage, the second noun would be in the same case as the first:",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 15,
+   "verse": 5,
+   "section": 113,
+   "clause": "‘Iordanis fluuium’ Jos. 15. 5, cf. Jud. 7. 25 (but ‘in Iordane flumine’ is the right reading in Mk. 1. 5",
+   "quotes": [
+    "Iordanis fluuium",
+    "in Iordane flumine"
+   ],
+   "lead": "‘Iordanis fluuium’ Jos. 15. 5, cf. Jud. 7. 25 (but ‘in Iordane flumine’ is the right reading in Mk. 1. 5; also ‘ab urbe Roma’ I Macc. 7. 1, 15. 15).",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 7,
+   "verse": 25,
+   "section": 113,
+   "clause": "‘Iordanis fluuium’ Jos. 15. 5, cf. Jud. 7. 25 (but ‘in Iordane flumine’ is the right reading in Mk. 1. 5",
+   "quotes": [
+    "Iordanis fluuium",
+    "in Iordane flumine"
+   ],
+   "lead": "‘Iordanis fluuium’ Jos. 15. 5, cf. Jud. 7. 25 (but ‘in Iordane flumine’ is the right reading in Mk. 1. 5; also ‘ab urbe Roma’ I Macc. 7. 1, 15. 15).",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 12,
    "verse": 29,
@@ -7323,6 +8947,18 @@
    "quotes": [
     "in noctis medio",
     "media nocte"
+   ],
+   "lead": "So, too, the Genitive is used after medius , extremus , etc., which in classical Latin are treated as simple adjectives:",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 15,
+   "verse": 5,
+   "section": 113,
+   "clause": "‘extrema Iordanis’ Jos. 15. 5",
+   "quotes": [
+    "extrema Iordanis"
    ],
    "lead": "So, too, the Genitive is used after medius , extremus , etc., which in classical Latin are treated as simple adjectives:",
    "in": "text"
@@ -7360,6 +8996,18 @@
    "quotes": [
     "nocte",
     "quarta uigilia noctis"
+   ],
+   "lead": "Time (including not only when , but also how long ):",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 3,
+   "verse": 8,
+   "section": 115,
+   "clause": "of duration , 'seruieruntque ei octo annis' Jud. 3. 8, cf. Gen. 7. 4, 12, 17",
+   "quotes": [
+    "seruieruntque ei octo annis"
    ],
    "lead": "Time (including not only when , but also how long ):",
    "in": "text"
@@ -7413,6 +9061,34 @@
    "in": "text"
   },
   {
+   "text": "3-kings",
+   "chapter": 14,
+   "verse": 14,
+   "section": 115,
+   "clause": "in is sometimes added to explain the case, 'in anno primo', 'in illis diebus', etc., 'in hac die et in hoc tempore' I Kgs. (III Reg.) 14. 14 (= even now).",
+   "quotes": [
+    "in anno primo",
+    "in illis diebus",
+    "in hac die et in hoc tempore"
+   ],
+   "lead": "Time (including not only when , but also how long ):",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 19,
+   "verse": 43,
+   "section": 115,
+   "clause": "(b) = by (measure of comparison): 'multo', 'co', 'quanto', etc., 'decem partibus maior ego sum' II Sam. (II Reg.) 19. 43",
+   "quotes": [
+    "multo",
+    "quanto",
+    "decem partibus maior ego sum"
+   ],
+   "lead": "(b) = by (measure of comparison):",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 25,
    "verse": 25,
@@ -7422,6 +9098,18 @@
     "altam quattuor digitis"
    ],
    "lead": "(b) = by (measure of comparison):",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 22,
+   "verse": 27,
+   "section": 116,
+   "clause": "'sustentate eum pane tribulationis' I Kgs. (III Reg.) 22. 27",
+   "quotes": [
+    "sustentate eum pane tribulationis"
+   ],
+   "lead": "",
    "in": "text"
   },
   {
@@ -7438,6 +9126,18 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 1,
+   "verse": 6,
+   "section": 116,
+   "clause": "'quem persecuti comprehenderunt caesis summitatibus manuum eius et pedum' (= they pursued after him and caught him, and cut off his thumbs and his great toes') Jud. 1. 6, cf. Esth. 9. 16.",
+   "quotes": [
+    "quem persecuti comprehenderunt caesis summitatibus manuum eius et pedum"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 19,
    "verse": 1,
@@ -7447,6 +9147,21 @@
     "et sedente Lot"
    ],
    "lead": "Also irregularly:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 14,
+   "verse": 39,
+   "section": 117,
+   "clause": "absque = (1) sine, 'without': 'absque liberis', etc., 'absque noxa' (guiltless), 'absque retractatione' (assuredly) I Sam. (I Reg.) 14. 39.",
+   "quotes": [
+    "without",
+    "absque liberis",
+    "absque noxa",
+    "absque retractatione"
+   ],
+   "lead": "absque = (1) sine, 'without':",
    "in": "text"
   },
   {
@@ -7491,6 +9206,56 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 18,
+   "verse": 11,
+   "section": 117,
+   "clause": "cum = 'with', (1) of accompaniment: 'configere ... David cum pariete' I Sam. (I Reg.) 18. 11 (= to smite David even to the wall).",
+   "quotes": [
+    "with",
+    "configere ... David cum pariete"
+   ],
+   "lead": "cum = 'with', (1) of accompaniment:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 16,
+   "verse": 14,
+   "section": 117,
+   "clause": "(1) 'from': 'de facie templi (from the forefront of the temple) et de', etc. II Kgs. (IV Reg.) 16. 14",
+   "quotes": [
+    "from",
+    "de facie templi (from the forefront of the temple) et de"
+   ],
+   "lead": "(1) 'from':",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 15,
+   "verse": 12,
+   "section": 117,
+   "clause": "'de nocte surrexit' (rose early) I Sam. (I Reg.) 15. 12",
+   "quotes": [
+    "de nocte surrexit"
+   ],
+   "lead": "(3) partitive (leading up to Ital. 'di', Fr. 'de'):",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 17,
+   "section": 117,
+   "clause": "'onus duorum burdonum de terra' (of earth) II Kgs. (IV Reg.) 5. 17",
+   "quotes": [
+    "onus duorum burdonum de terra"
+   ],
+   "lead": "(3) partitive (leading up to Ital. 'di', Fr. 'de'):",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 2,
    "verse": 23,
@@ -7503,6 +9268,68 @@
    "in": "text"
   },
   {
+   "text": "2-kings",
+   "chapter": 10,
+   "verse": 9,
+   "section": 117,
+   "clause": "(2) of position: 'ex aduerso' (in front) II Sam. (II Reg.) 10. 9, cf. I Sam. (I Reg.) 26. 1",
+   "quotes": [
+    "ex aduerso"
+   ],
+   "lead": "(2) of position:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 26,
+   "verse": 1,
+   "section": 117,
+   "clause": "(2) of position: 'ex aduerso' (in front) II Sam. (II Reg.) 10. 9, cf. I Sam. (I Reg.) 26. 1",
+   "quotes": [
+    "ex aduerso"
+   ],
+   "lead": "(2) of position:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 16,
+   "verse": 14,
+   "section": 117,
+   "clause": "'ex latere altaris ad aquilonem' (on the N. side of the altar) II Kgs. (IV Reg.) 16. 14.",
+   "quotes": [
+    "ex latere altaris ad aquilonem"
+   ],
+   "lead": "(2) of position:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 2,
+   "section": 117,
+   "clause": "'in obsequio' II. Kgs. (IV Reg.) 5. 2, 'in me' (in my case) Gal. 1. 24",
+   "quotes": [
+    "in obsequio",
+    "in me"
+   ],
+   "lead": "(1) of condition:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 11,
+   "verse": 2,
+   "section": 117,
+   "clause": "'in hoc' (on this condition) I Sam. (I Reg.) 11. 2, cf. Act. 21. 24 'in illis' (for them R.V.), I Tim. 4. 15, 16.",
+   "quotes": [
+    "in hoc",
+    "in illis"
+   ],
+   "lead": "(1) of condition:",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 38,
    "verse": 31,
@@ -7512,6 +9339,55 @@
     "in circuitu"
    ],
    "lead": "(2) of time and place, see above, § 116:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 28,
+   "verse": 8,
+   "section": 117,
+   "clause": "(3) instrumental, see Hebraisms, § 22: so 'in pythone' I Sam. (I Reg.) 28. 8.",
+   "quotes": [
+    "in pythone"
+   ],
+   "lead": "(3) instrumental, see Hebraisms, § 22:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 19,
+   "verse": 42,
+   "section": 117,
+   "clause": "after verbs expressing emotion (anger, pity, etc.): 'irasceris super hac re' II Sam. (II Reg.) 19. 42",
+   "quotes": [
+    "irasceris super hac re"
+   ],
+   "lead": "after verbs expressing emotion (anger, pity, etc.):",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 24,
+   "verse": 16,
+   "section": 117,
+   "clause": "'misertus est Dominus super afflictione' II Sam. (II Reg.) 24. 16, cf. Am. 7. 3, 6, Jon. 4. 2, 6, 9, Jer. 31. 15.",
+   "quotes": [
+    "misertus est Dominus super afflictione"
+   ],
+   "lead": "after verbs expressing emotion (anger, pity, etc.):",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 4,
+   "verse": 2,
+   "section": 119,
+   "clause": "also for the Past, with 'iam', see Jer. 20. 8, Mk. 8. 2, Joh. 5. 6 'multum iam tempus habet (haberet ŠC)', cf. II Sam. (II Reg.) 4. 2.",
+   "quotes": [
+    "iam",
+    "multum iam tempus habet (haberet ŠC)"
+   ],
+   "lead": "Present tense.",
    "in": "text"
   },
   {
@@ -7555,6 +9431,30 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 7,
+   "verse": 17,
+   "section": 124,
+   "clause": "The English idiom often requires the Future Perfect to be translated by the Present: 'quod fecero sectamini' (as I do so shall ye do) Jud. 7. 17",
+   "quotes": [
+    "quod fecero sectamini"
+   ],
+   "lead": "The English idiom often requires the Future Perfect to be translated by the Present:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 23,
+   "section": 126,
+   "clause": "(2) Doubt or uncertainty: as in 'quare ieiunem' (why should I fast?) II Sam. (II Reg.) 12. 23",
+   "quotes": [
+    "quare ieiunem"
+   ],
+   "lead": "(2) Doubt or uncertainty:",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 19,
    "verse": 30,
@@ -7562,6 +9462,34 @@
    "clause": "(6) Infinitive with Verbs of hoping, fearing, promising, swearing (instead of Accusative and Infinitive, or ut or ne with the Subjunctive): 'speratis accipere' Lk. 6. 34, cf. 23. 8, Act. 26. 7, III Joh. 14 etc. (but such Verbs are also used with quod , quia , and the Subjunctive, Rom. 15. 24 etc.). For timeo with Infinitive, see Gen. 19. 30, Mt. 1. 20 etc.",
    "quotes": [
     "speratis accipere"
+   ],
+   "lead": "(6) Infinitive with Verbs of hoping, fearing, promising, swearing (instead of Accusative and Infinitive, or ut or ne with the Subjunctive):",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 2,
+   "verse": 1,
+   "section": 127,
+   "clause": "Polliceor is found with simple Infinitive in Mt. 14. 7 ('pollicitus est ei dare'), but also with ut and Subjunctive, 'pollicitus sum ut non facerem' Jud. 2. 1, cf. II Chron. 6. 1, 20, and more often absolutely or with Accusative of the Relative.",
+   "quotes": [
+    "pollicitus est ei dare",
+    "pollicitus sum ut non facerem"
+   ],
+   "lead": "(6) Infinitive with Verbs of hoping, fearing, promising, swearing (instead of Accusative and Infinitive, or ut or ne with the Subjunctive):",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 8,
+   "verse": 19,
+   "section": 127,
+   "clause": "Similar is the use of promitto , see Tob. 7. 10, Judith 9. 11, II Kgs. (IV Reg.) 8. 19, II Chron. 21. 7. Iuro is found with the Infinitive in Hebr. 3. 18 (iurauit non introire), but also with ut , ne , quod , and the Subjunctive, or absolutely or with Accusative of the Relative.",
+   "quotes": [
+    "quod",
+    "promitto",
+    "Iuro",
+    "quod"
    ],
    "lead": "(6) Infinitive with Verbs of hoping, fearing, promising, swearing (instead of Accusative and Infinitive, or ut or ne with the Subjunctive):",
    "in": "text"
@@ -7633,6 +9561,19 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 20,
+   "verse": 19,
+   "section": 130,
+   "clause": "'uenies in locum ubi celandus es' = the place where you must (are to) hide, I Sam. (I Reg.) 20. 19, but the LXX and the A. and R.V. translate 'where thou didst hide thyself'.",
+   "quotes": [
+    "uenies in locum ubi celandus es",
+    "where thou didst hide thyself"
+   ],
+   "lead": "(2) As Attribute to a Noun. Here it loses its sense of obligation, and becomes equivalent to a Present Participle Passive:",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 19,
    "verse": 4,
@@ -7670,6 +9611,36 @@
     "prius autem quam irent cubitum",
     "dum autem irent emere",
     "properat tibi in occursum"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 16,
+   "verse": 12,
+   "section": 131,
+   "clause": "thus 'non saturatur oculus uisu, nec auris auditu impletur' Eccl. 1. 8, cf. 'aspectu, uisu, pulcher', etc., I Sam. (I Reg.) 16. 12, 17. 42, Gen. 2. 9, Isa. 2. 16, 'accessu difficile' II Macc. 12. 21, 'difficiliora intellectu' II Pet. 3. 16. Here we are again on the borderland between the Supine and the simple Noun",
+   "quotes": [
+    "non saturatur oculus uisu, nec auris auditu impletur",
+    "aspectu, uisu, pulcher",
+    "accessu difficile",
+    "difficiliora intellectu"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 42,
+   "section": 131,
+   "clause": "thus 'non saturatur oculus uisu, nec auris auditu impletur' Eccl. 1. 8, cf. 'aspectu, uisu, pulcher', etc., I Sam. (I Reg.) 16. 12, 17. 42, Gen. 2. 9, Isa. 2. 16, 'accessu difficile' II Macc. 12. 21, 'difficiliora intellectu' II Pet. 3. 16. Here we are again on the borderland between the Supine and the simple Noun",
+   "quotes": [
+    "non saturatur oculus uisu, nec auris auditu impletur",
+    "aspectu, uisu, pulcher",
+    "accessu difficile",
+    "difficiliora intellectu"
    ],
    "lead": "",
    "in": "text"
@@ -7730,6 +9701,45 @@
    "in": "text"
   },
   {
+   "text": "judges",
+   "chapter": 2,
+   "verse": 21,
+   "section": 132,
+   "clause": "'gentes quas dimisit Iosue et mortuus est' (which J. left when he died) Jud. 2. 21",
+   "quotes": [
+    "gentes quas dimisit Iosue et mortuus est"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 20,
+   "verse": 17,
+   "section": 132,
+   "clause": "so constantly 'ecce dies uenient et', e. g. 'ecce dies uenient et auferentur omnia' (= the days will come when everything shall be carried away) II Kgs. (IV Reg.) 20. 17, Isa. 39. 6",
+   "quotes": [
+    "ecce dies uenient et",
+    "ecce dies uenient et auferentur omnia"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 3,
+   "verse": 12,
+   "section": 132,
+   "clause": "1 other examples are 'incipiam et complebo' (when I begin I will also make an end A.V., from beginning to end R.V.) I Sam. (I Reg.) 3. 12, 'quid faciemus tibi, et cessabit mare a nobis? quia mare ibat et intumescebat' (what shall we do to thee in order that the sea may be calm unto us? for the sea grew more and more tempestuous) Jon. 1. 11, 'adferam pauxillum aquae et lauate pedes ustros' (a little water for you to wash) Gen. 18. 4",
+   "quotes": [
+    "incipiam et complebo",
+    "quid faciemus tibi, et cessabit mare a nobis? quia mare ibat et intumescebat",
+    "adferam pauxillum aquae et lauate pedes ustros"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 18,
    "verse": 4,
@@ -7741,6 +9751,78 @@
     "adferam pauxillum aquae et lauate pedes ustros"
    ],
    "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 4,
+   "verse": 12,
+   "section": 134,
+   "clause": "§ 134. (a) The Noun-Clause: (i) as Subject, attached to the main sentence by ut or quod . In English the Subject is expressed provisionally by 'it', and the clause containing the logical Subject is introduced by 'that'. It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus 'mihi pro minimo est ut a uobis iudicer' I Cor. 4. 3, 'manifestum . . . quod ex Iuda ortus sit Dominus' Hebr. 7. 14, 'nuntiatum est quod' Jud. 4. 12, 'nuntiatum est Samueli eo quod' I Sam. (I Reg.) 15. 12, 'factum est . . . ut intraret' ( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6, 'absit hoc scelus, hoc peccatum . . . ut' Jos. 22. 29, I Sam. (I Reg.) 12. 23",
+   "quotes": [
+    ", and the clause containing the logical Subject is introduced by",
+    ". It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus",
+    "I Cor. 4. 3,",
+    "Hebr. 7. 14,",
+    "Jud. 4. 12,",
+    "I Sam. (I Reg.) 15. 12,",
+    "( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6,"
+   ],
+   "lead": "(a) The Noun-Clause:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 15,
+   "verse": 12,
+   "section": 134,
+   "clause": "§ 134. (a) The Noun-Clause: (i) as Subject, attached to the main sentence by ut or quod . In English the Subject is expressed provisionally by 'it', and the clause containing the logical Subject is introduced by 'that'. It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus 'mihi pro minimo est ut a uobis iudicer' I Cor. 4. 3, 'manifestum . . . quod ex Iuda ortus sit Dominus' Hebr. 7. 14, 'nuntiatum est quod' Jud. 4. 12, 'nuntiatum est Samueli eo quod' I Sam. (I Reg.) 15. 12, 'factum est . . . ut intraret' ( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6, 'absit hoc scelus, hoc peccatum . . . ut' Jos. 22. 29, I Sam. (I Reg.) 12. 23",
+   "quotes": [
+    ", and the clause containing the logical Subject is introduced by",
+    ". It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus",
+    "I Cor. 4. 3,",
+    "Hebr. 7. 14,",
+    "Jud. 4. 12,",
+    "I Sam. (I Reg.) 15. 12,",
+    "( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6,"
+   ],
+   "lead": "(a) The Noun-Clause:",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 22,
+   "verse": 29,
+   "section": 134,
+   "clause": "§ 134. (a) The Noun-Clause: (i) as Subject, attached to the main sentence by ut or quod . In English the Subject is expressed provisionally by 'it', and the clause containing the logical Subject is introduced by 'that'. It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus 'mihi pro minimo est ut a uobis iudicer' I Cor. 4. 3, 'manifestum . . . quod ex Iuda ortus sit Dominus' Hebr. 7. 14, 'nuntiatum est quod' Jud. 4. 12, 'nuntiatum est Samueli eo quod' I Sam. (I Reg.) 15. 12, 'factum est . . . ut intraret' ( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6, 'absit hoc scelus, hoc peccatum . . . ut' Jos. 22. 29, I Sam. (I Reg.) 12. 23",
+   "quotes": [
+    ", and the clause containing the logical Subject is introduced by",
+    ". It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus",
+    "I Cor. 4. 3,",
+    "Hebr. 7. 14,",
+    "Jud. 4. 12,",
+    "I Sam. (I Reg.) 15. 12,",
+    "( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6,"
+   ],
+   "lead": "(a) The Noun-Clause:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 12,
+   "verse": 23,
+   "section": 134,
+   "clause": "§ 134. (a) The Noun-Clause: (i) as Subject, attached to the main sentence by ut or quod . In English the Subject is expressed provisionally by 'it', and the clause containing the logical Subject is introduced by 'that'. It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus 'mihi pro minimo est ut a uobis iudicer' I Cor. 4. 3, 'manifestum . . . quod ex Iuda ortus sit Dominus' Hebr. 7. 14, 'nuntiatum est quod' Jud. 4. 12, 'nuntiatum est Samueli eo quod' I Sam. (I Reg.) 15. 12, 'factum est . . . ut intraret' ( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6, 'absit hoc scelus, hoc peccatum . . . ut' Jos. 22. 29, I Sam. (I Reg.) 12. 23",
+   "quotes": [
+    ", and the clause containing the logical Subject is introduced by",
+    ". It follows Verbs used impersonally, as est, factum est, absit, accidit, paenitet , etc., and the Subordinate Verb is in the Subjunctive: thus",
+    "I Cor. 4. 3,",
+    "Hebr. 7. 14,",
+    "Jud. 4. 12,",
+    "I Sam. (I Reg.) 15. 12,",
+    "( éyévero . . . είσελθεῖν αὐτὸν ) Lk. 6. 6,"
+   ],
+   "lead": "(a) The Noun-Clause:",
    "in": "text"
   },
   {
@@ -7757,6 +9839,30 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 15,
+   "verse": 11,
+   "section": 134,
+   "clause": "'paenitet me quod constituerim' I Sam. (I Reg.) 15. 11, 35, cf. Gen. 6. 6, I Macc. 11. 10",
+   "quotes": [
+    "paenitet me quod constituerim"
+   ],
+   "lead": "(a) The Noun-Clause:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 15,
+   "verse": 35,
+   "section": 134,
+   "clause": "'paenitet me quod constituerim' I Sam. (I Reg.) 15. 11, 35, cf. Gen. 6. 6, I Macc. 11. 10",
+   "quotes": [
+    "paenitet me quod constituerim"
+   ],
+   "lead": "(a) The Noun-Clause:",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 6,
    "verse": 6,
@@ -7766,6 +9872,56 @@
     "paenitet me quod constituerim"
    ],
    "lead": "(a) The Noun-Clause:",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 20,
+   "verse": 3,
+   "section": 134,
+   "clause": "'nec latuit filios Beniamin quod ascendissent filii Israel' Jud. 20. 3, 'sorte exiit ut incensum poneret' Lk. 1. 9.",
+   "quotes": [
+    "nec latuit filios Beniamin quod ascendissent filii Israel",
+    "sorte exiit ut incensum poneret"
+   ],
+   "lead": "(a) The Noun-Clause:",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 17,
+   "verse": 17,
+   "section": 134,
+   "clause": "In the Old Test. 'factum est autem post haec, aegrotauit filius mulieris' I Kgs. (III Reg.) 17. 17, 'factum est autem, cum audisset Iezabel lapidatum Naboth et mortuum, locuta est ad Achab' ib. 21. 15.",
+   "quotes": [
+    "factum est autem post haec, aegrotauit filius mulieris",
+    "factum est autem, cum audisset Iezabel lapidatum Naboth et mortuum, locuta est ad Achab"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 2,
+   "verse": 1,
+   "section": 134,
+   "clause": "So with verbs of promising, threatening, etc. we have, instead of the classical construction, 'pollicitus sum ut non facerem inritum pactum meum' Jud. 2. 1",
+   "quotes": [
+    "pollicitus sum ut non facerem inritum pactum meum"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 8,
+   "verse": 19,
+   "section": 134,
+   "clause": "'promiserat ei ut daret' II Kgs. (IV Reg.) 8. 19, cf. II Chron. 6. 1",
+   "quotes": [
+    "promiserat ei ut daret"
+   ],
+   "lead": "",
    "in": "text"
   },
   {
@@ -7793,6 +9949,129 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 3,
+   "verse": 14,
+   "section": 134,
+   "clause": "'iurauit ut non transirem Iordanem' Dt. 4. 21, cf. I Sam. (I Reg.) 3. 14.",
+   "quotes": [
+    "iurauit ut non transirem Iordanem"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 12,
+   "verse": 12,
+   "section": 134,
+   "clause": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ): thus 'uidentes quod Naas ... uenisset' I Sam. (I Reg.) 12. 12",
+   "quotes": [
+    "uidentes quod Naas ... uenisset"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 19,
+   "verse": 8,
+   "section": 134,
+   "clause": "'audierat enim quod recessisset' II Kgs. (IV Reg.) 19. 8",
+   "quotes": [
+    "audierat enim quod recessisset"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 3,
+   "verse": 9,
+   "section": 134,
+   "clause": "'intellexit ergo Heli quia Dominus uocaret puerum' I Sam. (I Reg.) 3. 9, cf. Ps. 73. (72). 16, Jud. 15. 2, I Sam. (I Reg.) 18. 11, II Kgs. (IV Reg.) 5. 11, Job 14. 14",
+   "quotes": [
+    "intellexit ergo Heli quia Dominus uocaret puerum"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 15,
+   "verse": 2,
+   "section": 134,
+   "clause": "'intellexit ergo Heli quia Dominus uocaret puerum' I Sam. (I Reg.) 3. 9, cf. Ps. 73. (72). 16, Jud. 15. 2, I Sam. (I Reg.) 18. 11, II Kgs. (IV Reg.) 5. 11, Job 14. 14",
+   "quotes": [
+    "intellexit ergo Heli quia Dominus uocaret puerum"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 18,
+   "verse": 11,
+   "section": 134,
+   "clause": "'intellexit ergo Heli quia Dominus uocaret puerum' I Sam. (I Reg.) 3. 9, cf. Ps. 73. (72). 16, Jud. 15. 2, I Sam. (I Reg.) 18. 11, II Kgs. (IV Reg.) 5. 11, Job 14. 14",
+   "quotes": [
+    "intellexit ergo Heli quia Dominus uocaret puerum"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 11,
+   "section": 134,
+   "clause": "'intellexit ergo Heli quia Dominus uocaret puerum' I Sam. (I Reg.) 3. 9, cf. Ps. 73. (72). 16, Jud. 15. 2, I Sam. (I Reg.) 18. 11, II Kgs. (IV Reg.) 5. 11, Job 14. 14",
+   "quotes": [
+    "intellexit ergo Heli quia Dominus uocaret puerum"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 23,
+   "verse": 13,
+   "section": 134,
+   "clause": "'scitote quod Dominus Deus uester non eas deleat' Jos. 23. 13, cf. II Kgs. (IV Reg.) 5. 15. Sometimes the Subject of the Subordinate Clause is expressed in the main sentence, which has thus a twofold Object: 'hoc praecauete, ut diligatis' Jos. 23. 11",
+   "quotes": [
+    "scitote quod Dominus Deus uester non eas deleat",
+    "hoc praecauete, ut diligatis"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 15,
+   "section": 134,
+   "clause": "'scitote quod Dominus Deus uester non eas deleat' Jos. 23. 13, cf. II Kgs. (IV Reg.) 5. 15. Sometimes the Subject of the Subordinate Clause is expressed in the main sentence, which has thus a twofold Object: 'hoc praecauete, ut diligatis' Jos. 23. 11",
+   "quotes": [
+    "scitote quod Dominus Deus uester non eas deleat",
+    "hoc praecauete, ut diligatis"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 23,
+   "verse": 11,
+   "section": 134,
+   "clause": "'scitote quod Dominus Deus uester non eas deleat' Jos. 23. 13, cf. II Kgs. (IV Reg.) 5. 15. Sometimes the Subject of the Subordinate Clause is expressed in the main sentence, which has thus a twofold Object: 'hoc praecauete, ut diligatis' Jos. 23. 11",
+   "quotes": [
+    "scitote quod Dominus Deus uester non eas deleat",
+    "hoc praecauete, ut diligatis"
+   ],
+   "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 1,
    "verse": 4,
@@ -7802,6 +10081,30 @@
     "uidit Deus lucem quod esset bona"
    ],
    "lead": "(2) After Verbs denoting some activity of the senses or mind—seeing, hearing, knowing ( Verba sentiendi ):",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 46,
+   "section": 134,
+   "clause": "The Indicative is especially used with respect to God, whose existence is presupposed: 'ut sciat omnis terra quia est Deus in Israel' I Sam. (I Reg.) 17. 46",
+   "quotes": [
+    "ut sciat omnis terra quia est Deus in Israel"
+   ],
+   "lead": "The Indicative is especially used with respect to God, whose existence is presupposed:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 15,
+   "section": 134,
+   "clause": "(IV Reg.) 5. 15. In the New Testament 'credere enim oportet accedentem ad Deum quia est, et inquirentibus se remunerator fit (sit & ©)' Hebr. 11. 6 (cf. Act. 9. 20, 22, supra).",
+   "quotes": [
+    "credere enim oportet accedentem ad Deum quia est, et inquirentibus se remunerator fit (sit & ©)"
+   ],
+   "lead": "(IV Reg.) 5. 15. In the New Testament 'credere enim oportet accedentem ad Deum quia est, et inquirentibus se remunerator fit (sit & ©)' Hebr. 11. 6 (cf. Act. 9. 20, 22, supra).",
    "in": "text"
   },
   {
@@ -7826,6 +10129,60 @@
     "audierant quia comesturi essent panem"
    ],
    "lead": "The Subjunctive . To the instances given above may be added:",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 9,
+   "verse": 15,
+   "section": 134,
+   "clause": "'pollicitus est quod non occiderentur' Jos. 9. 15",
+   "quotes": [
+    "pollicitus est quod non occiderentur"
+   ],
+   "lead": "The Subjunctive . To the instances given above may be added:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 18,
+   "section": 134,
+   "clause": "'nuntiare ei quod mortuus esset paruulus' II Sam. (II Reg.) 12. 18",
+   "quotes": [
+    "nuntiare ei quod mortuus esset paruulus"
+   ],
+   "lead": "The Subjunctive . To the instances given above may be added:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 17,
+   "section": 134,
+   "clause": "'concede mihi ut tollam' II Kgs. (IV Reg.) 5. 17",
+   "quotes": [
+    "concede mihi ut tollam"
+   ],
+   "lead": "The Subjunctive . To the instances given above may be added:",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 5,
+   "verse": 8,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
    "in": "text"
   },
   {
@@ -7883,9 +10240,63 @@
    "in": "text"
   },
   {
+   "text": "4-kings",
+   "chapter": 6,
+   "verse": 20,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "leviticus",
    "chapter": 13,
    "verse": 53,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 11,
+   "verse": 16,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 2,
+   "verse": 42,
    "section": 134,
    "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
    "quotes": [
@@ -7937,6 +10348,78 @@
    "in": "text"
   },
   {
+   "text": "joshua",
+   "chapter": 8,
+   "verse": 6,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 22,
+   "verse": 19,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 19,
+   "verse": 28,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 20,
+   "verse": 32,
+   "section": 134,
+   "clause": "e.g. twice in II Kgs. (IV Reg.) 5. 8, after audisset and sciat , after audio Gen. 41. 15, uideo Gen. 44. 31, Ex. 2. 12, II Kgs. (IV Reg.) 6. 20, Lk. 21. 20, scio Lev. 13. 53, II Sam. (II Reg.) 11. 16, I Kgs. (III Reg.) 2. 42, Lk. 4. 41, I Joh. 5. 16, existimo I Mac. 5. 61, II Mac. 5. 21, 7. 19, and about 14 times in the New Test., puto Gen. 41. 1, 42. 30, Jos. 8. 6, 22. 19, Jud. 19. 28, 20. 32, Lk. 8. 18, Joh. 5. 39, Jac. 1. 26",
+   "quotes": [
+    "audisset",
+    "sciat",
+    "audio",
+    "uideo",
+    "scio",
+    "existimo",
+    "puto"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 37,
    "verse": 15,
@@ -7944,6 +10427,54 @@
    "clause": "but the questions are usually direct: thus we have 'interrogauit quid quaereret' Gen. 37. 15",
    "quotes": [
     "interrogauit quid quaereret"
+   ],
+   "lead": "Regular instances occur (though not frequently) in the Vulgate, and especially in the Old Testament; but the questions are usually direct:",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 56,
+   "section": 135,
+   "clause": "'interroga tu cuius filius sit iste puer' I Sam. (I Reg.) 17. 56",
+   "quotes": [
+    "interroga tu cuius filius sit iste puer"
+   ],
+   "lead": "Regular instances occur (though not frequently) in the Vulgate, and especially in the Old Testament; but the questions are usually direct:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 24,
+   "verse": 13,
+   "section": 135,
+   "clause": "'uide quem respondeam ei, qui misit, sermonem' II Sam. (II Reg.) 24. 13",
+   "quotes": [
+    "uide quem respondeam ei, qui misit, sermonem"
+   ],
+   "lead": "Regular instances occur (though not frequently) in the Vulgate, and especially in the Old Testament; but the questions are usually direct:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 11,
+   "verse": 7,
+   "section": 135,
+   "clause": "'quaesiuitque Dauid quam recte ageret Ioab et populus, et quomodo administraretur bellum' II Sam. (II Reg.) 11. 7, cf. Jud. 17. 9, Mk. 13. 35.",
+   "quotes": [
+    "quaesiuitque Dauid quam recte ageret Ioab et populus, et quomodo administraretur bellum"
+   ],
+   "lead": "Regular instances occur (though not frequently) in the Vulgate, and especially in the Old Testament; but the questions are usually direct:",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 17,
+   "verse": 9,
+   "section": 135,
+   "clause": "'quaesiuitque Dauid quam recte ageret Ioab et populus, et quomodo administraretur bellum' II Sam. (II Reg.) 11. 7, cf. Jud. 17. 9, Mk. 13. 35.",
+   "quotes": [
+    "quaesiuitque Dauid quam recte ageret Ioab et populus, et quomodo administraretur bellum"
    ],
    "lead": "Regular instances occur (though not frequently) in the Vulgate, and especially in the Old Testament; but the questions are usually direct:",
    "in": "text"
@@ -7970,6 +10501,88 @@
     "donec probentur quae dixistis utrum uera an falsa sint"
    ],
    "lead": "Alternative Questions :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 17,
+   "verse": 22,
+   "section": 135,
+   "clause": "cf. in the Old Test. I Sam. (I Reg.) 17. 22, II Sam. (II Reg.) 12. 22.",
+   "quotes": [],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 22,
+   "section": 135,
+   "clause": "cf. in the Old Test. I Sam. (I Reg.) 17. 22, II Sam. (II Reg.) 12. 22.",
+   "quotes": [],
+   "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 28,
+   "verse": 9,
+   "section": 135,
+   "clause": "Quantus : 'tu nostri quanta fecerit Saul et quo modo eraserit magos' I Sam. (I Reg.) 28. 9",
+   "quotes": [
+    "tu nostri quanta fecerit Saul et quo modo eraserit magos"
+   ],
+   "lead": "Quantus :",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 18,
+   "verse": 5,
+   "section": 137,
+   "clause": "Rogo with ut : 'rogauerunt autem eum ut consuleret Dominum, ut scire possent', etc. Jud. 18. 5, cf. I Sam. (I Reg.) 20. 6, Jer. 38. 4, Mt. 8. 34, 9. 38, Mk. 8. 22, Act. 16. 39: with ne : 'rogauit eunuchorum praepositum ne contaminaretur' Dan. 1. 8, cf. II Mac. 8. 16, Lk. 8. 31, Act. 19. 31, II Cor. 10. 2.",
+   "quotes": [
+    "rogauerunt autem eum ut consuleret Dominum, ut scire possent",
+    "rogauit eunuchorum praepositum ne contaminaretur"
+   ],
+   "lead": "Rogo with ut :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 20,
+   "verse": 6,
+   "section": 137,
+   "clause": "Rogo with ut : 'rogauerunt autem eum ut consuleret Dominum, ut scire possent', etc. Jud. 18. 5, cf. I Sam. (I Reg.) 20. 6, Jer. 38. 4, Mt. 8. 34, 9. 38, Mk. 8. 22, Act. 16. 39: with ne : 'rogauit eunuchorum praepositum ne contaminaretur' Dan. 1. 8, cf. II Mac. 8. 16, Lk. 8. 31, Act. 19. 31, II Cor. 10. 2.",
+   "quotes": [
+    "rogauerunt autem eum ut consuleret Dominum, ut scire possent",
+    "rogauit eunuchorum praepositum ne contaminaretur"
+   ],
+   "lead": "Rogo with ut :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 15,
+   "verse": 19,
+   "section": 137,
+   "clause": "Peto : 'peto ut uenias' I Kgs. (III Reg.) 15. 19",
+   "quotes": [
+    "peto ut uenias"
+   ],
+   "lead": "Peto :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 12,
+   "verse": 20,
+   "section": 137,
+   "clause": "'petiuit animae suae ut moreretur' ib. 19. 4, cf. II Sam. (II Reg.) 12. 20, Tob. 3. 15, 4. 20, 9. 1, 12. 4, Judith 12. 5, Jon. 4. 8, Act. 7. 46, 13. 28",
+   "quotes": [
+    "petiuit animae suae ut moreretur"
+   ],
+   "lead": "Peto :",
    "in": "text"
   },
   {
@@ -8020,6 +10633,112 @@
     "deprecabar ne deleret uos"
    ],
    "lead": "Deprecor :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 1,
+   "verse": 23,
+   "section": 137,
+   "clause": "Precor : 'precorque ut impleat Dominus uerbum suum' I Sam. (I Reg.) 1. 23, cf. II Sam. (II Reg.) 24. 10, I Kgs. (III Reg.) 2. 17, II Kgs. (IV Reg.) 18. 26, Act. 8. 24",
+   "quotes": [
+    "precorque ut impleat Dominus uerbum suum"
+   ],
+   "lead": "Precor :",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 24,
+   "verse": 10,
+   "section": 137,
+   "clause": "Precor : 'precorque ut impleat Dominus uerbum suum' I Sam. (I Reg.) 1. 23, cf. II Sam. (II Reg.) 24. 10, I Kgs. (III Reg.) 2. 17, II Kgs. (IV Reg.) 18. 26, Act. 8. 24",
+   "quotes": [
+    "precorque ut impleat Dominus uerbum suum"
+   ],
+   "lead": "Precor :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 2,
+   "verse": 17,
+   "section": 137,
+   "clause": "Precor : 'precorque ut impleat Dominus uerbum suum' I Sam. (I Reg.) 1. 23, cf. II Sam. (II Reg.) 24. 10, I Kgs. (III Reg.) 2. 17, II Kgs. (IV Reg.) 18. 26, Act. 8. 24",
+   "quotes": [
+    "precorque ut impleat Dominus uerbum suum"
+   ],
+   "lead": "Precor :",
+   "in": "text"
+  },
+  {
+   "text": "4-kings",
+   "chapter": 18,
+   "verse": 26,
+   "section": 137,
+   "clause": "Precor : 'precorque ut impleat Dominus uerbum suum' I Sam. (I Reg.) 1. 23, cf. II Sam. (II Reg.) 24. 10, I Kgs. (III Reg.) 2. 17, II Kgs. (IV Reg.) 18. 26, Act. 8. 24",
+   "quotes": [
+    "precorque ut impleat Dominus uerbum suum"
+   ],
+   "lead": "Precor :",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 2,
+   "verse": 16,
+   "section": 137,
+   "clause": "with ne , 'petitionem unam precor a te, ne confundas faciem meam' I Kgs. (III Reg.) 2. 16.",
+   "quotes": [
+    "petitionem unam precor a te, ne confundas faciem meam"
+   ],
+   "lead": "Precor :",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 14,
+   "verse": 15,
+   "section": 137,
+   "clause": "Suadeo : 'suade ei ut indicet' Jud. 14. 15",
+   "quotes": [
+    "suade ei ut indicet"
+   ],
+   "lead": "Suadeo :",
+   "in": "text"
+  },
+  {
+   "text": "joshua",
+   "chapter": 15,
+   "verse": 18,
+   "section": 137,
+   "clause": "Jos. 15. 18.",
+   "quotes": [],
+   "lead": "Suadeo :",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 11,
+   "verse": 14,
+   "section": 137,
+   "clause": "Impero (rare): 'imperauit eis ut dicerent' Jud. 11. 14, cf. Esth. 8. 11.",
+   "quotes": [
+    "imperauit eis ut dicerent"
+   ],
+   "lead": "Impero (rare):",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 8,
+   "verse": 6,
+   "section": 137,
+   "clause": "Postulo : 'postulas ut demus' Jud. 8. 6, cf. I Mac. 11. 28, II Mac. 11. 17, 12. 24",
+   "quotes": [
+    "postulas ut demus"
+   ],
+   "lead": "Postulo :",
    "in": "text"
   },
   {
@@ -8107,6 +10826,42 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 25,
+   "verse": 26,
+   "section": 137,
+   "clause": "'prohibuit te ne uenires' I Sam. (I Reg.) 25. 26, cf. 33, 34.",
+   "quotes": [
+    "prohibuit te ne uenires"
+   ],
+   "lead": "Verbs of hindering are occasionally found with ne :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 25,
+   "verse": 33,
+   "section": 137,
+   "clause": "'prohibuit te ne uenires' I Sam. (I Reg.) 25. 26, cf. 33, 34.",
+   "quotes": [
+    "prohibuit te ne uenires"
+   ],
+   "lead": "Verbs of hindering are occasionally found with ne :",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 25,
+   "verse": 34,
+   "section": 137,
+   "clause": "'prohibuit te ne uenires' I Sam. (I Reg.) 25. 26, cf. 33, 34.",
+   "quotes": [
+    "prohibuit te ne uenires"
+   ],
+   "lead": "Verbs of hindering are occasionally found with ne :",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 26,
    "verse": 9,
@@ -8131,6 +10886,18 @@
    "in": "text"
   },
   {
+   "text": "4-kings",
+   "chapter": 4,
+   "verse": 17,
+   "section": 138,
+   "clause": "so preceded by idem : 'in hora eadem qua dixerat Eliseus' II Kgs. (IV Reg.) 4. 17, cf. II Mac. 4. 38",
+   "quotes": [
+    "in hora eadem qua dixerat Eliseus"
+   ],
+   "lead": "(i) With the Indicative:",
+   "in": "text"
+  },
+  {
    "text": "exodus",
    "chapter": 9,
    "verse": 24,
@@ -8141,6 +10908,44 @@
     "tantaeque fuit magnitudinis, quanta ante numquam apparuit"
    ],
    "lead": "Quicumque occurs frequently:",
+   "in": "text"
+  },
+  {
+   "text": "2-kings",
+   "chapter": 24,
+   "verse": 3,
+   "section": 138,
+   "clause": "without antecedent expressed, 'adaugeat Dominus Deus tuus ad populum tuum, quantus nunc est' II Sam. (II Reg.) 24. 3, cf. 'quanto digna est' I Kgs. (III Reg.) 21. 2",
+   "quotes": [
+    "adaugeat Dominus Deus tuus ad populum tuum, quantus nunc est",
+    "quanto digna est"
+   ],
+   "lead": "Quicumque occurs frequently:",
+   "in": "text"
+  },
+  {
+   "text": "3-kings",
+   "chapter": 21,
+   "verse": 2,
+   "section": 138,
+   "clause": "without antecedent expressed, 'adaugeat Dominus Deus tuus ad populum tuum, quantus nunc est' II Sam. (II Reg.) 24. 3, cf. 'quanto digna est' I Kgs. (III Reg.) 21. 2",
+   "quotes": [
+    "adaugeat Dominus Deus tuus ad populum tuum, quantus nunc est",
+    "quanto digna est"
+   ],
+   "lead": "Quicumque occurs frequently:",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 15,
+   "verse": 7,
+   "section": 143,
+   "clause": "elsewhere (ii) Subjunctive, as 'licet haec feceritis' Jud. 15. 7 etc.",
+   "quotes": [
+    "licet haec feceritis"
+   ],
+   "lead": "(i) Indicative when expressing a fact:",
    "in": "text"
   },
   {
@@ -8182,6 +10987,20 @@
    "in": "text"
   },
   {
+   "text": "1-kings",
+   "chapter": 20,
+   "verse": 3,
+   "section": 143,
+   "clause": "quin occurs only in the Old Testament, and there chiefly in the phrase 'quin potius' (so Lev. 7. 18 etc.), but also 'quin et', Ezek. 21. 17, and 'quin imo' I Sam. (I Reg.) 20. 3, Jer. 8. 12 (with negative)",
+   "quotes": [
+    "quin potius",
+    "quin et",
+    "quin imo"
+   ],
+   "lead": "",
+   "in": "text"
+  },
+  {
    "text": "genesis",
    "chapter": 23,
    "verse": 6,
@@ -8191,6 +11010,19 @@
     "nullus te prohibere potuit quin . . . sepelias"
    ],
    "lead": "",
+   "in": "text"
+  },
+  {
+   "text": "1-kings",
+   "chapter": 10,
+   "verse": 22,
+   "section": 143,
+   "clause": "utrumnam = whether: 'consuluerunt post haec Dominum utrumnam uenturus esset illuc' I Sam. (I Reg.) 10. 22. 1 ubi with Indicative = when: 'ubi uenit plenitudo temporis ( ὅτε )' Gal. 4. 4.",
+   "quotes": [
+    "consuluerunt post haec Dominum utrumnam uenturus esset illuc",
+    "ubi uenit plenitudo temporis ( ὅτε )"
+   ],
+   "lead": "utrumnam = whether:",
    "in": "text"
   },
   {
@@ -8242,6 +11074,18 @@
    "in": "text"
   },
   {
+   "text": "4-kings",
+   "chapter": 17,
+   "verse": 26,
+   "section": 144,
+   "clause": "eo quod = because: 'eo quod nudus essem' Gen. 3. 10, cf. II Kgs. (IV Reg.) 17. 26",
+   "quotes": [
+    "eo quod nudus essem"
+   ],
+   "lead": "eo quod = because:",
+   "in": "text"
+  },
+  {
    "text": "deuteronomy",
    "chapter": 4,
    "verse": 5,
@@ -8263,6 +11107,30 @@
     "scietis quod ego sum Dominus Deus uester"
    ],
    "lead": "19. 44. So quod = that:",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 2,
+   "verse": 19,
+   "section": 144,
+   "clause": "postquam = after: 'postquam autem mortuus esset iudex, reuertebantur (the death of the judge was the cause of their turning back)' Jud. 2. 19, cf. Apoc. 22. 8",
+   "quotes": [
+    "postquam autem mortuus esset iudex, reuertebantur (the death of the judge was the cause of their turning back)"
+   ],
+   "lead": "postquam = after:",
+   "in": "text"
+  },
+  {
+   "text": "judges",
+   "chapter": 20,
+   "verse": 38,
+   "section": 144,
+   "clause": "'signum autem dederant . . . ut postquam urbem cepissent ignem accenderent' (dependent on a Subj. clause) Jud. 20. 38",
+   "quotes": [
+    "signum autem dederant . . . ut postquam urbem cepissent ignem accenderent"
+   ],
+   "lead": "postquam = after:",
    "in": "text"
   },
   {
