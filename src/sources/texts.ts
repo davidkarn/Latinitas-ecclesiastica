@@ -23,7 +23,7 @@ export interface AlignedVerse {
 export interface TextDef {
   id: string;
   title: string;
-  /** Modern English name, where it differs from the Vulgate/Douay-Rheims one ("1 Samuel" for 1 Kings) */
+  /** English name, where it differs from the Vulgate one ("Numbers" for Numeri, "1 Samuel" for I Regum) */
   aka?: string;
   /** Book name in the aligned audio metadata */
   vulgateBook: string;
@@ -39,27 +39,38 @@ const VULGATE_SOURCES: TextSources = {
 };
 
 /**
- * Genesis to 4 Kings. `id` is the URL segment; `vulgateBook` is the book name scripts/align_split.py writes.
- * The Vulgate and the Douay-Rheims count four books of Kings (1–2 Samuel and 1–2 Kings in modern Bibles);
- * the titles follow them, as the Latin does, and `aka` gives the modern name. The Douay-Rheims JSON uses
- * modern names, and its verse numbering matches the Clementine text exactly in all of these books.
+ * Genesis to 4 Kings. Titles are the Vulgate's own (short) names, as in the Clementine headings ("Liber
+ * Numeri", "Liber Primus Regum"), and `aka` gives the English name where it differs. The Vulgate counts
+ * four books of Kings, which modern Bibles call 1–2 Samuel and 1–2 Kings.
+ * `id` is the URL segment (English, kept stable for links and grammar citations); `vulgateBook` is the book
+ * name scripts/align_split.py writes; `englishBook` is the name in the Douay-Rheims JSON, whose verse
+ * numbering matches the Clementine text exactly in all of these books.
  */
-const book = (title: string, vulgateBook = title, englishBook = title, aka?: string): TextDef => ({
-  id: title.toLowerCase().replace(/\s+/g, "-"),
-  title,
-  ...(aka ? { aka } : {}),
-  vulgateBook,
-  englishBook,
-  sources: VULGATE_SOURCES,
-});
+const book = (id: string, title: string, aka?: string, vulgateBook?: string, englishBook?: string): TextDef => {
+  const english = englishBook ?? aka ?? title;
+  return {
+    id,
+    title,
+    ...(aka ? { aka } : {}),
+    vulgateBook: vulgateBook ?? english,
+    englishBook: english,
+    sources: VULGATE_SOURCES,
+  };
+};
 
 export const TEXTS: TextDef[] = [
-  book("Genesis"), book("Exodus"), book("Leviticus"), book("Numbers"), book("Deuteronomy"),
-  book("Joshua"), book("Judges"), book("Ruth"),
-  book("1 Kings", "1Kings", "1 Samuel", "1 Samuel"),
-  book("2 Kings", "2Kings", "2 Samuel", "2 Samuel"),
-  book("3 Kings", "3Kings", "1 Kings", "1 Kings"),
-  book("4 Kings", "4Kings", "2 Kings", "2 Kings"),
+  book("genesis", "Genesis"),
+  book("exodus", "Exodus"),
+  book("leviticus", "Leviticus"),
+  book("numbers", "Numeri", "Numbers"),
+  book("deuteronomy", "Deuteronomium", "Deuteronomy"),
+  book("joshua", "Josue", "Joshua"),
+  book("judges", "Judicum", "Judges"),
+  book("ruth", "Ruth"),
+  book("1-kings", "I Regum", "1 Samuel", "1Kings"),
+  book("2-kings", "II Regum", "2 Samuel", "2Kings"),
+  book("3-kings", "III Regum", "1 Kings", "3Kings"),
+  book("4-kings", "IV Regum", "2 Kings", "4Kings"),
 ];
 
 /** Books whose verses have been aligned (scripts/align_split.py); the rest are skipped with a warning. */
