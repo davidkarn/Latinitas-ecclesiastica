@@ -36,8 +36,17 @@ timings come from a Python 3 venv with `mlx-whisper`, `torch` and `torchaudio`:
 .venv/bin/python scripts/align_split.py resources/audio/vulgate/bibliasacra_0*_128kb.mp3   # → resources/audio/vulgate/verses
 ```
 
-Both skip parts already done. To add a book, add it to `BOOKS` in `align_split.py` and to `TEXTS`
-in `src/sources/texts.ts`; books without aligned verses are skipped by `npm run generate`.
+Both skip parts already done. Parts 001–007 (Genesis and Exodus 1–22) have a broadband hiss the rest of
+the recording doesn't; after aligning, clean them and re-cut their clips at the same points (word timings are
+unchanged; `--filter none` restores the original audio):
+
+```sh
+.venv/bin/python scripts/denoise_verses.py resources/audio/vulgate/bibliasacra_00[1-7]_vulgataclementina_128kb.mp3
+```
+
+Re-aligning a part overwrites its clips with unfiltered ones, so run the denoise again after.
+
+To add a book, add it to `BOOKS` in `align_split.py` and to `TEXTS` in `src/sources/texts.ts`; books without aligned verses are skipped by `npm run generate`.
 
 Grammar notes come from W. E. Plater & H. J. White, *A Grammar of the Vulgate* (Oxford, 1926; public
 domain), OCR'd with Surya. `scripts/convert_grammar.py` turns the OCR output
