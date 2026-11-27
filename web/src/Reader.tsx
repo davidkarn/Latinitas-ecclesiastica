@@ -37,7 +37,7 @@ export function Reader({ chapter, audio, selectedToken, showEnglish, showNotes, 
       {chapter.verses.map((v, i) => {
         const current = i === audio.verseIndex;
         return (
-          <section key={v.verse} ref={el => { rows.current[i] = el; }}
+          <section key={v.verse} id={`v-${v.verse}`} ref={el => { rows.current[i] = el; }}
             className={`verse${current ? " current" : ""}`} aria-label={v.ref}>
             <div className="latin" lang="la">
               <button className="verse-no" onClick={() => audio.playFrom(i)} disabled={!v.audio}

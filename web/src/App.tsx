@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import type { ChapterFile, GrammarNote, TextIndex, Token, Verse } from "../../src/api/index.ts";
 import { getChapter, getTextIndex } from "./api.ts";
+import { loadPosition, savePosition } from "./position.ts";
 import { TopBar } from "./Contents.tsx";
 import { VerseNotesPopup } from "./GrammarNotes.tsx";
 import { GrammarPage } from "./GrammarPage.tsx";
@@ -11,9 +12,28 @@ import { WordPopup } from "./WordPopup.tsx";
 
 interface Route { text: string; chapter: number }
 
-function parseRoute(): Route {
+const START: Route = { text: "genesis", chapter: 1 };
+
+/** The chapter named in the URL, if it names one */
+function parseRoute(): Route | null {
   const m = /^\/([a-z0-9-]+)\/(\d+)\/?$/.exec(location.pathname);
-  return m && m[1] !== "grammar" ? { text: m[1]!, chapter: Number(m[2]) } : { text: "genesis", chapter: 1 };
+  return m && m[1] !== "grammar" ? { text: m[1]!, chapter: Number(m[2]) } : null;
+}
+
+/**
+ * Where to open: the chapter in the URL, else where the reader left off (the URL is updated to match),
+ * else Genesis 1. Returns the verse to resume at when the saved position is the chapter being opened.
+ */
+function startingPoint(): { route: Route; resumeVerse?: number } {
+  history.scrollRestoration = "manual";   // the saved verse, or the top, not the browser's guess
+  const saved = loadPosition();
+  let route = parseRoute();
+  if (!route) {
+    route = saved ? { text: saved.text, chapter: saved.chapter } : START;
+    if (saved && parseGrammar() === undefined) history.replaceState(null, "", `/${route.text}/${route.chapter}`);
+  }
+  const here = saved && saved.text === route.text && saved.chapter === route.chapter;
+  return { route, ...(here && saved.verse !== undefined ? { resumeVerse: saved.verse } : {}) };
 }
 
 /** undefined: reading a text; null: the grammar's start; n: § n */
@@ -40,7 +60,8 @@ export type Selection =
 let selectionSeq = 0;
 
 export function App() {
-  const [route, setRoute] = useState(parseRoute);
+  const [start] = useState(startingPoint);
+  const [route, setRoute] = useState(start.route);
   const [grammarAt, setGrammarAt] = useState(parseGrammar);
   const [index, setIndex] = useState<TextIndex>();
   const [chapter, setChapter] = useState<ChapterFile>();
@@ -67,7 +88,7 @@ export function App() {
     const onPop = () => {
       const g = parseGrammar();
       setGrammarAt(g);
-      if (g === undefined) setRoute(parseRoute());
+      if (g === undefined) setRoute(parseRoute() ?? START);
     };
     addEventListener("popstate", onPop);
     return () => removeEventListener("popstate", onPop);
@@ -152,6 +173,31 @@ export function App() {
   }, [grammarAt]);
 
   const current = chapter && chapter.text === route.text && chapter.chapter === route.chapter ? chapter : undefined;
+
+  // Remember the chapter, and the verse being played in it
+  useEffect(() => {
+    const prev = loadPosition();
+    const same = prev?.text === route.text && prev.chapter === route.chapter;
+    savePosition({ text: route.text, chapter: route.chapter, ...(same && prev.verse !== undefined ? { verse: prev.verse } : {}) });
+  }, [route.text, route.chapter]);
+  const playingVerse = audio.playing && current ? current.verses[audio.verseIndex]?.verse : undefined;
+  useEffect(() => {
+    if (current && playingVerse !== undefined) savePosition({ text: current.text, chapter: current.chapter, verse: playingVerse });
+  }, [current, playingVerse]);
+
+  // Reopened where a verse was last played: bring it into view and cue it, so play continues from there
+  const resume = useRef(start.resumeVerse);
+  const { cue } = audio;
+  useEffect(() => {
+    const verse = resume.current;
+    if (verse === undefined || !current) return;
+    resume.current = undefined;
+    if (current.text !== start.route.text || current.chapter !== start.route.chapter) return;   // moved on already
+    const i = current.verses.findIndex(v => v.verse === verse);
+    if (i < 0) return;
+    cue(i);
+    document.getElementById(`v-${verse}`)?.scrollIntoView({ block: "center" });
+  }, [current, cue, start]);
 
   if (grammarAt !== undefined) {
     return <GrammarPage section={grammarAt} onOpen={openGrammar} onBack={leaveGrammar}

@@ -16,6 +16,8 @@ export interface ChapterAudio {
   active: ActiveWord | null;
   toggle(): void;
   playFrom(verseIndex: number): void;
+  /** Make a verse the current one without playing it: play (toggle) then starts there. Its clip is fetched ahead. */
+  cue(verseIndex: number): void;
   stop(): void;
 }
 
@@ -133,8 +135,15 @@ export function useChapterAudio(verses: Verse[] | undefined): ChapterAudio {
     if (!a) return;
     if (!a.paused) a.pause();
     else if (indexRef.current >= 0 && a.src) a.play().catch(() => setPlaying(false));
-    else playFrom(0);
+    else playFrom(Math.max(0, indexRef.current));   // a cued verse, or the start
   }, [playFrom]);
+
+  const cue = useCallback((i: number) => {
+    const vs = versesRef.current;
+    if (!vs?.[i]?.audio) return;
+    setIndex(i);
+    prefetch(i);
+  }, []);
 
   // New chapter: stop whatever was playing
   useEffect(() => {
@@ -183,5 +192,5 @@ export function useChapterAudio(verses: Verse[] | undefined): ChapterAudio {
     return () => cancelAnimationFrame(raf);
   }, [playing]);
 
-  return { playing, verseIndex, active, toggle, playFrom, stop };
+  return { playing, verseIndex, active, toggle, playFrom, cue, stop };
 }
